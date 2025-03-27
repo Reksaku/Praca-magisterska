@@ -1,0 +1,348 @@
+[0.027s] Invoking command in '/home/rosbot/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/rosbot/ros2_ws/build/custom_msgs -- -j4 -l4
+[0.091s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.148s] -- Found Python3: /home/rosbot/ros2_ws/venv/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.313s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.401s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.487s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.913s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.057s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.258s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.715s] -- Found Python3: /home/rosbot/ros2_ws/venv/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.739s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.774s] -- Added test 'lint_cmake' to check CMake code style
+[1.777s] -- Added test 'xmllint' to check XML markup files
+[1.783s] -- Configuring done (1.7s)
+[1.930s] -- Generating done (0.1s)
+[1.967s] -- Build files have been written to: /home/rosbot/ros2_ws/build/custom_msgs
+[2.023s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.041s] [  1%] Built target ament_cmake_python_copy_custom_msgs
+[2.371s] running egg_info
+[2.400s] writing custom_msgs.egg-info/PKG-INFO
+[2.400s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[2.401s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[2.442s] [  1%] Built target custom_msgs__rosidl_generator_type_description
+[2.458s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.480s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.494s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[2.495s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[2.589s] [  4%] Built target ament_cmake_python_build_custom_msgs_egg
+[3.159s] [  4%] Built target custom_msgs__cpp
+[3.300s] [  6%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/accel_data__type_support.c.o[0m
+[3.300s] [  6%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/accel_data__description.c.o[0m
+[3.300s] [  9%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/accel_data__functions.c.o[0m
+[3.301s] [  9%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__description.c.o[0m
+[3.677s] [ 10%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.c.o[0m
+[3.744s] [ 12%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__type_support.c.o[0m
+[3.750s] [ 13%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/imu_data__description.c.o[0m
+[3.803s] [ 14%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/imu_data__functions.c.o[0m
+[3.807s] [ 16%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__description.c.o[0m
+[3.807s] [ 17%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/imu_data__type_support.c.o[0m
+[3.832s] [ 18%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.c.o[0m
+[3.873s] [ 20%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__type_support.c.o[0m
+[3.887s] [ 21%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/possition_data__description.c.o[0m
+[3.907s] [ 22%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/possition_data__functions.c.o[0m
+[3.934s] [ 24%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/possition_data__type_support.c.o[0m
+[3.989s] [ 25%] [32m[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so[0m
+[4.106s] [ 25%] Built target custom_msgs__rosidl_generator_c
+[4.128s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.128s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.128s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.129s] [ 31%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.685s] [ 32%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.cpp.o[0m
+[4.832s] [ 33%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.cpp.o[0m
+[4.846s] [ 35%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c.o[0m
+[4.913s] [ 36%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.c.o[0m
+[4.952s] [ 37%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.cpp.o[0m
+[4.975s] [ 39%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/imu_data__type_support.c.o[0m
+[5.038s] [ 40%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.o[0m
+[5.101s] [ 41%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/possition_data__type_support.c.o[0m
+[5.133s] [ 43%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.cpp.o[0m
+[5.173s] [ 44%] [32m[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.214s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/imu_data__type_support.cpp.o[0m
+[5.238s] [ 45%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[5.259s] [ 47%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.302s] [ 48%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.cpp.o[0m
+[5.390s] [ 50%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/possition_data__type_support.cpp.o[0m
+[5.474s] [ 51%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so[0m
+[5.568s] [ 51%] Built target custom_msgs__rosidl_typesupport_c
+[5.592s] [ 52%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.677s] [ 54%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.cpp.o[0m
+[5.906s] [ 55%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.cpp.o[0m
+[6.087s] [ 56%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.cpp.o[0m
+[6.270s] [ 58%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/imu_data__type_support.cpp.o[0m
+[6.530s] [ 59%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.cpp.o[0m
+[6.545s] [ 60%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.cpp.o[0m
+[6.904s] [ 62%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.cpp.o[0m
+[7.051s] [ 63%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o[0m
+[7.161s] [ 64%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/imu_data__type_support.cpp.o[0m
+[8.009s] [ 66%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.cpp.o[0m
+[8.178s] [ 67%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/possition_data__type_support.cpp.o[0m
+[8.190s] [ 68%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.cpp.o[0m
+[8.393s] [ 70%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.cpp.o[0m
+[9.326s] [ 71%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/possition_data__type_support.cpp.o[0m
+[9.635s] [ 72%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/possition_data__type_support.cpp.o[0m
+[9.715s] [ 74%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/imu_data__type_support_c.cpp.o[0m
+[9.729s] [ 75%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.928s] [ 75%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[9.968s] [ 77%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.cpp.o[0m
+[10.965s] [ 78%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/possition_data__type_support_c.cpp.o[0m
+[11.269s] [ 79%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so[0m
+[11.447s] [ 79%] Built target custom_msgs__rosidl_typesupport_cpp
+[11.750s] [ 81%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.887s] [ 81%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[12.060s] [ 82%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[12.177s] [ 82%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[12.225s] [ 82%] Built target custom_msgs
+[12.276s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.354s] [ 83%] Built target custom_msgs__py
+[13.402s] [ 86%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_gyro_data_s.c.o[0m
+[13.402s] [ 86%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_accel_data_s.c.o[0m
+[13.416s] [ 87%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_imu_data_s.c.o[0m
+[13.416s] [ 89%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c.o[0m
+[13.819s] [ 90%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_possition_data_s.c.o[0m
+[14.023s] [ 91%] [32m[1mLinking C shared library libcustom_msgs__rosidl_generator_py.so[0m
+[14.116s] [ 91%] Built target custom_msgs__rosidl_generator_py
+[14.174s] [ 93%] [32mBuilding C object CMakeFiles/custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.180s] [ 94%] [32mBuilding C object CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.194s] [ 95%] [32mBuilding C object CMakeFiles/custom_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[14.419s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[14.453s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[14.468s] [100%] [32m[1mLinking C shared module rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so[0m
+[14.503s] [100%] Built target custom_msgs_s__rosidl_typesupport_introspection_c
+[14.525s] [100%] Built target custom_msgs_s__rosidl_typesupport_fastrtps_c
+[14.538s] [100%] Built target custom_msgs_s__rosidl_typesupport_c
+[14.565s] Invoked command in '/home/rosbot/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/rosbot/ros2_ws/build/custom_msgs -- -j4 -l4
+[14.566s] Invoking command in '/home/rosbot/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/rosbot/ros2_ws/build/custom_msgs
+[14.581s] -- Install configuration: ""
+[14.581s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[14.581s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AccelData.json
+[14.582s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GyroData.json
+[14.582s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/ImuData.json
+[14.582s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/EstimatorData.json
+[14.582s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PossitionData.json
+[14.582s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[14.583s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[14.583s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[14.583s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/imu_data.h
+[14.583s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/gyro_data.h
+[14.583s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/estimator_data.h
+[14.583s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/accel_data.h
+[14.583s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[14.583s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__description.c
+[14.583s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__functions.c
+[14.584s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__struct.h
+[14.584s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.c
+[14.584s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__functions.h
+[14.584s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.h
+[14.584s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__functions.h
+[14.584s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.h
+[14.585s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__functions.c
+[14.585s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.c
+[14.585s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__description.c
+[14.585s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__functions.c
+[14.585s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__functions.h
+[14.585s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.c
+[14.586s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__description.c
+[14.586s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.c
+[14.586s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__functions.c
+[14.586s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.h
+[14.586s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__functions.h
+[14.586s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__description.c
+[14.587s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__struct.h
+[14.587s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.c
+[14.587s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__struct.h
+[14.587s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__struct.h
+[14.587s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__functions.h
+[14.587s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.h
+[14.588s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__functions.c
+[14.588s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.h
+[14.588s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__struct.h
+[14.588s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__description.c
+[14.588s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/possition_data.h
+[14.589s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[14.589s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[14.589s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[14.590s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""
+[14.590s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[14.590s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[14.590s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.590s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[14.590s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_fastrtps_c.h
+[14.590s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
+[14.591s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_fastrtps_c.h
+[14.591s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_fastrtps_c.h
+[14.591s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_fastrtps_c.h
+[14.591s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[14.592s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[14.592s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[14.592s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[14.592s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[14.592s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_introspection_c.h
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.c
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_introspection_c.h
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.c
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_introspection_c.h
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.c
+[14.593s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.c
+[14.594s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.c
+[14.594s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+[14.594s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.594s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[14.595s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""
+[14.595s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[14.596s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""
+[14.596s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[14.596s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[14.596s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/accel_data.hpp
+[14.596s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.596s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/imu_data.hpp
+[14.596s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/possition_data.hpp
+[14.597s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/gyro_data.hpp
+[14.597s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[14.597s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.hpp
+[14.597s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__traits.hpp
+[14.597s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__struct.hpp
+[14.597s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__traits.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__builder.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__struct.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__builder.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__traits.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__struct.hpp
+[14.598s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__builder.hpp
+[14.599s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.hpp
+[14.599s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__builder.hpp
+[14.599s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.hpp
+[14.599s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__builder.hpp
+[14.599s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__struct.hpp
+[14.599s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__traits.hpp
+[14.600s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__traits.hpp
+[14.600s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__struct.hpp
+[14.600s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.hpp
+[14.600s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/estimator_data.hpp
+[14.600s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[14.601s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[14.601s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.601s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[14.601s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_fastrtps_cpp.hpp
+[14.601s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[14.601s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_fastrtps_cpp.hpp
+[14.601s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_fastrtps_cpp.hpp
+[14.602s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_fastrtps_cpp.hpp
+[14.602s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_fastrtps_cpp.hpp
+[14.602s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[14.603s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.603s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[14.603s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[14.603s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[14.603s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp
+[14.603s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_cpp.hpp
+[14.603s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.cpp
+[14.603s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_introspection_cpp.hpp
+[14.604s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.cpp
+[14.604s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.cpp
+[14.604s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_introspection_cpp.hpp
+[14.604s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.cpp
+[14.604s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.cpp
+[14.604s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_introspection_cpp.hpp
+[14.605s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[14.606s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[14.606s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[14.607s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""
+[14.607s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[14.607s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[14.609s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info
+[14.610s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[14.610s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[14.610s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[14.610s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[14.610s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs
+[14.610s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[14.610s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[14.610s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_estimator_data_s.c
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_possition_data.py
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_accel_data_s.c
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_possition_data_s.c
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_imu_data_s.c
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_estimator_data.py
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/__init__.py
+[14.611s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_accel_data.py
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_gyro_data.py
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_imu_data.py
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_gyro_data_s.c
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.612s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/__init__.py
+[14.698s] Listing '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs'...
+[14.698s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/__init__.py'...
+[14.698s] Listing '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg'...
+[14.699s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/__init__.py'...
+[14.699s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_accel_data.py'...
+[14.699s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_estimator_data.py'...
+[14.699s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_gyro_data.py'...
+[14.699s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_imu_data.py'...
+[14.699s] Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_possition_data.py'...
+[14.712s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[14.712s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[14.713s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so
+[14.714s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[14.714s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so
+[14.715s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so" to ""
+[14.715s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[14.716s] -- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""
+[14.716s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AccelData.idl
+[14.716s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GyroData.idl
+[14.716s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/ImuData.idl
+[14.716s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/EstimatorData.idl
+[14.716s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PossitionData.idl
+[14.717s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AccelData.msg
+[14.717s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GyroData.msg
+[14.717s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/ImuData.msg
+[14.717s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/EstimatorData.msg
+[14.717s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PossitionData.msg
+[14.717s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[14.717s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[14.718s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[14.718s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[14.719s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh
+[14.719s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[14.719s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash
+[14.720s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh
+[14.720s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[14.721s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[14.721s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[14.722s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[14.723s] -- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[14.723s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.723s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[14.724s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[14.724s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.725s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.725s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.725s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[14.725s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[14.725s] -- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml
+[14.726s] Invoked command in '/home/rosbot/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/rosbot/ros2_ws/build/custom_msgs

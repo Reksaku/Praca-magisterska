@@ -1,0 +1,24 @@
+[1.222s] Invoking command in '/home/rosbot/ros2_ws/src/estimator_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/estimator_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/estimator_pkg build --build-base /home/rosbot/ros2_ws/build/estimator_pkg/build install --record /home/rosbot/ros2_ws/build/estimator_pkg/install.log --single-version-externally-managed install_data
+[1.578s] running egg_info
+[1.603s] writing ../../build/estimator_pkg/estimator_pkg.egg-info/PKG-INFO
+[1.604s] writing dependency_links to ../../build/estimator_pkg/estimator_pkg.egg-info/dependency_links.txt
+[1.607s] writing entry points to ../../build/estimator_pkg/estimator_pkg.egg-info/entry_points.txt
+[1.610s] writing requirements to ../../build/estimator_pkg/estimator_pkg.egg-info/requires.txt
+[1.612s] writing top-level names to ../../build/estimator_pkg/estimator_pkg.egg-info/top_level.txt
+[1.671s] reading manifest file '../../build/estimator_pkg/estimator_pkg.egg-info/SOURCES.txt'
+[1.672s] writing manifest file '../../build/estimator_pkg/estimator_pkg.egg-info/SOURCES.txt'
+[1.672s] running build
+[1.672s] running build_py
+[1.672s] copying estimator_pkg/estimator_node.py -> /home/rosbot/ros2_ws/build/estimator_pkg/build/lib/estimator_pkg
+[1.673s] running install
+[1.682s] running install_lib
+[1.708s] copying /home/rosbot/ros2_ws/build/estimator_pkg/build/lib/estimator_pkg/estimator_node.py -> /home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg
+[1.709s] byte-compiling /home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg/estimator_node.py to estimator_node.cpython-312.pyc
+[1.714s] running install_data
+[1.714s] running install_egg_info
+[1.742s] removing '/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[1.742s] Copying ../../build/estimator_pkg/estimator_pkg.egg-info to /home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg-0.0.0-py3.12.egg-info
+[1.744s] running install_scripts
+[1.939s] Installing estimator_node script to /home/rosbot/ros2_ws/install/estimator_pkg/lib/estimator_pkg
+[1.940s] writing list of installed files to '/home/rosbot/ros2_ws/build/estimator_pkg/install.log'
+[2.028s] Invoked command in '/home/rosbot/ros2_ws/src/estimator_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/estimator_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/estimator_pkg build --build-base /home/rosbot/ros2_ws/build/estimator_pkg/build install --record /home/rosbot/ros2_ws/build/estimator_pkg/install.log --single-version-externally-managed install_data

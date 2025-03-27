@@ -1,0 +1,11 @@
+body {
+	background-color: rgba(255, 255, 255, 1);
+	background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(214, 214, 214, 1) 100%);
+	color: black;
+}
+.str-btn {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}

@@ -1,0 +1,32 @@
+[2.586s] Invoking command in '/home/rosbot/ros2_ws/src/flight_controller_pkg': PYTHONPATH=/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flight_controller_pkg build --build-base /home/rosbot/ros2_ws/build/flight_controller_pkg/build install --record /home/rosbot/ros2_ws/build/flight_controller_pkg/install.log --single-version-externally-managed install_data
+[2.995s] running egg_info
+[2.996s] creating ../../build/flight_controller_pkg/flight_controller_pkg.egg-info
+[3.021s] writing ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/PKG-INFO
+[3.021s] writing dependency_links to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/dependency_links.txt
+[3.022s] writing requirements to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/requires.txt
+[3.022s] writing top-level names to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/top_level.txt
+[3.022s] writing manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'
+[3.075s] reading manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'
+[3.076s] writing manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'
+[3.076s] running build
+[3.076s] running build_py
+[3.076s] creating /home/rosbot/ros2_ws/build/flight_controller_pkg/build
+[3.076s] creating /home/rosbot/ros2_ws/build/flight_controller_pkg/build/lib
+[3.077s] creating /home/rosbot/ros2_ws/build/flight_controller_pkg/build/lib/flight_controller_pkg
+[3.077s] copying flight_controller_pkg/__init__.py -> /home/rosbot/ros2_ws/build/flight_controller_pkg/build/lib/flight_controller_pkg
+[3.077s] running install
+[3.087s] running install_lib
+[3.114s] creating /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg
+[3.114s] copying /home/rosbot/ros2_ws/build/flight_controller_pkg/build/lib/flight_controller_pkg/__init__.py -> /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg
+[3.115s] byte-compiling /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg/__init__.py to __init__.cpython-312.pyc
+[3.115s] running install_data
+[3.116s] creating /home/rosbot/ros2_ws/install/flight_controller_pkg/share/ament_index
+[3.116s] creating /home/rosbot/ros2_ws/install/flight_controller_pkg/share/ament_index/resource_index
+[3.116s] creating /home/rosbot/ros2_ws/install/flight_controller_pkg/share/ament_index/resource_index/packages
+[3.116s] copying resource/flight_controller_pkg -> /home/rosbot/ros2_ws/install/flight_controller_pkg/share/ament_index/resource_index/packages
+[3.116s] copying package.xml -> /home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg
+[3.116s] running install_egg_info
+[3.145s] Copying ../../build/flight_controller_pkg/flight_controller_pkg.egg-info to /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg-0.0.0-py3.12.egg-info
+[3.146s] running install_scripts
+[3.353s] writing list of installed files to '/home/rosbot/ros2_ws/build/flight_controller_pkg/install.log'
+[3.515s] Invoked command in '/home/rosbot/ros2_ws/src/flight_controller_pkg' returned '0': PYTHONPATH=/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flight_controller_pkg build --build-base /home/rosbot/ros2_ws/build/flight_controller_pkg/build install --record /home/rosbot/ros2_ws/build/flight_controller_pkg/install.log --single-version-externally-managed install_data

@@ -1,0 +1,7 @@
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AccelData.idl
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/GyroData.idl
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/ImuData.idl
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/EstimatorData.idl
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PossitionData.idl
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/SpeedData.idl
+/home/rosbot/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DataXYZ.idl

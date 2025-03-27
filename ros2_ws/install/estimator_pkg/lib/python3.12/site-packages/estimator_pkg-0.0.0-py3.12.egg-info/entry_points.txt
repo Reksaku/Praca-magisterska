@@ -1,0 +1,2 @@
+[console_scripts]
+estimator_node = estimator_pkg.estimator_node:main

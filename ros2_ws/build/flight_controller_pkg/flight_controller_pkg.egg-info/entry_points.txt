@@ -1,0 +1,2 @@
+[console_scripts]
+imu_reader = flight_controller_pkg.imu_reader:main

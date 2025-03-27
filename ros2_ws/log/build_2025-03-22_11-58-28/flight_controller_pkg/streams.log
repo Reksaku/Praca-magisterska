@@ -1,0 +1,24 @@
+[1.641s] Invoking command in '/home/rosbot/ros2_ws/src/flight_controller_pkg': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flight_controller_pkg build --build-base /home/rosbot/ros2_ws/build/flight_controller_pkg/build install --record /home/rosbot/ros2_ws/build/flight_controller_pkg/install.log --single-version-externally-managed install_data
+[2.015s] running egg_info
+[2.039s] writing ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/PKG-INFO
+[2.040s] writing dependency_links to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/dependency_links.txt
+[2.041s] writing entry points to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/entry_points.txt
+[2.042s] writing requirements to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/requires.txt
+[2.043s] writing top-level names to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/top_level.txt
+[2.095s] reading manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'
+[2.096s] writing manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'
+[2.096s] running build
+[2.096s] running build_py
+[2.096s] copying flight_controller_pkg/imu_reader.py -> /home/rosbot/ros2_ws/build/flight_controller_pkg/build/lib/flight_controller_pkg
+[2.097s] running install
+[2.106s] running install_lib
+[2.131s] copying /home/rosbot/ros2_ws/build/flight_controller_pkg/build/lib/flight_controller_pkg/imu_reader.py -> /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg
+[2.132s] byte-compiling /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg/imu_reader.py to imu_reader.cpython-312.pyc
+[2.134s] running install_data
+[2.134s] running install_egg_info
+[2.161s] removing '/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[2.161s] Copying ../../build/flight_controller_pkg/flight_controller_pkg.egg-info to /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg-0.0.0-py3.12.egg-info
+[2.163s] running install_scripts
+[2.341s] Installing IMU_node script to /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/flight_controller_pkg
+[2.342s] writing list of installed files to '/home/rosbot/ros2_ws/build/flight_controller_pkg/install.log'
+[2.479s] Invoked command in '/home/rosbot/ros2_ws/src/flight_controller_pkg' returned '0': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flight_controller_pkg build --build-base /home/rosbot/ros2_ws/build/flight_controller_pkg/build install --record /home/rosbot/ros2_ws/build/flight_controller_pkg/install.log --single-version-externally-managed install_data

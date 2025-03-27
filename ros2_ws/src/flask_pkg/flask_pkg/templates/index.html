@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykresy danych z ROS 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+        .chart-container {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+        }
+
+        .horizontal-flex-canvas {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+        }
+
+        .horizontal-flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="horizontal-flex-canvas">
+            <div><canvas id="leftCanva" width="800" height="400"></canvas></div>
+            <div><canvas id="rightCanva" width="800" height="400"></canvas></div>
+        </div>
+        <br>
+        <div class="horizontal-flex-canvas">
+            <div><canvas id="leftCanvaBot" width="800" height="400"></canvas></div>
+            <div><canvas id="rightCanvaBot" width="800" height="400"></canvas></div>
+        </div>
+        <br>
+        <form method="POST" action="/">
+            <div class="horizontal-flex">
+                <input type="submit" value="Reset" name="reset">
+                <input type="submit" value="Re-calibrate" name="calibrate" />
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Inicjalizacja wykresów
+        const ctxLeft = document.getElementById('leftCanva').getContext('2d');
+        const ctxRight = document.getElementById('rightCanva').getContext('2d');
+        const ctxLeftBot = document.getElementById('leftCanvaBot').getContext('2d');
+        const ctxRightBot = document.getElementById('rightCanvaBot').getContext('2d');
+
+
+        const labels = Array.from({});
+
+        const leftChart = new Chart(ctxLeft, {
+            type: 'line',
+            data: {
+                labels: labels,
+                pointStyle: 'false',
+                pointRadius: 0,
+                datasets: [
+                    {
+                        label: 'Oś X',
+                        data: [],
+                        fill: false,
+                        borderColor: 'red',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+
+                    },
+                    {
+                        label: 'Oś Y',
+                        data: [],
+                        fill: false,
+                        borderColor: 'blue',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Z',
+                        data: [],
+                        fill: false,
+                        borderColor: 'green',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    }
+                ]
+            }
+        });
+
+        const rightChart = new Chart(ctxRight, {
+            type: 'line',
+            data: {
+                labels: labels,
+                pointStyle: 'false',
+                pointRadius: 0,
+                datasets: [
+                    {
+                        label: 'Oś X',
+                        data: [],
+                        fill: false,
+                        borderColor: 'red',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Y',
+                        data: [],
+                        fill: false,
+                        borderColor: 'blue',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Z',
+                        data: [],
+                        fill: false,
+                        borderColor: 'green',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    }
+                ]
+            }
+        });
+
+        const leftChartBot = new Chart(ctxLeftBot, {
+            type: 'line',
+            data: {
+                labels: labels,
+                pointStyle: 'false',
+                pointRadius: 0,
+                datasets: [
+                    {
+                        label: 'Oś X',
+                        data: [],
+                        fill: false,
+                        borderColor: 'red',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Y',
+                        data: [],
+                        fill: false,
+                        borderColor: 'blue',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Z',
+                        data: [],
+                        fill: false,
+                        borderColor: 'green',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    }
+                ]
+            }
+        });
+
+        const rightChartBot = new Chart(ctxRightBot, {
+            type: 'line',
+            data: {
+                labels: labels,
+
+                datasets: [
+                    {
+                        label: 'Oś X',
+                        data: [],
+                        fill: false,
+                        borderColor: 'red',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Y',
+                        data: [],
+                        fill: false,
+                        borderColor: 'blue',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Z',
+                        data: [],
+                        fill: false,
+                        borderColor: 'green',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    }
+                ]
+            }
+        });
+
+        // Funkcja aktualizująca wykresy
+        function updateCharts() {
+            fetch('/data')
+                .then(response => response.json())
+                .then(data => {
+                    leftChart.data.labels = data.map(d => d.time);
+                    leftChart.data.datasets[0].data = data.map(d => d.accel_x);
+                    leftChart.data.datasets[1].data = data.map(d => d.accel_y);
+                    leftChart.data.datasets[2].data = data.map(d => d.accel_z);
+
+                    rightChart.data.labels = data.map(d => d.time);
+                    rightChart.data.datasets[0].data = data.map(d => d.rotation_x);
+                    rightChart.data.datasets[1].data = data.map(d => d.rotation_y);
+                    rightChart.data.datasets[2].data = data.map(d => d.rotation_z);
+
+                    leftChartBot.data.labels = data.map(d => d.time);
+                    leftChartBot.data.datasets[0].data = data.map(d => d.speed_x);
+                    leftChartBot.data.datasets[1].data = data.map(d => d.speed_y);
+                    leftChartBot.data.datasets[2].data = data.map(d => d.speed_z);
+
+                    rightChartBot.data.labels = data.map(d => d.time);
+                    rightChartBot.data.datasets[0].data = data.map(d => d.position_x);
+                    rightChartBot.data.datasets[1].data = data.map(d => d.position_y);
+                    rightChartBot.data.datasets[2].data = data.map(d => d.position_z);
+
+                    leftChart.update();
+                    rightChart.update();
+                    leftChartBot.update();
+                    rightChartBot.update();
+
+                })
+                .catch(error => console.error('Błąd podczas pobierania danych:', error));
+        }
+
+        // Aktualizacja wykresów co 200 ms
+        setInterval(updateCharts, 200);
+    </script>
+</body>
+</html>
