@@ -1,0 +1,2 @@
+[console_scripts]
+imu_reader = um7_pkg.imu_reader:main

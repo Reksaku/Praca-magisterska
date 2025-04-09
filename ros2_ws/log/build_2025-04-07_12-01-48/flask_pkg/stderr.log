@@ -1,0 +1,5 @@
+  File "/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg/flask_server.py", line 110
+    app.run(debug=True, host='0.0.0.0', host='rosbot.netbird.cloud')
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: host
+

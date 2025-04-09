@@ -1,0 +1,29 @@
+[2.482s] Invoking command in '/home/rosbot/ros2_ws/src/flask_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/rosbot/ros2_ws/build/flask_pkg/build install --record /home/rosbot/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data
+[2.938s] running egg_info
+[2.980s] writing ../../build/flask_pkg/flask_pkg.egg-info/PKG-INFO
+[2.981s] writing dependency_links to ../../build/flask_pkg/flask_pkg.egg-info/dependency_links.txt
+[3.011s] writing entry points to ../../build/flask_pkg/flask_pkg.egg-info/entry_points.txt
+[3.012s] writing requirements to ../../build/flask_pkg/flask_pkg.egg-info/requires.txt
+[3.012s] writing top-level names to ../../build/flask_pkg/flask_pkg.egg-info/top_level.txt
+[3.069s] reading manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'
+[3.099s] writing manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'
+[3.099s] running build
+[3.099s] running build_py
+[3.114s] copying flask_pkg/flask_server.py -> /home/rosbot/ros2_ws/build/flask_pkg/build/lib/flask_pkg
+[3.118s] running install
+[3.125s] running install_lib
+[3.152s] copying /home/rosbot/ros2_ws/build/flask_pkg/build/lib/flask_pkg/flask_server.py -> /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg
+[3.153s] byte-compiling /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg/flask_server.py to flask_server.cpython-312.pyc
+[3.156s] running install_data
+[3.156s]   File "/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg/flask_server.py", line 110
+[3.156s]     app.run(debug=True, host='0.0.0.0', host='rosbot.netbird.cloud')
+[3.156s]                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.156s] SyntaxError: keyword argument repeated: host
+[3.157s] 
+[3.158s] running install_egg_info
+[3.184s] removing '/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[3.184s] Copying ../../build/flask_pkg/flask_pkg.egg-info to /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg-0.0.0-py3.12.egg-info
+[3.188s] running install_scripts
+[3.413s] Installing flask_server script to /home/rosbot/ros2_ws/install/flask_pkg/lib/flask_pkg
+[3.414s] writing list of installed files to '/home/rosbot/ros2_ws/build/flask_pkg/install.log'
+[3.614s] Invoked command in '/home/rosbot/ros2_ws/src/flask_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/rosbot/ros2_ws/build/flask_pkg/build install --record /home/rosbot/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data

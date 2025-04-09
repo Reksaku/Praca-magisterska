@@ -1,0 +1,28 @@
+running egg_info
+creating ../../build/um7_pkg/um7_pkg.egg-info
+writing ../../build/um7_pkg/um7_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/um7_pkg/um7_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/um7_pkg/um7_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/um7_pkg/um7_pkg.egg-info/requires.txt
+writing top-level names to ../../build/um7_pkg/um7_pkg.egg-info/top_level.txt
+writing manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rosbot/ros2_ws/build/um7_pkg/build
+creating /home/rosbot/ros2_ws/build/um7_pkg/build/lib
+creating /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+copying um7_pkg/imu_reader.py -> /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+copying um7_pkg/__init__.py -> /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+running install
+running install_lib
+creating /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg
+copying /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg/imu_reader.py -> /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg
+copying /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg/__init__.py -> /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg
+byte-compiling /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg/imu_reader.py to imu_reader.cpython-312.pyc
+byte-compiling /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/rosbot/ros2_ws/install/um7_pkg/share/ament_index
+creating /home/rosbot/ros2_ws/install/um7_pkg/share/ament_index/resource_index
+creating /home/rosbot/ros2_ws/install/um7_pkg/share/ament_index/resource_index/packages

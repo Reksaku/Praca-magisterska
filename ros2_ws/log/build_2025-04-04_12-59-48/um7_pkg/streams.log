@@ -1,0 +1,24 @@
+[1.181s] Invoking command in '/home/rosbot/ros2_ws/src/um7_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/um7_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/um7_pkg build --build-base /home/rosbot/ros2_ws/build/um7_pkg/build install --record /home/rosbot/ros2_ws/build/um7_pkg/install.log --single-version-externally-managed install_data
+[1.546s] running egg_info
+[1.571s] writing ../../build/um7_pkg/um7_pkg.egg-info/PKG-INFO
+[1.572s] writing dependency_links to ../../build/um7_pkg/um7_pkg.egg-info/dependency_links.txt
+[1.573s] writing entry points to ../../build/um7_pkg/um7_pkg.egg-info/entry_points.txt
+[1.621s] writing requirements to ../../build/um7_pkg/um7_pkg.egg-info/requires.txt
+[1.622s] writing top-level names to ../../build/um7_pkg/um7_pkg.egg-info/top_level.txt
+[1.677s] reading manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+[1.678s] writing manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+[1.678s] running build
+[1.678s] running build_py
+[1.678s] copying um7_pkg/imu_reader.py -> /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+[1.679s] running install
+[1.688s] running install_lib
+[1.714s] copying /home/rosbot/ros2_ws/build/um7_pkg/build/lib/um7_pkg/imu_reader.py -> /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg
+[1.715s] byte-compiling /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg/imu_reader.py to imu_reader.cpython-312.pyc
+[1.716s] running install_data
+[1.716s] running install_egg_info
+[1.745s] removing '/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[1.745s] Copying ../../build/um7_pkg/um7_pkg.egg-info to /home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages/um7_pkg-0.0.0-py3.12.egg-info
+[1.747s] running install_scripts
+[1.934s] Installing imu_reader script to /home/rosbot/ros2_ws/install/um7_pkg/lib/um7_pkg
+[1.934s] writing list of installed files to '/home/rosbot/ros2_ws/build/um7_pkg/install.log'
+[2.010s] Invoked command in '/home/rosbot/ros2_ws/src/um7_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/um7_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/um7_pkg build --build-base /home/rosbot/ros2_ws/build/um7_pkg/build install --record /home/rosbot/ros2_ws/build/um7_pkg/install.log --single-version-externally-managed install_data
