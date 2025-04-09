@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wykres z ROS2</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Dane z czujników (ostatnie 10 sek)</h2>
+    <canvas id="myChart" width="900" height="400"></canvas>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Temperatura (°C)',
+                        data: [],
+                        borderColor: 'red',
+                        fill: false
+                    },
+                    {
+                        label: 'Wilgotność (%)',
+                        data: [],
+                        borderColor: 'blue',
+                        fill: false
+                    },
+                    {
+                        label: 'Ciśnienie (hPa)',
+                        data: [],
+                        borderColor: 'green',
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Czas' }
+                    },
+                    y: {
+                        beginAtZero: false,
+                        title: { display: true, text: 'Wartości' }
+                    }
+                }
+            }
+        });
+
+        function updateChart() {
+            fetch('/data')
+                .then(res => res.json())
+                .then(data => {
+                    chart.data.labels = data.map(d => d.time);
+                    chart.data.datasets[0].data = data.map(d => d.temperature);
+                    chart.data.datasets[1].data = data.map(d => d.humidity);
+                    chart.data.datasets[2].data = data.map(d => d.pressure);
+                    chart.update();
+                });
+        }
+
+        setInterval(updateChart, 100);
+    </script>
+</body>
+</html>

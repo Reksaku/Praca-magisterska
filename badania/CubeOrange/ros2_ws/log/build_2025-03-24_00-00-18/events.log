@@ -1,0 +1,659 @@
+[0.000000] (-) TimerEvent: {}
+[0.000236] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000281] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000303] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.000322] (estimator_pkg) JobQueued: {'identifier': 'estimator_pkg', 'dependencies': OrderedDict({'custom_msgs': '/home/rosbot/ros2_ws/install/custom_msgs'})}
+[0.000346] (flask_pkg) JobQueued: {'identifier': 'flask_pkg', 'dependencies': OrderedDict({'custom_msgs': '/home/rosbot/ros2_ws/install/custom_msgs'})}
+[0.000367] (flight_controller_pkg) JobQueued: {'identifier': 'flight_controller_pkg', 'dependencies': OrderedDict({'custom_msgs': '/home/rosbot/ros2_ws/install/custom_msgs'})}
+[0.000817] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.008271] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.013323] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.023356] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.024279] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[0.025043] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rosbot/ros2_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/rosbot/ros2_ws/build/custom_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/custom_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy'}), 'shell': False}
+[0.028809] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.029866] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.030210] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rosbot/ros2_ws/build/my_cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/rosbot/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/my_cpp_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy'}), 'shell': False}
+[0.091161] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099708] (-) TimerEvent: {}
+[0.128166] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target cpp_node\n'}
+[0.148849] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /home/rosbot/ros2_ws/venv/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.199820] (-) TimerEvent: {}
+[0.300174] (-) TimerEvent: {}
+[0.313503] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.322775] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.382778] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[0.383658] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[0.398990] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rosbot/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/rosbot/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/my_cpp_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy'}), 'shell': False}
+[0.400447] (-) TimerEvent: {}
+[0.401838] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.413708] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.415273] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[0.415459] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[0.415572] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[0.415676] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[0.415765] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[0.415849] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[0.415972] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[0.416094] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[0.416193] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[0.416286] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[0.416369] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[0.416453] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[0.416542] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[0.416631] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[0.416869] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[0.417163] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[0.418325] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[0.438650] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[0.487598] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.500545] (-) TimerEvent: {}
+[0.600856] (-) TimerEvent: {}
+[0.701267] (-) TimerEvent: {}
+[0.801653] (-) TimerEvent: {}
+[0.901986] (-) TimerEvent: {}
+[0.913746] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.002079] (-) TimerEvent: {}
+[1.057842] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.102191] (-) TimerEvent: {}
+[1.202561] (-) TimerEvent: {}
+[1.254422] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.258565] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.293925] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/rosbot/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/rosbot/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rosbot/ros2_ws/src/my_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.302672] (-) TimerEvent: {}
+[1.403023] (-) TimerEvent: {}
+[1.503350] (-) TimerEvent: {}
+[1.603711] (-) TimerEvent: {}
+[1.684301] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.705430] (-) TimerEvent: {}
+[1.710910] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /home/rosbot/ros2_ws/venv/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.715555] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[1.720176] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[1.721089] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[1.724368] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[1.725135] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[1.740118] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.774513] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.777559] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.782348] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.783439] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.783615] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[1.783744] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.783870] (custom_msgs) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[1.784207] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[1.793517] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.805500] (-) TimerEvent: {}
+[1.820522] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.820786] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.848855] (my_py_pkg) StdoutLine: {'line': b"removing '/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[1.849399] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info\n'}
+[1.851014] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.905605] (-) TimerEvent: {}
+[1.930870] (custom_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[1.967320] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/rosbot/ros2_ws/build/custom_msgs\n'}
+[2.005724] (-) TimerEvent: {}
+[2.023251] (custom_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.041309] (custom_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[2.045557] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/rosbot/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[2.046309] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/rosbot/ros2_ws/build/my_py_pkg/install.log'\n"}
+[2.105844] (-) TimerEvent: {}
+[2.145009] (my_py_pkg) CommandEnded: {'returncode': 0}
+[2.170962] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[2.205978] (-) TimerEvent: {}
+[2.306282] (-) TimerEvent: {}
+[2.371327] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.400529] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[2.400990] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[2.402077] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[2.407829] (-) TimerEvent: {}
+[2.442221] (custom_msgs) StdoutLine: {'line': b'[  1%] Built target custom_msgs__rosidl_generator_type_description\n'}
+[2.458623] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.481033] (custom_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.494565] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.495501] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.507938] (-) TimerEvent: {}
+[2.589296] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[2.608017] (-) TimerEvent: {}
+[2.708288] (-) TimerEvent: {}
+[2.808719] (-) TimerEvent: {}
+[2.908987] (-) TimerEvent: {}
+[3.010064] (-) TimerEvent: {}
+[3.110520] (-) TimerEvent: {}
+[3.159726] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target custom_msgs__cpp\n'}
+[3.212486] (-) TimerEvent: {}
+[3.300462] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/accel_data__type_support.c.o\x1b[0m\n'}
+[3.300841] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/accel_data__description.c.o\x1b[0m\n'}
+[3.301161] (custom_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/accel_data__functions.c.o\x1b[0m\n'}
+[3.301304] (custom_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__description.c.o\x1b[0m\n'}
+[3.312588] (-) TimerEvent: {}
+[3.412934] (-) TimerEvent: {}
+[3.513313] (-) TimerEvent: {}
+[3.613674] (-) TimerEvent: {}
+[3.677802] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.c.o\x1b[0m\n'}
+[3.713799] (-) TimerEvent: {}
+[3.744747] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__type_support.c.o\x1b[0m\n'}
+[3.750227] (custom_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/imu_data__description.c.o\x1b[0m\n'}
+[3.803754] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/imu_data__functions.c.o\x1b[0m\n'}
+[3.807260] (custom_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__description.c.o\x1b[0m\n'}
+[3.807828] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/imu_data__type_support.c.o\x1b[0m\n'}
+[3.814052] (-) TimerEvent: {}
+[3.832970] (custom_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.c.o\x1b[0m\n'}
+[3.873063] (custom_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__type_support.c.o\x1b[0m\n'}
+[3.887203] (custom_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/possition_data__description.c.o\x1b[0m\n'}
+[3.907308] (custom_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/possition_data__functions.c.o\x1b[0m\n'}
+[3.914704] (-) TimerEvent: {}
+[3.935066] (custom_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/possition_data__type_support.c.o\x1b[0m\n'}
+[3.989734] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.014805] (-) TimerEvent: {}
+[4.106625] (custom_msgs) StdoutLine: {'line': b'[ 25%] Built target custom_msgs__rosidl_generator_c\n'}
+[4.115008] (-) TimerEvent: {}
+[4.128740] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.129107] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.129209] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.129290] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.216008] (-) TimerEvent: {}
+[4.316389] (-) TimerEvent: {}
+[4.420164] (-) TimerEvent: {}
+[4.520754] (-) TimerEvent: {}
+[4.621141] (-) TimerEvent: {}
+[4.685596] (custom_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.cpp.o\x1b[0m\n'}
+[4.721291] (-) TimerEvent: {}
+[4.821757] (-) TimerEvent: {}
+[4.832154] (custom_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.cpp.o\x1b[0m\n'}
+[4.846567] (custom_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c.o\x1b[0m\n'}
+[4.914006] (custom_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.c.o\x1b[0m\n'}
+[4.921874] (-) TimerEvent: {}
+[4.952998] (custom_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.cpp.o\x1b[0m\n'}
+[4.976033] (custom_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/imu_data__type_support.c.o\x1b[0m\n'}
+[5.022006] (-) TimerEvent: {}
+[5.038821] (custom_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.o\x1b[0m\n'}
+[5.102012] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/possition_data__type_support.c.o\x1b[0m\n'}
+[5.122122] (-) TimerEvent: {}
+[5.133293] (custom_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.cpp.o\x1b[0m\n'}
+[5.173084] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.214219] (custom_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/imu_data__type_support.cpp.o\x1b[0m\n'}
+[5.222515] (-) TimerEvent: {}
+[5.238586] (custom_msgs) StdoutLine: {'line': b'[ 45%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[5.259253] (custom_msgs) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.302361] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.cpp.o\x1b[0m\n'}
+[5.323031] (-) TimerEvent: {}
+[5.390697] (custom_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/possition_data__type_support.cpp.o\x1b[0m\n'}
+[5.424990] (-) TimerEvent: {}
+[5.474860] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.525125] (-) TimerEvent: {}
+[5.568828] (custom_msgs) StdoutLine: {'line': b'[ 51%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[5.592837] (custom_msgs) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.625232] (-) TimerEvent: {}
+[5.677980] (custom_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.cpp.o\x1b[0m\n'}
+[5.727032] (-) TimerEvent: {}
+[5.827556] (-) TimerEvent: {}
+[5.906096] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.cpp.o\x1b[0m\n'}
+[5.927681] (-) TimerEvent: {}
+[6.029479] (-) TimerEvent: {}
+[6.085719] (custom_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.cpp.o\x1b[0m\n'}
+[6.132005] (-) TimerEvent: {}
+[6.232426] (-) TimerEvent: {}
+[6.271059] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/imu_data__type_support.cpp.o\x1b[0m\n'}
+[6.332573] (-) TimerEvent: {}
+[6.433286] (-) TimerEvent: {}
+[6.530343] (custom_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.cpp.o\x1b[0m\n'}
+[6.535077] (-) TimerEvent: {}
+[6.545105] (custom_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.cpp.o\x1b[0m\n'}
+[6.635248] (-) TimerEvent: {}
+[6.738013] (-) TimerEvent: {}
+[6.838554] (-) TimerEvent: {}
+[6.904615] (custom_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.cpp.o\x1b[0m\n'}
+[6.938695] (-) TimerEvent: {}
+[7.039337] (-) TimerEvent: {}
+[7.051804] (custom_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o\x1b[0m\n'}
+[7.139576] (-) TimerEvent: {}
+[7.161548] (custom_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/imu_data__type_support.cpp.o\x1b[0m\n'}
+[7.244027] (-) TimerEvent: {}
+[7.344761] (-) TimerEvent: {}
+[7.446247] (-) TimerEvent: {}
+[7.551014] (-) TimerEvent: {}
+[7.653075] (-) TimerEvent: {}
+[7.756054] (-) TimerEvent: {}
+[7.856507] (-) TimerEvent: {}
+[7.957205] (-) TimerEvent: {}
+[8.009246] (custom_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.cpp.o\x1b[0m\n'}
+[8.061013] (-) TimerEvent: {}
+[8.161474] (-) TimerEvent: {}
+[8.178127] (custom_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/possition_data__type_support.cpp.o\x1b[0m\n'}
+[8.190187] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.cpp.o\x1b[0m\n'}
+[8.261610] (-) TimerEvent: {}
+[8.362338] (-) TimerEvent: {}
+[8.393174] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.cpp.o\x1b[0m\n'}
+[8.462466] (-) TimerEvent: {}
+[8.563096] (-) TimerEvent: {}
+[8.670018] (-) TimerEvent: {}
+[8.770472] (-) TimerEvent: {}
+[8.870971] (-) TimerEvent: {}
+[8.974002] (-) TimerEvent: {}
+[9.074443] (-) TimerEvent: {}
+[9.178071] (-) TimerEvent: {}
+[9.278589] (-) TimerEvent: {}
+[9.326326] (custom_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/possition_data__type_support.cpp.o\x1b[0m\n'}
+[9.378762] (-) TimerEvent: {}
+[9.481030] (-) TimerEvent: {}
+[9.581470] (-) TimerEvent: {}
+[9.635455] (custom_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/possition_data__type_support.cpp.o\x1b[0m\n'}
+[9.684046] (-) TimerEvent: {}
+[9.715479] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/imu_data__type_support_c.cpp.o\x1b[0m\n'}
+[9.729678] (custom_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.784239] (-) TimerEvent: {}
+[9.887253] (-) TimerEvent: {}
+[9.928575] (custom_msgs) StdoutLine: {'line': b'[ 75%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[9.968182] (custom_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.cpp.o\x1b[0m\n'}
+[9.987391] (-) TimerEvent: {}
+[10.089021] (-) TimerEvent: {}
+[10.189679] (-) TimerEvent: {}
+[10.291201] (-) TimerEvent: {}
+[10.393199] (-) TimerEvent: {}
+[10.493759] (-) TimerEvent: {}
+[10.599023] (-) TimerEvent: {}
+[10.699642] (-) TimerEvent: {}
+[10.804224] (-) TimerEvent: {}
+[10.907343] (-) TimerEvent: {}
+[10.965161] (custom_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/possition_data__type_support_c.cpp.o\x1b[0m\n'}
+[11.007474] (-) TimerEvent: {}
+[11.108131] (-) TimerEvent: {}
+[11.214408] (-) TimerEvent: {}
+[11.270029] (custom_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.314542] (-) TimerEvent: {}
+[11.415534] (-) TimerEvent: {}
+[11.447603] (custom_msgs) StdoutLine: {'line': b'[ 79%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[11.516006] (-) TimerEvent: {}
+[11.620019] (-) TimerEvent: {}
+[11.720683] (-) TimerEvent: {}
+[11.750751] (custom_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.820824] (-) TimerEvent: {}
+[11.887692] (custom_msgs) StdoutLine: {'line': b'[ 81%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[11.920989] (-) TimerEvent: {}
+[12.021438] (-) TimerEvent: {}
+[12.060602] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.123023] (-) TimerEvent: {}
+[12.177550] (custom_msgs) StdoutLine: {'line': b'[ 82%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.223166] (-) TimerEvent: {}
+[12.225375] (custom_msgs) StdoutLine: {'line': b'[ 82%] Built target custom_msgs\n'}
+[12.276120] (custom_msgs) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.324026] (-) TimerEvent: {}
+[12.424507] (-) TimerEvent: {}
+[12.526279] (-) TimerEvent: {}
+[12.626743] (-) TimerEvent: {}
+[12.729001] (-) TimerEvent: {}
+[12.829388] (-) TimerEvent: {}
+[12.929765] (-) TimerEvent: {}
+[13.030207] (-) TimerEvent: {}
+[13.131990] (-) TimerEvent: {}
+[13.232386] (-) TimerEvent: {}
+[13.332767] (-) TimerEvent: {}
+[13.354003] (custom_msgs) StdoutLine: {'line': b'[ 83%] Built target custom_msgs__py\n'}
+[13.402523] (custom_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_gyro_data_s.c.o\x1b[0m\n'}
+[13.402871] (custom_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_accel_data_s.c.o\x1b[0m\n'}
+[13.416182] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_imu_data_s.c.o\x1b[0m\n'}
+[13.416496] (custom_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c.o\x1b[0m\n'}
+[13.433545] (-) TimerEvent: {}
+[13.535174] (-) TimerEvent: {}
+[13.635816] (-) TimerEvent: {}
+[13.737465] (-) TimerEvent: {}
+[13.819626] (custom_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_possition_data_s.c.o\x1b[0m\n'}
+[13.840060] (-) TimerEvent: {}
+[13.940585] (-) TimerEvent: {}
+[14.023634] (custom_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[14.040729] (-) TimerEvent: {}
+[14.116992] (custom_msgs) StdoutLine: {'line': b'[ 91%] Built target custom_msgs__rosidl_generator_py\n'}
+[14.143194] (-) TimerEvent: {}
+[14.174983] (custom_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.181011] (custom_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.195049] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/custom_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.245002] (-) TimerEvent: {}
+[14.348015] (-) TimerEvent: {}
+[14.419090] (custom_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.451046] (-) TimerEvent: {}
+[14.453776] (custom_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.468385] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.503307] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs_s__rosidl_typesupport_introspection_c\n'}
+[14.526060] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[14.538271] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs_s__rosidl_typesupport_c\n'}
+[14.551174] (-) TimerEvent: {}
+[14.565579] (custom_msgs) CommandEnded: {'returncode': 0}
+[14.566179] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[14.566223] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rosbot/ros2_ws/build/custom_msgs'], 'cwd': '/home/rosbot/ros2_ws/build/custom_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/custom_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy'}), 'shell': False}
+[14.581585] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.581896] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[14.582095] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AccelData.json\n'}
+[14.582280] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GyroData.json\n'}
+[14.582504] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/ImuData.json\n'}
+[14.582745] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/EstimatorData.json\n'}
+[14.582957] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PossitionData.json\n'}
+[14.583157] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[14.583324] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[14.583432] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.583525] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/imu_data.h\n'}
+[14.583647] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/gyro_data.h\n'}
+[14.583772] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/estimator_data.h\n'}
+[14.583890] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/accel_data.h\n'}
+[14.584025] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[14.584131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__description.c\n'}
+[14.584241] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__functions.c\n'}
+[14.584403] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__struct.h\n'}
+[14.584557] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.c\n'}
+[14.584727] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__functions.h\n'}
+[14.584884] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.h\n'}
+[14.585052] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__functions.h\n'}
+[14.585224] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.h\n'}
+[14.585360] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__functions.c\n'}
+[14.585524] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.c\n'}
+[14.585707] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__description.c\n'}
+[14.585842] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__functions.c\n'}
+[14.586024] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__functions.h\n'}
+[14.586186] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.c\n'}
+[14.586345] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__description.c\n'}
+[14.586513] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.c\n'}
+[14.586732] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__functions.c\n'}
+[14.586878] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.h\n'}
+[14.587030] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__functions.h\n'}
+[14.587216] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__description.c\n'}
+[14.587382] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__struct.h\n'}
+[14.587545] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.c\n'}
+[14.587705] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__struct.h\n'}
+[14.587863] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__struct.h\n'}
+[14.588016] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__functions.h\n'}
+[14.588180] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.h\n'}
+[14.588327] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__functions.c\n'}
+[14.588489] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.h\n'}
+[14.588701] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__struct.h\n'}
+[14.588836] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__description.c\n'}
+[14.589068] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/possition_data.h\n'}
+[14.589323] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[14.589456] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[14.589644] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[14.590362] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[14.590517] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[14.590663] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[14.590769] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.590864] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[14.591017] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_fastrtps_c.h\n'}
+[14.591148] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h\n'}
+[14.591313] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_fastrtps_c.h\n'}
+[14.591451] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_fastrtps_c.h\n'}
+[14.591583] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_fastrtps_c.h\n'}
+[14.591834] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[14.592545] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.592747] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[14.592922] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[14.593043] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[14.593144] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_introspection_c.h\n'}
+[14.593298] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.c\n'}
+[14.593418] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_introspection_c.h\n'}
+[14.593553] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.c\n'}
+[14.593682] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_introspection_c.h\n'}
+[14.593810] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_introspection_c.h\n'}
+[14.593964] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.c\n'}
+[14.594157] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.c\n'}
+[14.594338] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.c\n'}
+[14.594512] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h\n'}
+[14.594689] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.595004] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[14.595665] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.595874] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[14.596502] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[14.596648] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[14.596748] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[14.596872] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/accel_data.hpp\n'}
+[14.596980] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.597098] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/imu_data.hpp\n'}
+[14.597208] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/possition_data.hpp\n'}
+[14.597322] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/gyro_data.hpp\n'}
+[14.597470] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[14.597589] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.hpp\n'}
+[14.597750] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__traits.hpp\n'}
+[14.597895] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__struct.hpp\n'}
+[14.598146] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.hpp\n'}
+[14.598300] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__traits.hpp\n'}
+[14.598456] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__builder.hpp\n'}
+[14.598616] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__struct.hpp\n'}
+[14.598760] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__builder.hpp\n'}
+[14.598931] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__traits.hpp\n'}
+[14.599099] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__struct.hpp\n'}
+[14.599245] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__builder.hpp\n'}
+[14.599385] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.hpp\n'}
+[14.599556] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__builder.hpp\n'}
+[14.599705] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.hpp\n'}
+[14.599850] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__builder.hpp\n'}
+[14.600033] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__struct.hpp\n'}
+[14.600200] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__traits.hpp\n'}
+[14.600342] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__traits.hpp\n'}
+[14.600502] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__struct.hpp\n'}
+[14.600667] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.hpp\n'}
+[14.600845] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/estimator_data.hpp\n'}
+[14.601201] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[14.601357] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[14.601459] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.601549] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[14.601669] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.601826] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[14.601976] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.602177] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.602280] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.602366] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.602560] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.603323] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.603550] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[14.603650] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[14.603742] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[14.603837] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.603992] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.604103] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__type_support.cpp\n'}
+[14.604231] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.604352] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__type_support.cpp\n'}
+[14.604471] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/imu_data__type_support.cpp\n'}
+[14.604596] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.604740] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/accel_data__type_support.cpp\n'}
+[14.604923] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/gyro_data__type_support.cpp\n'}
+[14.605170] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/possition_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.605586] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[14.606266] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.606547] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[14.607190] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[14.607380] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[14.607503] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[14.610032] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info\n'}
+[14.610332] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[14.610434] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[14.610540] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[14.610642] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[14.610748] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs\n'}
+[14.610856] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.611057] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[14.611180] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg\n'}
+[14.611297] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_estimator_data_s.c\n'}
+[14.611408] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_possition_data.py\n'}
+[14.611520] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_accel_data_s.c\n'}
+[14.611632] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_possition_data_s.c\n'}
+[14.611748] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_imu_data_s.c\n'}
+[14.611861] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_estimator_data.py\n'}
+[14.612104] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/__init__.py\n'}
+[14.612208] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_accel_data.py\n'}
+[14.612296] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_gyro_data.py\n'}
+[14.612382] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_imu_data.py\n'}
+[14.612522] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_gyro_data_s.c\n'}
+[14.612639] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.612751] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[14.612972] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so\n'}
+[14.613085] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.613178] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/__init__.py\n'}
+[14.651299] (-) TimerEvent: {}
+[14.698590] (custom_msgs) StdoutLine: {'line': b"Listing '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs'...\n"}
+[14.698972] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/__init__.py'...\n"}
+[14.699160] (custom_msgs) StdoutLine: {'line': b"Listing '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg'...\n"}
+[14.699327] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/__init__.py'...\n"}
+[14.699449] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_accel_data.py'...\n"}
+[14.699548] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_estimator_data.py'...\n"}
+[14.699674] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_gyro_data.py'...\n"}
+[14.699771] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_imu_data.py'...\n"}
+[14.699862] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/msg/_possition_data.py'...\n"}
+[14.712395] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.713123] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.713536] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[14.714289] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.714671] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so\n'}
+[14.715419] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[14.715716] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[14.716450] (custom_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rosbot/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[14.716684] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AccelData.idl\n'}
+[14.716812] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GyroData.idl\n'}
+[14.716964] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/ImuData.idl\n'}
+[14.717121] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/EstimatorData.idl\n'}
+[14.717229] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PossitionData.idl\n'}
+[14.717367] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AccelData.msg\n'}
+[14.717521] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GyroData.msg\n'}
+[14.717644] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/ImuData.msg\n'}
+[14.717776] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/EstimatorData.msg\n'}
+[14.717916] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/msg/PossitionData.msg\n'}
+[14.718096] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[14.718239] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[14.718963] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[14.719157] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[14.719328] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[14.719420] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[14.719510] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[14.721032] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[14.721227] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[14.721331] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[14.721427] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[14.721518] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[14.721599] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[14.721682] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.721762] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.721878] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.722047] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.722175] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.722268] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[14.722356] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.722444] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[14.722529] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.722616] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.722706] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.722797] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.722886] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[14.723049] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.723148] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[14.723233] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.723311] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[14.723387] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.723464] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.725028] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.725195] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.725283] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.725371] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.725455] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[14.725636] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[14.725726] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[14.726398] (custom_msgs) CommandEnded: {'returncode': 0}
+[14.751423] (-) TimerEvent: {}
+[14.773393] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[14.775172] (estimator_pkg) JobStarted: {'identifier': 'estimator_pkg'}
+[14.786018] (flask_pkg) JobStarted: {'identifier': 'flask_pkg'}
+[14.794135] (flight_controller_pkg) JobStarted: {'identifier': 'flight_controller_pkg'}
+[14.851526] (-) TimerEvent: {}
+[14.951867] (-) TimerEvent: {}
+[15.052226] (-) TimerEvent: {}
+[15.152578] (-) TimerEvent: {}
+[15.255064] (-) TimerEvent: {}
+[15.355617] (-) TimerEvent: {}
+[15.455988] (-) TimerEvent: {}
+[15.556348] (-) TimerEvent: {}
+[15.656731] (-) TimerEvent: {}
+[15.757116] (-) TimerEvent: {}
+[15.857467] (-) TimerEvent: {}
+[15.957788] (-) TimerEvent: {}
+[16.059991] (-) TimerEvent: {}
+[16.160315] (-) TimerEvent: {}
+[16.260631] (-) TimerEvent: {}
+[16.360963] (-) TimerEvent: {}
+[16.461466] (-) TimerEvent: {}
+[16.561792] (-) TimerEvent: {}
+[16.662093] (-) TimerEvent: {}
+[16.762403] (-) TimerEvent: {}
+[16.863062] (-) TimerEvent: {}
+[16.925184] (estimator_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/estimator_pkg', 'build', '--build-base', '/home/rosbot/ros2_ws/build/estimator_pkg/build', 'install', '--record', '/home/rosbot/ros2_ws/build/estimator_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rosbot/ros2_ws/src/estimator_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/estimator_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/build/estimator_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[16.931038] (flight_controller_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/flight_controller_pkg', 'build', '--build-base', '/home/rosbot/ros2_ws/build/flight_controller_pkg/build', 'install', '--record', '/home/rosbot/ros2_ws/build/flight_controller_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rosbot/ros2_ws/src/flight_controller_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/flight_controller_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[16.950758] (flask_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/flask_pkg', 'build', '--build-base', '/home/rosbot/ros2_ws/build/flask_pkg/build', 'install', '--record', '/home/rosbot/ros2_ws/build/flask_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rosbot/ros2_ws/src/flask_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rosbot', 'SSH_CLIENT': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rosbot/ros2_ws/install/custom_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rosbot', 'OLDPWD': '/home/rosbot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/rosbot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rosbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/my_cpp_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/home/rosbot/ros2_ws/install/custom_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rosbot/ros2_ws/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rosbot/ros2_ws/build/flask_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::73bc:b5b3:a668:f352%wlan0 52541 fe80::2ecf:67ff:fe5e:1f07%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[16.963152] (-) TimerEvent: {}
+[17.063519] (-) TimerEvent: {}
+[17.164050] (-) TimerEvent: {}
+[17.264366] (-) TimerEvent: {}
+[17.318366] (estimator_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[17.318947] (flight_controller_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[17.336858] (flask_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[17.344340] (flight_controller_pkg) StdoutLine: {'line': b'writing ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/PKG-INFO\n'}
+[17.344596] (estimator_pkg) StdoutLine: {'line': b'writing ../../build/estimator_pkg/estimator_pkg.egg-info/PKG-INFO\n'}
+[17.344778] (estimator_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/estimator_pkg/estimator_pkg.egg-info/dependency_links.txt\n'}
+[17.344923] (flight_controller_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/dependency_links.txt\n'}
+[17.345076] (estimator_pkg) StdoutLine: {'line': b'writing entry points to ../../build/estimator_pkg/estimator_pkg.egg-info/entry_points.txt\n'}
+[17.345232] (estimator_pkg) StdoutLine: {'line': b'writing requirements to ../../build/estimator_pkg/estimator_pkg.egg-info/requires.txt\n'}
+[17.345366] (estimator_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/estimator_pkg/estimator_pkg.egg-info/top_level.txt\n'}
+[17.347942] (flight_controller_pkg) StdoutLine: {'line': b'writing entry points to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/entry_points.txt\n'}
+[17.348162] (flight_controller_pkg) StdoutLine: {'line': b'writing requirements to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/requires.txt\n'}
+[17.348306] (flight_controller_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/flight_controller_pkg/flight_controller_pkg.egg-info/top_level.txt\n'}
+[17.363112] (flask_pkg) StdoutLine: {'line': b'writing ../../build/flask_pkg/flask_pkg.egg-info/PKG-INFO\n'}
+[17.363509] (flask_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/flask_pkg/flask_pkg.egg-info/dependency_links.txt\n'}
+[17.364432] (-) TimerEvent: {}
+[17.364818] (flask_pkg) StdoutLine: {'line': b'writing entry points to ../../build/flask_pkg/flask_pkg.egg-info/entry_points.txt\n'}
+[17.365609] (flask_pkg) StdoutLine: {'line': b'writing requirements to ../../build/flask_pkg/flask_pkg.egg-info/requires.txt\n'}
+[17.366549] (flask_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/flask_pkg/flask_pkg.egg-info/top_level.txt\n'}
+[17.398430] (estimator_pkg) StdoutLine: {'line': b"reading manifest file '../../build/estimator_pkg/estimator_pkg.egg-info/SOURCES.txt'\n"}
+[17.399519] (estimator_pkg) StdoutLine: {'line': b"writing manifest file '../../build/estimator_pkg/estimator_pkg.egg-info/SOURCES.txt'\n"}
+[17.399731] (estimator_pkg) StdoutLine: {'line': b'running build\n'}
+[17.399872] (estimator_pkg) StdoutLine: {'line': b'running build_py\n'}
+[17.400144] (estimator_pkg) StdoutLine: {'line': b'copying estimator_pkg/estimator_node.py -> /home/rosbot/ros2_ws/build/estimator_pkg/build/lib/estimator_pkg\n'}
+[17.400571] (estimator_pkg) StdoutLine: {'line': b'running install\n'}
+[17.401093] (flight_controller_pkg) StdoutLine: {'line': b"reading manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'\n"}
+[17.402284] (flight_controller_pkg) StdoutLine: {'line': b"writing manifest file '../../build/flight_controller_pkg/flight_controller_pkg.egg-info/SOURCES.txt'\n"}
+[17.402519] (flight_controller_pkg) StdoutLine: {'line': b'running build\n'}
+[17.402665] (flight_controller_pkg) StdoutLine: {'line': b'running build_py\n'}
+[17.403080] (flight_controller_pkg) StdoutLine: {'line': b'running install\n'}
+[17.410138] (estimator_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[17.412349] (flight_controller_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[17.421079] (flask_pkg) StdoutLine: {'line': b"reading manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'\n"}
+[17.422163] (flask_pkg) StdoutLine: {'line': b"writing manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'\n"}
+[17.422387] (flask_pkg) StdoutLine: {'line': b'running build\n'}
+[17.422517] (flask_pkg) StdoutLine: {'line': b'running build_py\n'}
+[17.422899] (flask_pkg) StdoutLine: {'line': b'running install\n'}
+[17.432240] (flask_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[17.436941] (estimator_pkg) StdoutLine: {'line': b'copying /home/rosbot/ros2_ws/build/estimator_pkg/build/lib/estimator_pkg/estimator_node.py -> /home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg\n'}
+[17.437898] (estimator_pkg) StdoutLine: {'line': b'byte-compiling /home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg/estimator_node.py to estimator_node.cpython-312.pyc\n'}
+[17.439480] (flight_controller_pkg) StdoutLine: {'line': b'running install_data\n'}
+[17.439711] (flight_controller_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.440965] (estimator_pkg) StdoutLine: {'line': b'running install_data\n'}
+[17.441188] (estimator_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.459804] (flask_pkg) StdoutLine: {'line': b'running install_data\n'}
+[17.460044] (flask_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.464507] (-) TimerEvent: {}
+[17.468327] (flight_controller_pkg) StdoutLine: {'line': b"removing '/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[17.470937] (flight_controller_pkg) StdoutLine: {'line': b'Copying ../../build/flight_controller_pkg/flight_controller_pkg.egg-info to /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages/flight_controller_pkg-0.0.0-py3.12.egg-info\n'}
+[17.471220] (estimator_pkg) StdoutLine: {'line': b"removing '/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[17.472058] (estimator_pkg) StdoutLine: {'line': b'Copying ../../build/estimator_pkg/estimator_pkg.egg-info to /home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages/estimator_pkg-0.0.0-py3.12.egg-info\n'}
+[17.472167] (flight_controller_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[17.472376] (estimator_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[17.489042] (flask_pkg) StdoutLine: {'line': b"removing '/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[17.491134] (flask_pkg) StdoutLine: {'line': b'Copying ../../build/flask_pkg/flask_pkg.egg-info to /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg-0.0.0-py3.12.egg-info\n'}
+[17.491297] (flask_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[17.564615] (-) TimerEvent: {}
+[17.661699] (estimator_pkg) StdoutLine: {'line': b'Installing estimator_node script to /home/rosbot/ros2_ws/install/estimator_pkg/lib/estimator_pkg\n'}
+[17.662025] (flight_controller_pkg) StdoutLine: {'line': b'Installing imu_reader script to /home/rosbot/ros2_ws/install/flight_controller_pkg/lib/flight_controller_pkg\n'}
+[17.662261] (estimator_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/rosbot/ros2_ws/build/estimator_pkg/install.log'\n"}
+[17.662424] (flight_controller_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/rosbot/ros2_ws/build/flight_controller_pkg/install.log'\n"}
+[17.664729] (-) TimerEvent: {}
+[17.700442] (flask_pkg) StdoutLine: {'line': b'Installing flask_server script to /home/rosbot/ros2_ws/install/flask_pkg/lib/flask_pkg\n'}
+[17.701567] (flask_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/rosbot/ros2_ws/build/flask_pkg/install.log'\n"}
+[17.764974] (-) TimerEvent: {}
+[17.787075] (flight_controller_pkg) CommandEnded: {'returncode': 0}
+[17.798886] (flight_controller_pkg) JobEnded: {'identifier': 'flight_controller_pkg', 'rc': 0}
+[17.802438] (estimator_pkg) CommandEnded: {'returncode': 0}
+[17.810571] (estimator_pkg) JobEnded: {'identifier': 'estimator_pkg', 'rc': 0}
+[17.814346] (flask_pkg) CommandEnded: {'returncode': 0}
+[17.824687] (flask_pkg) JobEnded: {'identifier': 'flask_pkg', 'rc': 0}
+[17.826049] (-) EventReactorShutdown: {}

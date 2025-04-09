@@ -1,0 +1,24 @@
+[1.624s] Invoking command in '/home/rosbot/ros2_ws/src/flask_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/rosbot/ros2_ws/build/flask_pkg/build install --record /home/rosbot/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data
+[1.987s] running egg_info
+[2.012s] writing ../../build/flask_pkg/flask_pkg.egg-info/PKG-INFO
+[2.013s] writing dependency_links to ../../build/flask_pkg/flask_pkg.egg-info/dependency_links.txt
+[2.016s] writing entry points to ../../build/flask_pkg/flask_pkg.egg-info/entry_points.txt
+[2.017s] writing requirements to ../../build/flask_pkg/flask_pkg.egg-info/requires.txt
+[2.018s] writing top-level names to ../../build/flask_pkg/flask_pkg.egg-info/top_level.txt
+[2.070s] reading manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'
+[2.071s] writing manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'
+[2.071s] running build
+[2.071s] running build_py
+[2.072s] copying flask_pkg/flask_server.py -> /home/rosbot/ros2_ws/build/flask_pkg/build/lib/flask_pkg
+[2.072s] running install
+[2.081s] running install_lib
+[2.107s] copying /home/rosbot/ros2_ws/build/flask_pkg/build/lib/flask_pkg/flask_server.py -> /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg
+[2.108s] byte-compiling /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg/flask_server.py to flask_server.cpython-312.pyc
+[2.109s] running install_data
+[2.110s] running install_egg_info
+[2.137s] removing '/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[2.139s] Copying ../../build/flask_pkg/flask_pkg.egg-info to /home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages/flask_pkg-0.0.0-py3.12.egg-info
+[2.139s] running install_scripts
+[2.321s] Installing flask_server script to /home/rosbot/ros2_ws/install/flask_pkg/lib/flask_pkg
+[2.322s] writing list of installed files to '/home/rosbot/ros2_ws/build/flask_pkg/install.log'
+[2.418s] Invoked command in '/home/rosbot/ros2_ws/src/flask_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/rosbot/ros2_ws/build/flask_pkg/build install --record /home/rosbot/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data
