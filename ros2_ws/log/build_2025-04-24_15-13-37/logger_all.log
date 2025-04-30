@@ -1,0 +1,476 @@
+[0.161s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.162s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb838f950>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb8543ef0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb8543ef0>>, mixin_verb=('build',))
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.221s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rosbot/ros2_ws'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/estimator_pkg) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'src/estimator_pkg' with type 'ros.ament_python' and name 'estimator_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/flask_pkg) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/flask_pkg' with type 'ros.ament_python' and name 'flask_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/flight_controller_pkg) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/flight_controller_pkg' with type 'ros.ament_python' and name 'flight_controller_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_cpp_pkg' with type 'ros.ament_cmake' and name 'my_cpp_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_py_pkg' with type 'ros.ament_python' and name 'my_py_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/um7_pkg) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/um7_pkg' with type 'ros.ament_python' and name 'um7_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(venv) ignored
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.309s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/rosbot/ros2_ws/install
+[0.314s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.375s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/custom_msgs', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_target' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.376s] DEBUG:colcon.colcon_core.verb:Building package 'my_cpp_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/my_cpp_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/my_cpp_pkg', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/my_cpp_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.376s] DEBUG:colcon.colcon_core.verb:Building package 'my_py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/my_py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/my_py_pkg', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/my_py_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'cmake_target' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'estimator_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.377s] DEBUG:colcon.colcon_core.verb:Building package 'estimator_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/estimator_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/estimator_pkg', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/estimator_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'cmake_target' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'flask_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.377s] DEBUG:colcon.colcon_core.verb:Building package 'flask_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/flask_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/flask_pkg', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/flask_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'cmake_target' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'flight_controller_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.378s] DEBUG:colcon.colcon_core.verb:Building package 'flight_controller_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/flight_controller_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/flight_controller_pkg', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/flight_controller_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'cmake_target' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'um7_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.379s] DEBUG:colcon.colcon_core.verb:Building package 'um7_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rosbot/ros2_ws/build/um7_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rosbot/ros2_ws/install/um7_pkg', 'merge_install': False, 'path': '/home/rosbot/ros2_ws/src/um7_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.379s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.380s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.380s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rosbot/ros2_ws/src/custom_msgs' with build type 'ament_cmake'
+[0.380s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rosbot/ros2_ws/src/custom_msgs'
+[0.383s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.389s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rosbot/ros2_ws/src/my_cpp_pkg' with build type 'ament_cmake'
+[0.389s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rosbot/ros2_ws/src/my_cpp_pkg'
+[0.389s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.394s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rosbot/ros2_ws/src/my_py_pkg' with build type 'ament_python'
+[0.394s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg', 'ament_prefix_path')
+[0.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.ps1'
+[0.396s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.dsv'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.sh'
+[0.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/rosbot/ros2_ws/build/custom_msgs -- -j4 -l4
+[0.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/rosbot/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.911s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rosbot/ros2_ws/src/my_py_pkg'
+[0.911s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.911s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/rosbot/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/rosbot/ros2_ws/build/my_cpp_pkg
+[0.985s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cpp_pkg)
+[0.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/rosbot/ros2_ws/build/my_cpp_pkg
+[0.994s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg' for CMake module files
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg' for CMake config files
+[0.998s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cpp_pkg', 'cmake_prefix_path')
+[0.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.ps1'
+[1.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.dsv'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.sh'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/lib'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/bin'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/lib/pkgconfig/my_cpp_pkg.pc'
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/lib/python3.12/site-packages'
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/bin'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.ps1'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.sh'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.bash'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.zsh'
+[1.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/my_cpp_pkg/share/colcon-core/packages/my_cpp_pkg)
+[1.016s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cpp_pkg)
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg' for CMake module files
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg' for CMake config files
+[1.018s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cpp_pkg', 'cmake_prefix_path')
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.ps1'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.dsv'
+[1.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.sh'
+[1.021s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/lib'
+[1.021s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/bin'
+[1.021s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/lib/pkgconfig/my_cpp_pkg.pc'
+[1.022s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/lib/python3.12/site-packages'
+[1.022s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_cpp_pkg/bin'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.ps1'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv'
+[1.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.sh'
+[1.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.bash'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.zsh'
+[1.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/my_cpp_pkg/share/colcon-core/packages/my_cpp_pkg)
+[1.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/rosbot/ros2_ws/build/custom_msgs -- -j4 -l4
+[1.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/rosbot/ros2_ws/build/custom_msgs
+[1.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.385s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs' for CMake module files
+[1.387s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs' for CMake config files
+[1.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/ros2_ws/install/um7_pkg:/home/rosbot/ros2_ws/install/my_py_pkg:/home/rosbot/ros2_ws/install/flight_controller_pkg:/home/rosbot/ros2_ws/install/flask_pkg:/home/rosbot/ros2_ws/install/estimator_pkg:/opt/ros/jazzy PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/rosbot/ros2_ws/build/custom_msgs
+[1.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/lib'
+[1.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.396s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/bin'
+[1.396s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.397s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages'
+[1.397s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[1.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[1.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/bin'
+[1.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[1.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs' for CMake module files
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs' for CMake config files
+[1.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/lib'
+[1.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.419s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/bin'
+[1.419s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.420s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages'
+[1.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[1.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[1.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[1.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[1.424s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/custom_msgs/bin'
+[1.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[1.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[1.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.432s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rosbot/ros2_ws/src/estimator_pkg' with build type 'ament_python'
+[1.433s] Level 1:colcon.colcon_core.shell:create_environment_hook('estimator_pkg', 'ament_prefix_path')
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/hook/ament_prefix_path.ps1'
+[1.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/hook/ament_prefix_path.dsv'
+[1.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/hook/ament_prefix_path.sh'
+[1.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.440s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.445s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rosbot/ros2_ws/src/flask_pkg' with build type 'ament_python'
+[1.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('flask_pkg', 'ament_prefix_path')
+[1.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/hook/ament_prefix_path.ps1'
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/hook/ament_prefix_path.dsv'
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/hook/ament_prefix_path.sh'
+[1.449s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.449s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.454s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rosbot/ros2_ws/src/flight_controller_pkg' with build type 'ament_python'
+[1.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('flight_controller_pkg', 'ament_prefix_path')
+[1.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/hook/ament_prefix_path.ps1'
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/hook/ament_prefix_path.dsv'
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/hook/ament_prefix_path.sh'
+[1.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.814s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rosbot/ros2_ws/src/estimator_pkg'
+[1.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.181s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rosbot/ros2_ws/src/flask_pkg'
+[2.181s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.182s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.516s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rosbot/ros2_ws/src/flight_controller_pkg'
+[2.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/src/my_py_pkg': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/rosbot/ros2_ws/build/my_py_pkg/build install --record /home/rosbot/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[3.584s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg' for CMake module files
+[3.585s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg' for CMake config files
+[3.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/src/my_py_pkg' returned '0': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/rosbot/ros2_ws/build/my_py_pkg/build install --record /home/rosbot/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[3.587s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg/lib'
+[3.587s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg/bin'
+[3.587s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg/lib/pkgconfig/my_py_pkg.pc'
+[3.588s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages'
+[3.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg', 'pythonpath')
+[3.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.ps1'
+[3.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.dsv'
+[3.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.sh'
+[3.592s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/my_py_pkg/bin'
+[3.593s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_py_pkg)
+[3.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.ps1'
+[3.595s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.dsv'
+[3.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.sh'
+[3.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.bash'
+[3.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.zsh'
+[3.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/my_py_pkg/share/colcon-core/packages/my_py_pkg)
+[3.606s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rosbot/ros2_ws/src/um7_pkg' with build type 'ament_python'
+[3.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('um7_pkg', 'ament_prefix_path')
+[3.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/hook/ament_prefix_path.ps1'
+[3.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/hook/ament_prefix_path.dsv'
+[3.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/hook/ament_prefix_path.sh'
+[3.618s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.046s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rosbot/ros2_ws/src/um7_pkg'
+[4.046s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.046s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/src/flask_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/rosbot/ros2_ws/build/flask_pkg/build install --record /home/rosbot/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data
+[4.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/src/estimator_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/estimator_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/estimator_pkg build --build-base /home/rosbot/ros2_ws/build/estimator_pkg/build install --record /home/rosbot/ros2_ws/build/estimator_pkg/install.log --single-version-externally-managed install_data
+[4.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/src/flight_controller_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flight_controller_pkg build --build-base /home/rosbot/ros2_ws/build/flight_controller_pkg/build install --record /home/rosbot/ros2_ws/build/flight_controller_pkg/install.log --single-version-externally-managed install_data
+[5.244s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg' for CMake module files
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg' for CMake config files
+[5.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/src/flight_controller_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flight_controller_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flight_controller_pkg build --build-base /home/rosbot/ros2_ws/build/flight_controller_pkg/build install --record /home/rosbot/ros2_ws/build/flight_controller_pkg/install.log --single-version-externally-managed install_data
+[5.249s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg/lib'
+[5.249s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg/bin'
+[5.250s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/pkgconfig/flight_controller_pkg.pc'
+[5.250s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages'
+[5.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('flight_controller_pkg', 'pythonpath')
+[5.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/hook/pythonpath.ps1'
+[5.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/hook/pythonpath.dsv'
+[5.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/hook/pythonpath.sh'
+[5.260s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flight_controller_pkg/bin'
+[5.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(flight_controller_pkg)
+[5.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/package.ps1'
+[5.264s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/package.dsv'
+[5.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/package.sh'
+[5.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/package.bash'
+[5.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flight_controller_pkg/share/flight_controller_pkg/package.zsh'
+[5.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/flight_controller_pkg/share/colcon-core/packages/flight_controller_pkg)
+[5.346s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg' for CMake module files
+[5.348s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg' for CMake config files
+[5.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rosbot/ros2_ws/src/um7_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/um7_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/um7_pkg build --build-base /home/rosbot/ros2_ws/build/um7_pkg/build install --record /home/rosbot/ros2_ws/build/um7_pkg/install.log --single-version-externally-managed install_data
+[5.358s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg/lib'
+[5.359s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg/bin'
+[5.360s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg/lib/pkgconfig/estimator_pkg.pc'
+[5.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/src/estimator_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/estimator_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/estimator_pkg build --build-base /home/rosbot/ros2_ws/build/estimator_pkg/build install --record /home/rosbot/ros2_ws/build/estimator_pkg/install.log --single-version-externally-managed install_data
+[5.360s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages'
+[5.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('estimator_pkg', 'pythonpath')
+[5.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/hook/pythonpath.ps1'
+[5.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/hook/pythonpath.dsv'
+[5.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/hook/pythonpath.sh'
+[5.368s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/estimator_pkg/bin'
+[5.368s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(estimator_pkg)
+[5.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/package.ps1'
+[5.369s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/package.dsv'
+[5.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/package.sh'
+[5.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/package.bash'
+[5.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/estimator_pkg/share/estimator_pkg/package.zsh'
+[5.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/estimator_pkg/share/colcon-core/packages/estimator_pkg)
+[5.376s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg' for CMake module files
+[5.378s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg' for CMake config files
+[5.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/src/flask_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/rosbot/ros2_ws/build/flask_pkg/build install --record /home/rosbot/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data
+[5.381s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg/lib'
+[5.381s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg/bin'
+[5.381s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg/lib/pkgconfig/flask_pkg.pc'
+[5.381s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages'
+[5.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('flask_pkg', 'pythonpath')
+[5.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/hook/pythonpath.ps1'
+[5.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/hook/pythonpath.dsv'
+[5.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/hook/pythonpath.sh'
+[5.387s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/flask_pkg/bin'
+[5.387s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(flask_pkg)
+[5.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/package.ps1'
+[5.388s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/package.dsv'
+[5.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/package.sh'
+[5.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/package.bash'
+[5.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/flask_pkg/share/flask_pkg/package.zsh'
+[5.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/flask_pkg/share/colcon-core/packages/flask_pkg)
+[6.217s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg' for CMake module files
+[6.217s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg' for CMake config files
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg/lib'
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg/bin'
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg/lib/pkgconfig/um7_pkg.pc'
+[6.219s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages'
+[6.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('um7_pkg', 'pythonpath')
+[6.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/hook/pythonpath.ps1'
+[6.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rosbot/ros2_ws/src/um7_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/um7_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/um7_pkg build --build-base /home/rosbot/ros2_ws/build/um7_pkg/build install --record /home/rosbot/ros2_ws/build/um7_pkg/install.log --single-version-externally-managed install_data
+[6.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/hook/pythonpath.dsv'
+[6.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/hook/pythonpath.sh'
+[6.222s] Level 1:colcon.colcon_core.environment:checking '/home/rosbot/ros2_ws/install/um7_pkg/bin'
+[6.222s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(um7_pkg)
+[6.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/package.ps1'
+[6.223s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/package.dsv'
+[6.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/package.sh'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/package.bash'
+[6.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/rosbot/ros2_ws/install/um7_pkg/share/um7_pkg/package.zsh'
+[6.227s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rosbot/ros2_ws/install/um7_pkg/share/colcon-core/packages/um7_pkg)
+[6.228s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.228s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.229s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.238s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.238s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.239s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.239s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.240s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.240s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.240s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rosbot/ros2_ws/install/local_setup.ps1'
+[6.241s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rosbot/ros2_ws/install/_local_setup_util_ps1.py'
+[6.244s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rosbot/ros2_ws/install/setup.ps1'
+[6.245s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rosbot/ros2_ws/install/local_setup.sh'
+[6.246s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rosbot/ros2_ws/install/_local_setup_util_sh.py'
+[6.247s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rosbot/ros2_ws/install/setup.sh'
+[6.249s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rosbot/ros2_ws/install/local_setup.bash'
+[6.251s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rosbot/ros2_ws/install/setup.bash'
+[6.253s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rosbot/ros2_ws/install/local_setup.zsh'
+[6.254s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rosbot/ros2_ws/install/setup.zsh'

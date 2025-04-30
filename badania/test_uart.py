@@ -34,7 +34,7 @@ if __name__ == '__main__':
         print(f"get_fw_revision               : {um7.get_fw_revision}")
     else:
         print(f"\\n========== COMMAND REGISTERS ===================================")
-        um7.reset_to_factory()
+        um7.reset_to_factory = 1
         # print(f"get_fw_revision               : {um7.get_fw_revision}")
         # print(f"flash_commit                  : {um7.flash_commit}")
         # print(f"reset_to_factory              : {um7.reset_to_factory}")

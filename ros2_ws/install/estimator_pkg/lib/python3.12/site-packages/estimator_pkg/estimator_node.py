@@ -9,8 +9,8 @@ from datetime import datetime
 from scipy.signal import firwin, lfilter
 
 
-G_force = 9.80665
-#G_force = 9.81228 # Warsaw g value
+#G_force = 9.80665
+G_force = 9.81228 # Warsaw g value
 
 
 global real_object
@@ -18,7 +18,8 @@ position = np.array([0, 0, 0]) # X, Y and Z axis
 speed = np.array([0, 0, 0]) # X, Y and Z axis
 acceleration = np.array([0, 0, 0]) # X, Y and Z axis
 angle = np.array([0, 0, 0]) # roll, pitch and yaw in rad
-real_object = [position, speed, acceleration, angle]
+data = np.array([0, 0, 0]) # roll, pitch and yaw in rad
+real_object = [position, speed, acceleration, angle, data]
 IMU_data = [np.array([0, 0, 0]), np.array([0, 0, 0]), 0] #accelerator and gyroscope data
 
 
@@ -104,6 +105,44 @@ class EstimatorClass():
 
         return angle
 
+    def Estimate_angle_cheat(self, gyroscope, angle, dt):
+        temp = [0, 0, 0]
+        for i in range(0,3):
+            if abs(gyroscope[i]) >= 0.005:
+                temp[i] = angle[i] + gyroscope[i]*dt
+            else:
+                temp[i] = angle[i]
+
+        temp = np.asarray(temp).flatten()
+        return temp
+
+    def Estimate_angle_complementary_ch(self, gyroscope, acceleration, angle, dt):
+        alpha = 0.998
+        new_angle = [0, 0, 0]
+        
+        # Integracja prędkości kątowej
+        temp = [0, 0, 0]
+        for i in range(0,3):
+            if abs(gyroscope[i]) >= 0.005:
+                temp[i] = angle[i] + gyroscope[i]*dt
+            else:
+                temp[i] = angle[i]
+
+        temp = np.asarray(temp).flatten()
+        gyro_roll = temp[0]
+        gyro_pitch = temp[1]
+        gyro_yaw = temp[2]
+        
+        # Odczyty z akcelerometru
+        acc_roll = np.arctan2(acceleration[1], -acceleration[2])
+        acc_pitch = np.arctan2(-acceleration[0], np.sqrt(acceleration[1]**2 + acceleration[2]**2))
+
+        # Fuzja danyc
+        new_angle[0] = alpha * gyro_roll + (1 - alpha) * acc_roll
+        new_angle[1] = alpha * gyro_pitch + (1 - alpha) * acc_pitch
+        new_angle[2] = gyro_yaw
+    
+        return new_angle
 
     def Estimate_angle_complementary(self, gyroscope, acceleration, angle, dt):
         alpha = 0.996
@@ -124,7 +163,6 @@ class EstimatorClass():
         new_angle[2] = gyro_yaw
     
         return new_angle
-
 
     def Estimate_velocity(self,velocity, acceleration, dt):
         velocity = velocity + acceleration * dt
@@ -155,11 +193,11 @@ class EstimatorClass():
 
     # Przekształcenie przyśpieszeń z IMU do układu globalnego
     def Calculate_acceleration(self, acceleration, angle):
-        roll = -angle[0]
-        pitch = -angle[1]
-        yaw = -angle[2]
+        roll = angle[0]
+        pitch = angle[1]
+        yaw = angle[2]
 
-        gravity_force = np.array([0, 0, G_force])
+        gravity_force = np.array([0, 0, -G_force])
 
         R_x = np.matrix([[1, 0, 0], 
                        [0, math.cos(roll), -math.sin(roll)], 
@@ -176,17 +214,15 @@ class EstimatorClass():
         Euler_matrix_zy = np.dot(R_z, R_y)
         Euler_matrix = np.dot(Euler_matrix_zy, R_x)
         
-        local_G_force = np.dot(gravity_force, Euler_matrix)
-        local_G_force = np.asarray(local_G_force).flatten()
-        local_acceleration = acceleration - np.array([local_G_force[0], local_G_force[1], -local_G_force[2]])
+        local_G_force = np.asarray( np.dot(gravity_force, Euler_matrix) ).flatten()
+        local_acceleration = acceleration - local_G_force # np.array([local_G_force[0], local_G_force[1], local_G_force[2]])
         local_acceleration = np.asarray(local_acceleration).flatten()
-        local_acceleration[0] -= 0.005
         return local_acceleration
     
     
-    def Update_status(self, position, velocity, acceleration, angle):
+    def Update_status(self, position, velocity, acceleration, angle, data):
         global real_object 
-        real_object = [position, velocity, acceleration, angle]
+        real_object = [position, velocity, acceleration, angle, data]
 
     def do_magic(self, object, data, dt):
         position = object[0]
@@ -196,7 +232,8 @@ class EstimatorClass():
         gyroscope_data = data[1]
 
         #angle = self.Estimate_angle(gyroscope_data, angle, dt)
-        angle = self.Estimate_angle_complementary(gyroscope_data, acceleration_data, angle, dt)
+        angle = self.Estimate_angle_cheat(gyroscope_data, angle, dt)
+        #angle = self.Estimate_angle_complementary_ch(gyroscope_data, acceleration_data, angle, dt)
         
         acceleration = self.Calculate_acceleration(acceleration_data, angle)
 
@@ -206,7 +243,7 @@ class EstimatorClass():
 
         position = self.Estimate_position(velocity, position, dt)
 
-        self.Update_status(position, velocity, acceleration, angle)
+        self.Update_status(position, velocity, acceleration, angle, acceleration_data)
 
     def applay_offsets(self, IMU_data, offsets):
         IMU_data[0][0] = IMU_data[0][0] - offsets[0]
@@ -250,14 +287,14 @@ class MyEstimator(Node):
     def perform_estimate(self, IMU_data, dt):
         global real_object
         IMU_data = self.estimator.applay_offsets(IMU_data, self.calibrator)
-        IMU_data = self.filter_LP.filter_data(IMU_data) # Filtr dolnoprzepustowy
-        IMU_data = self.filter_HP.filter_data(IMU_data) # Filtr górnoprzepustowy
+        # IMU_data = self.filter_LP.filter_data(IMU_data) # Filtr dolnoprzepustowy
+        # IMU_data = self.filter_HP.filter_data(IMU_data) # Filtr górnoprzepustowy
         self.estimator.do_magic(real_object, IMU_data, dt)
 
 
     def perform_calibration(self, IMU_data):
         IMU_data = self.filter_LP_calibration.filter_data(IMU_data) # Filtr dolnoprzepustowy
-        iterations = 1000
+        iterations = 2000
         if(self.calibrator[6] == iterations):
             for i in range(0,6):
                 self.calibrator[i] = self.calibrator[i]/iterations
@@ -267,7 +304,7 @@ class MyEstimator(Node):
         else:
             for i in range(0,2):
                 for j in range(0,3):
-                    self.calibrator[j+i*2] += IMU_data[i][j]
+                    self.calibrator[j+i*3] += IMU_data[i][j]
             self.calibrator[6] += 1
             print(self.calibrator[6])
 
@@ -280,7 +317,7 @@ class MyEstimator(Node):
             speed = np.array([0, 0, 0]) # X, Y and Z axis
             acceleration = np.array([0, 0, 0]) # X, Y and Z axis
             angle = np.array([0, 0, 0]) # roll, pitch and yaw in rad
-            real_object = [position, speed, acceleration, angle]
+            real_object = [position, speed, acceleration, angle, data]
         elif(msg.data == 'calibrate'):
             self.calibrator = [0, 0, 0, 0, 0, 0, 0]
             self.mode = 'calibration'
@@ -292,8 +329,11 @@ class MyEstimator(Node):
             self.last_timestamp = msg.timestamp
         dt = (msg.timestamp - self.last_timestamp)/1000000
         self.last_timestamp = msg.timestamp
+        
         IMU_data = [[msg.accel.x, msg.accel.y, msg.accel.z], [msg.gyro.x, msg.gyro.y, msg.gyro.z], msg.timestamp]
-
+        
+        #print(IMU_data)
+        
         if(self.mode == 'estimation'):
             self.perform_estimate(IMU_data, dt)
         elif(self.mode == 'calibration'):
@@ -310,21 +350,21 @@ class MyEstimator(Node):
         data.accel = DataXYZ()
         data.rotation = DataXYZ()
 
-        data.possition.x = float(real_object[0][0]*100)
-        data.possition.y = float(real_object[0][1]*100)
-        data.possition.z = float(-real_object[0][2]*100)
+        data.accel.x = float(real_object[4][0])
+        data.accel.y = float(real_object[4][1])
+        data.accel.z = float(real_object[4][2])
+
+        data.rotation.x = float(real_object[2][0])
+        data.rotation.y = float(real_object[2][1])
+        data.rotation.z = float(real_object[2][2])
 
         data.speed.x = float(real_object[1][0])
         data.speed.y = float(real_object[1][1])
         data.speed.z = float(real_object[1][2])
 
-        data.accel.x = float(real_object[2][0])
-        data.accel.y = float(real_object[2][1])
-        data.accel.z = float(real_object[2][2])
-
-        data.rotation.x = float(real_object[3][0])
-        data.rotation.y = float(real_object[3][1])
-        data.rotation.z = float(real_object[3][2])
+        data.possition.x = float(real_object[0][0]*100)
+        data.possition.y = float(real_object[0][1]*100)
+        data.possition.z = float(-real_object[0][2]*100)
 
         data.timestamp = 0
         return data
