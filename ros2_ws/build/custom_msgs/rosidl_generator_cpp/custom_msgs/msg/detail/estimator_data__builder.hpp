@@ -24,16 +24,32 @@ namespace msg
 namespace builder
 {
 
-class Init_EstimatorData_rotation
+class Init_EstimatorData_raw_data
 {
 public:
-  explicit Init_EstimatorData_rotation(::custom_msgs::msg::EstimatorData & msg)
+  explicit Init_EstimatorData_raw_data(::custom_msgs::msg::EstimatorData & msg)
   : msg_(msg)
   {}
-  ::custom_msgs::msg::EstimatorData rotation(::custom_msgs::msg::EstimatorData::_rotation_type arg)
+  ::custom_msgs::msg::EstimatorData raw_data(::custom_msgs::msg::EstimatorData::_raw_data_type arg)
   {
-    msg_.rotation = std::move(arg);
+    msg_.raw_data = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::EstimatorData msg_;
+};
+
+class Init_EstimatorData_orientation
+{
+public:
+  explicit Init_EstimatorData_orientation(::custom_msgs::msg::EstimatorData & msg)
+  : msg_(msg)
+  {}
+  Init_EstimatorData_raw_data orientation(::custom_msgs::msg::EstimatorData::_orientation_type arg)
+  {
+    msg_.orientation = std::move(arg);
+    return Init_EstimatorData_raw_data(msg_);
   }
 
 private:
@@ -46,10 +62,10 @@ public:
   explicit Init_EstimatorData_accel(::custom_msgs::msg::EstimatorData & msg)
   : msg_(msg)
   {}
-  Init_EstimatorData_rotation accel(::custom_msgs::msg::EstimatorData::_accel_type arg)
+  Init_EstimatorData_orientation accel(::custom_msgs::msg::EstimatorData::_accel_type arg)
   {
     msg_.accel = std::move(arg);
-    return Init_EstimatorData_rotation(msg_);
+    return Init_EstimatorData_orientation(msg_);
   }
 
 private:

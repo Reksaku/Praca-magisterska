@@ -15,7 +15,9 @@ module custom_msgs {
 
       custom_msgs::msg::DataXYZ accel;
 
-      custom_msgs::msg::DataXYZ rotation;
+      custom_msgs::msg::DataXYZ orientation;
+
+      custom_msgs::msg::DataXYZ raw_data;
     };
   };
 };

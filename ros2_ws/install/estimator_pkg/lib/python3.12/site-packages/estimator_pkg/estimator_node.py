@@ -5,7 +5,7 @@ from custom_msgs.msg import ImuData, EstimatorData, DataXYZ
 from example_interfaces.msg import String
 import numpy as np
 import math
-from datetime import datetime
+from datetime import datetime, timedelta
 from scipy.signal import firwin, lfilter
 
 
@@ -332,31 +332,36 @@ class MyEstimator(Node):
         
         IMU_data = [[msg.accel.x, msg.accel.y, msg.accel.z], [msg.gyro.x, msg.gyro.y, msg.gyro.z], msg.timestamp]
         
-        #print(IMU_data)
+        #print(dt)
         
         if(self.mode == 'estimation'):
             self.perform_estimate(IMU_data, dt)
         elif(self.mode == 'calibration'):
             self.perform_calibration(IMU_data)
 
-        self.publisher_.publish(self.prepare_msg())
+        self.publisher_.publish(self.prepare_msg(msg.timestamp))
 
 
-    def prepare_msg(self):
+    def prepare_msg(self, timestamp):
         global real_object
         data = EstimatorData()
         data.possition = DataXYZ()
         data.speed = DataXYZ()
         data.accel = DataXYZ()
-        data.rotation = DataXYZ()
+        data.orientation = DataXYZ()
+        data.raw_data = DataXYZ()
 
-        data.accel.x = float(real_object[4][0])
-        data.accel.y = float(real_object[4][1])
-        data.accel.z = float(real_object[4][2])
+        data.raw_data.x = float(real_object[4][0])
+        data.raw_data.y = float(real_object[4][1])
+        data.raw_data.z = float(real_object[4][2])
 
-        data.rotation.x = float(real_object[2][0])
-        data.rotation.y = float(real_object[2][1])
-        data.rotation.z = float(real_object[2][2])
+        data.orientation.x = float(real_object[3][0])
+        data.orientation.y = float(real_object[3][1])
+        data.orientation.z = float(real_object[3][2])
+
+        data.accel.x = float(real_object[2][0])
+        data.accel.y = float(real_object[2][1])
+        data.accel.z = float(real_object[2][2])
 
         data.speed.x = float(real_object[1][0])
         data.speed.y = float(real_object[1][1])
@@ -366,7 +371,7 @@ class MyEstimator(Node):
         data.possition.y = float(real_object[0][1]*100)
         data.possition.z = float(-real_object[0][2]*100)
 
-        data.timestamp = 0
+        data.timestamp = timestamp
         return data
 
 def main(args=None):

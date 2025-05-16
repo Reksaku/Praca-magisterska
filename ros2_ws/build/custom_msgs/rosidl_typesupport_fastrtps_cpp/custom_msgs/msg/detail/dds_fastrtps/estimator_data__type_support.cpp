@@ -60,6 +60,8 @@ max_serialized_size_key_DataXYZ(
 
 // functions for custom_msgs::msg::DataXYZ already declared above
 
+// functions for custom_msgs::msg::DataXYZ already declared above
+
 
 namespace custom_msgs
 {
@@ -95,9 +97,14 @@ cdr_serialize(
     ros_message.accel,
     cdr);
 
-  // Member: rotation
+  // Member: orientation
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-    ros_message.rotation,
+    ros_message.orientation,
+    cdr);
+
+  // Member: raw_data
+  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.raw_data,
     cdr);
 
   return true;
@@ -124,9 +131,13 @@ cdr_deserialize(
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.accel);
 
-  // Member: rotation
+  // Member: orientation
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-    cdr, ros_message.rotation);
+    cdr, ros_message.orientation);
+
+  // Member: raw_data
+  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.raw_data);
 
   return true;
 }
@@ -167,10 +178,15 @@ get_serialized_size(
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.accel, current_alignment);
 
-  // Member: rotation
+  // Member: orientation
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-    ros_message.rotation, current_alignment);
+    ros_message.orientation, current_alignment);
+
+  // Member: raw_data
+  current_alignment +=
+    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.raw_data, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -250,7 +266,23 @@ max_serialized_size_EstimatorData(
       is_plain &= inner_is_plain;
     }
   }
-  // Member: rotation
+  // Member: orientation
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_DataXYZ(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // Member: raw_data
   {
     size_t array_size = 1;
     last_member_size = 0;
@@ -275,7 +307,7 @@ max_serialized_size_EstimatorData(
     using DataType = custom_msgs::msg::EstimatorData;
     is_plain =
       (
-      offsetof(DataType, rotation) +
+      offsetof(DataType, raw_data) +
       last_member_size
       ) == ret_val;
   }
@@ -307,9 +339,14 @@ cdr_serialize_key(
     ros_message.accel,
     cdr);
 
-  // Member: rotation
+  // Member: orientation
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.rotation,
+    ros_message.orientation,
+    cdr);
+
+  // Member: raw_data
+  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
+    ros_message.raw_data,
     cdr);
 
   return true;
@@ -350,10 +387,15 @@ get_serialized_size_key(
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
     ros_message.accel, current_alignment);
 
-  // Member: rotation
+  // Member: orientation
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.rotation, current_alignment);
+    ros_message.orientation, current_alignment);
+
+  // Member: raw_data
+  current_alignment +=
+    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
+    ros_message.raw_data, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -436,7 +478,24 @@ max_serialized_size_key_EstimatorData(
     }
   }
 
-  // Member: rotation
+  // Member: orientation
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DataXYZ(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: raw_data
   {
     size_t array_size = 1;
     last_member_size = 0;
@@ -461,7 +520,7 @@ max_serialized_size_key_EstimatorData(
     using DataType = custom_msgs::msg::EstimatorData;
     is_plain =
       (
-      offsetof(DataType, rotation) +
+      offsetof(DataType, raw_data) +
       last_member_size
       ) == ret_val;
   }

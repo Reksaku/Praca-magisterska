@@ -70,7 +70,8 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         '_possition',
         '_speed',
         '_accel',
-        '_rotation',
+        '_orientation',
+        '_raw_data',
         '_check_fields',
     ]
 
@@ -79,13 +80,15 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         'possition': 'custom_msgs/DataXYZ',
         'speed': 'custom_msgs/DataXYZ',
         'accel': 'custom_msgs/DataXYZ',
-        'rotation': 'custom_msgs/DataXYZ',
+        'orientation': 'custom_msgs/DataXYZ',
+        'raw_data': 'custom_msgs/DataXYZ',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['custom_msgs', 'msg'], 'DataXYZ'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['custom_msgs', 'msg'], 'DataXYZ'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['custom_msgs', 'msg'], 'DataXYZ'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['custom_msgs', 'msg'], 'DataXYZ'),  # noqa: E501
@@ -109,7 +112,9 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         from custom_msgs.msg import DataXYZ
         self.accel = kwargs.get('accel', DataXYZ())
         from custom_msgs.msg import DataXYZ
-        self.rotation = kwargs.get('rotation', DataXYZ())
+        self.orientation = kwargs.get('orientation', DataXYZ())
+        from custom_msgs.msg import DataXYZ
+        self.raw_data = kwargs.get('raw_data', DataXYZ())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -149,7 +154,9 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
             return False
         if self.accel != other.accel:
             return False
-        if self.rotation != other.rotation:
+        if self.orientation != other.orientation:
+            return False
+        if self.raw_data != other.raw_data:
             return False
         return True
 
@@ -216,15 +223,29 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         self._accel = value
 
     @builtins.property
-    def rotation(self):
-        """Message field 'rotation'."""
-        return self._rotation
+    def orientation(self):
+        """Message field 'orientation'."""
+        return self._orientation
 
-    @rotation.setter
-    def rotation(self, value):
+    @orientation.setter
+    def orientation(self, value):
         if self._check_fields:
             from custom_msgs.msg import DataXYZ
             assert \
                 isinstance(value, DataXYZ), \
-                "The 'rotation' field must be a sub message of type 'DataXYZ'"
-        self._rotation = value
+                "The 'orientation' field must be a sub message of type 'DataXYZ'"
+        self._orientation = value
+
+    @builtins.property
+    def raw_data(self):
+        """Message field 'raw_data'."""
+        return self._raw_data
+
+    @raw_data.setter
+    def raw_data(self, value):
+        if self._check_fields:
+            from custom_msgs.msg import DataXYZ
+            assert \
+                isinstance(value, DataXYZ), \
+                "The 'raw_data' field must be a sub message of type 'DataXYZ'"
+        self._raw_data = value

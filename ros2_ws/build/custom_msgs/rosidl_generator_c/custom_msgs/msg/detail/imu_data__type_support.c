@@ -6,8 +6,8 @@
 
 #include "rosidl_typesupport_interface/macros.h"
 #include "custom_msgs/msg/detail/imu_data__struct.h"
-#include "custom_msgs/msg/detail/imu_data__type_support.h"
 #include "custom_msgs/msg/detail/imu_data__functions.h"
+#include "custom_msgs/msg/detail/imu_data__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

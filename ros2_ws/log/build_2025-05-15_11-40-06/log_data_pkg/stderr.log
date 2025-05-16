@@ -1,0 +1,5 @@
+  File "/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg/save_to_csv.py", line 70
+    if self.mode = 'logging':
+       ^^^^^^^^^
+SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?
+

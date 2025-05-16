@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "custom_msgs/msg/detail/gyro_data__struct.h"
 #include "custom_msgs/msg/detail/gyro_data__type_support.h"
 #include "custom_msgs/msg/detail/gyro_data__functions.h"
+#include "custom_msgs/msg/detail/gyro_data__struct.h"
 
 #ifdef __cplusplus
 extern "C"

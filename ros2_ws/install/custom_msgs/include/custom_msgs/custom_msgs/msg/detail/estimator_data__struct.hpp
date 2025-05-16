@@ -22,7 +22,8 @@
 // Member 'possition'
 // Member 'speed'
 // Member 'accel'
-// Member 'rotation'
+// Member 'orientation'
+// Member 'raw_data'
 #include "custom_msgs/msg/detail/data_xyz__struct.hpp"
 
 #ifndef _WIN32
@@ -47,7 +48,8 @@ struct EstimatorData_
   : possition(_init),
     speed(_init),
     accel(_init),
-    rotation(_init)
+    orientation(_init),
+    raw_data(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -60,7 +62,8 @@ struct EstimatorData_
   : possition(_alloc, _init),
     speed(_alloc, _init),
     accel(_alloc, _init),
-    rotation(_alloc, _init)
+    orientation(_alloc, _init),
+    raw_data(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -82,9 +85,12 @@ struct EstimatorData_
   using _accel_type =
     custom_msgs::msg::DataXYZ_<ContainerAllocator>;
   _accel_type accel;
-  using _rotation_type =
+  using _orientation_type =
     custom_msgs::msg::DataXYZ_<ContainerAllocator>;
-  _rotation_type rotation;
+  _orientation_type orientation;
+  using _raw_data_type =
+    custom_msgs::msg::DataXYZ_<ContainerAllocator>;
+  _raw_data_type raw_data;
 
   // setters for named parameter idiom
   Type & set__timestamp(
@@ -111,10 +117,16 @@ struct EstimatorData_
     this->accel = _arg;
     return *this;
   }
-  Type & set__rotation(
+  Type & set__orientation(
     const custom_msgs::msg::DataXYZ_<ContainerAllocator> & _arg)
   {
-    this->rotation = _arg;
+    this->orientation = _arg;
+    return *this;
+  }
+  Type & set__raw_data(
+    const custom_msgs::msg::DataXYZ_<ContainerAllocator> & _arg)
+  {
+    this->raw_data = _arg;
     return *this;
   }
 
@@ -172,7 +184,10 @@ struct EstimatorData_
     if (this->accel != other.accel) {
       return false;
     }
-    if (this->rotation != other.rotation) {
+    if (this->orientation != other.orientation) {
+      return false;
+    }
+    if (this->raw_data != other.raw_data) {
       return false;
     }
     return true;

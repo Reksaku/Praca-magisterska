@@ -36,7 +36,7 @@ extern "C"
 {
 #endif
 
-#include "custom_msgs/msg/detail/data_xyz__functions.h"  // accel, possition, rotation, speed
+#include "custom_msgs/msg/detail/data_xyz__functions.h"  // accel, orientation, possition, raw_data, speed
 
 // forward declare type support functions
 
@@ -105,10 +105,16 @@ bool cdr_serialize_custom_msgs__msg__EstimatorData(
       &ros_message->accel, cdr);
   }
 
-  // Field name: rotation
+  // Field name: orientation
   {
     cdr_serialize_custom_msgs__msg__DataXYZ(
-      &ros_message->rotation, cdr);
+      &ros_message->orientation, cdr);
+  }
+
+  // Field name: raw_data
+  {
+    cdr_serialize_custom_msgs__msg__DataXYZ(
+      &ros_message->raw_data, cdr);
   }
 
   return true;
@@ -139,9 +145,14 @@ bool cdr_deserialize_custom_msgs__msg__EstimatorData(
     cdr_deserialize_custom_msgs__msg__DataXYZ(cdr, &ros_message->accel);
   }
 
-  // Field name: rotation
+  // Field name: orientation
   {
-    cdr_deserialize_custom_msgs__msg__DataXYZ(cdr, &ros_message->rotation);
+    cdr_deserialize_custom_msgs__msg__DataXYZ(cdr, &ros_message->orientation);
+  }
+
+  // Field name: raw_data
+  {
+    cdr_deserialize_custom_msgs__msg__DataXYZ(cdr, &ros_message->raw_data);
   }
 
   return true;
@@ -181,9 +192,13 @@ size_t get_serialized_size_custom_msgs__msg__EstimatorData(
   current_alignment += get_serialized_size_custom_msgs__msg__DataXYZ(
     &(ros_message->accel), current_alignment);
 
-  // Field name: rotation
+  // Field name: orientation
   current_alignment += get_serialized_size_custom_msgs__msg__DataXYZ(
-    &(ros_message->rotation), current_alignment);
+    &(ros_message->orientation), current_alignment);
+
+  // Field name: raw_data
+  current_alignment += get_serialized_size_custom_msgs__msg__DataXYZ(
+    &(ros_message->raw_data), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -269,7 +284,25 @@ size_t max_serialized_size_custom_msgs__msg__EstimatorData(
     }
   }
 
-  // Field name: rotation
+  // Field name: orientation
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_custom_msgs__msg__DataXYZ(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Field name: raw_data
   {
     size_t array_size = 1;
     last_member_size = 0;
@@ -296,7 +329,7 @@ size_t max_serialized_size_custom_msgs__msg__EstimatorData(
     using DataType = custom_msgs__msg__EstimatorData;
     is_plain =
       (
-      offsetof(DataType, rotation) +
+      offsetof(DataType, raw_data) +
       last_member_size
       ) == ret_val;
   }
@@ -331,10 +364,16 @@ bool cdr_serialize_key_custom_msgs__msg__EstimatorData(
       &ros_message->accel, cdr);
   }
 
-  // Field name: rotation
+  // Field name: orientation
   {
     cdr_serialize_key_custom_msgs__msg__DataXYZ(
-      &ros_message->rotation, cdr);
+      &ros_message->orientation, cdr);
+  }
+
+  // Field name: raw_data
+  {
+    cdr_serialize_key_custom_msgs__msg__DataXYZ(
+      &ros_message->raw_data, cdr);
   }
 
   return true;
@@ -374,9 +413,13 @@ size_t get_serialized_size_key_custom_msgs__msg__EstimatorData(
   current_alignment += get_serialized_size_key_custom_msgs__msg__DataXYZ(
     &(ros_message->accel), current_alignment);
 
-  // Field name: rotation
+  // Field name: orientation
   current_alignment += get_serialized_size_key_custom_msgs__msg__DataXYZ(
-    &(ros_message->rotation), current_alignment);
+    &(ros_message->orientation), current_alignment);
+
+  // Field name: raw_data
+  current_alignment += get_serialized_size_key_custom_msgs__msg__DataXYZ(
+    &(ros_message->raw_data), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -460,7 +503,25 @@ size_t max_serialized_size_key_custom_msgs__msg__EstimatorData(
     }
   }
 
-  // Field name: rotation
+  // Field name: orientation
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_key_custom_msgs__msg__DataXYZ(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Field name: raw_data
   {
     size_t array_size = 1;
     last_member_size = 0;
@@ -486,7 +547,7 @@ size_t max_serialized_size_key_custom_msgs__msg__EstimatorData(
     using DataType = custom_msgs__msg__EstimatorData;
     is_plain =
       (
-      offsetof(DataType, rotation) +
+      offsetof(DataType, raw_data) +
       last_member_size
       ) == ret_val;
   }

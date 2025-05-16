@@ -24,6 +24,8 @@ bool custom_msgs__msg__data_xyz__convert_from_py(PyObject * _pymsg, void * _ros_
 PyObject * custom_msgs__msg__data_xyz__convert_to_py(void * raw_ros_message);
 bool custom_msgs__msg__data_xyz__convert_from_py(PyObject * _pymsg, void * _ros_message);
 PyObject * custom_msgs__msg__data_xyz__convert_to_py(void * raw_ros_message);
+bool custom_msgs__msg__data_xyz__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * custom_msgs__msg__data_xyz__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool custom_msgs__msg__estimator_data__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -100,12 +102,23 @@ bool custom_msgs__msg__estimator_data__convert_from_py(PyObject * _pymsg, void *
     }
     Py_DECREF(field);
   }
-  {  // rotation
-    PyObject * field = PyObject_GetAttrString(_pymsg, "rotation");
+  {  // orientation
+    PyObject * field = PyObject_GetAttrString(_pymsg, "orientation");
     if (!field) {
       return false;
     }
-    if (!custom_msgs__msg__data_xyz__convert_from_py(field, &ros_message->rotation)) {
+    if (!custom_msgs__msg__data_xyz__convert_from_py(field, &ros_message->orientation)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
+  {  // raw_data
+    PyObject * field = PyObject_GetAttrString(_pymsg, "raw_data");
+    if (!field) {
+      return false;
+    }
+    if (!custom_msgs__msg__data_xyz__convert_from_py(field, &ros_message->raw_data)) {
       Py_DECREF(field);
       return false;
     }
@@ -186,14 +199,28 @@ PyObject * custom_msgs__msg__estimator_data__convert_to_py(void * raw_ros_messag
       }
     }
   }
-  {  // rotation
+  {  // orientation
     PyObject * field = NULL;
-    field = custom_msgs__msg__data_xyz__convert_to_py(&ros_message->rotation);
+    field = custom_msgs__msg__data_xyz__convert_to_py(&ros_message->orientation);
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "rotation", field);
+      int rc = PyObject_SetAttrString(_pymessage, "orientation", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // raw_data
+    PyObject * field = NULL;
+    field = custom_msgs__msg__data_xyz__convert_to_py(&ros_message->raw_data);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "raw_data", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

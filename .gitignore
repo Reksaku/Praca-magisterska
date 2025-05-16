@@ -13,3 +13,10 @@
 .viminfo
 .vscode-server/
 .wget-hsts
+Desktop
+Downloads
+snap
+.Xauthority
+.fontconfig/
+.xorgxrdp.10.log
+.xsession-errors

@@ -1,0 +1,4 @@
+Invoking command in '/home/rosbot/ros2_ws/build/my_cpp_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rosbot/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+Invoked command in '/home/rosbot/ros2_ws/build/my_cpp_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rosbot/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+Invoking command in '/home/rosbot/ros2_ws/build/my_cpp_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rosbot/ros2_ws/build/my_cpp_pkg
+Invoked command in '/home/rosbot/ros2_ws/build/my_cpp_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rosbot/ros2_ws/build/my_cpp_pkg

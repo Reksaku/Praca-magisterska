@@ -74,5 +74,5 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/ms
  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/rosbot/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.h \
- /home/rosbot/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/accel_data__functions.h
+ /home/rosbot/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/accel_data__functions.h \
+ /home/rosbot/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.h

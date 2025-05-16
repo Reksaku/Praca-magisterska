@@ -1,6 +1,4 @@
-source;share/estimator_pkg/hook/pythonpath.ps1
 source;share/estimator_pkg/hook/pythonpath.dsv
 source;share/estimator_pkg/hook/pythonpath.sh
-source;share/estimator_pkg/hook/ament_prefix_path.ps1
 source;share/estimator_pkg/hook/ament_prefix_path.dsv
 source;share/estimator_pkg/hook/ament_prefix_path.sh

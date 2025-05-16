@@ -15,7 +15,8 @@
 // Member `possition`
 // Member `speed`
 // Member `accel`
-// Member `rotation`
+// Member `orientation`
+// Member `raw_data`
 #include "custom_msgs/msg/detail/data_xyz__functions.h"
 
 bool
@@ -40,8 +41,13 @@ custom_msgs__msg__EstimatorData__init(custom_msgs__msg__EstimatorData * msg)
     custom_msgs__msg__EstimatorData__fini(msg);
     return false;
   }
-  // rotation
-  if (!custom_msgs__msg__DataXYZ__init(&msg->rotation)) {
+  // orientation
+  if (!custom_msgs__msg__DataXYZ__init(&msg->orientation)) {
+    custom_msgs__msg__EstimatorData__fini(msg);
+    return false;
+  }
+  // raw_data
+  if (!custom_msgs__msg__DataXYZ__init(&msg->raw_data)) {
     custom_msgs__msg__EstimatorData__fini(msg);
     return false;
   }
@@ -61,8 +67,10 @@ custom_msgs__msg__EstimatorData__fini(custom_msgs__msg__EstimatorData * msg)
   custom_msgs__msg__DataXYZ__fini(&msg->speed);
   // accel
   custom_msgs__msg__DataXYZ__fini(&msg->accel);
-  // rotation
-  custom_msgs__msg__DataXYZ__fini(&msg->rotation);
+  // orientation
+  custom_msgs__msg__DataXYZ__fini(&msg->orientation);
+  // raw_data
+  custom_msgs__msg__DataXYZ__fini(&msg->raw_data);
 }
 
 bool
@@ -93,9 +101,15 @@ custom_msgs__msg__EstimatorData__are_equal(const custom_msgs__msg__EstimatorData
   {
     return false;
   }
-  // rotation
+  // orientation
   if (!custom_msgs__msg__DataXYZ__are_equal(
-      &(lhs->rotation), &(rhs->rotation)))
+      &(lhs->orientation), &(rhs->orientation)))
+  {
+    return false;
+  }
+  // raw_data
+  if (!custom_msgs__msg__DataXYZ__are_equal(
+      &(lhs->raw_data), &(rhs->raw_data)))
   {
     return false;
   }
@@ -130,9 +144,15 @@ custom_msgs__msg__EstimatorData__copy(
   {
     return false;
   }
-  // rotation
+  // orientation
   if (!custom_msgs__msg__DataXYZ__copy(
-      &(input->rotation), &(output->rotation)))
+      &(input->orientation), &(output->orientation)))
+  {
+    return false;
+  }
+  // raw_data
+  if (!custom_msgs__msg__DataXYZ__copy(
+      &(input->raw_data), &(output->raw_data)))
   {
     return false;
   }

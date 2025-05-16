@@ -11,10 +11,10 @@ custom_msgs__msg__EstimatorData__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xef, 0x22, 0xe0, 0x40, 0x82, 0x60, 0x16, 0x5a,
-      0x98, 0x6b, 0x7a, 0xbf, 0xcc, 0xf9, 0x06, 0xd7,
-      0xa9, 0xb4, 0x13, 0x88, 0xef, 0x99, 0x94, 0x3b,
-      0xf1, 0x7d, 0xdc, 0xf0, 0xf5, 0xb0, 0x39, 0x78,
+      0xe5, 0x9d, 0x32, 0x09, 0x98, 0x1a, 0x2d, 0xba,
+      0x19, 0xb6, 0x5f, 0xc7, 0x25, 0x07, 0xb8, 0xdf,
+      0x9d, 0xfb, 0xce, 0x32, 0xff, 0x93, 0x0e, 0xd0,
+      0xc9, 0xa0, 0x1d, 0x79, 0x84, 0x56, 0x99, 0x5c,
     }};
   return &hash;
 }
@@ -43,7 +43,8 @@ static char custom_msgs__msg__EstimatorData__FIELD_NAME__timestamp[] = "timestam
 static char custom_msgs__msg__EstimatorData__FIELD_NAME__possition[] = "possition";
 static char custom_msgs__msg__EstimatorData__FIELD_NAME__speed[] = "speed";
 static char custom_msgs__msg__EstimatorData__FIELD_NAME__accel[] = "accel";
-static char custom_msgs__msg__EstimatorData__FIELD_NAME__rotation[] = "rotation";
+static char custom_msgs__msg__EstimatorData__FIELD_NAME__orientation[] = "orientation";
+static char custom_msgs__msg__EstimatorData__FIELD_NAME__raw_data[] = "raw_data";
 
 static rosidl_runtime_c__type_description__Field custom_msgs__msg__EstimatorData__FIELDS[] = {
   {
@@ -87,7 +88,17 @@ static rosidl_runtime_c__type_description__Field custom_msgs__msg__EstimatorData
     {NULL, 0, 0},
   },
   {
-    {custom_msgs__msg__EstimatorData__FIELD_NAME__rotation, 8, 8},
+    {custom_msgs__msg__EstimatorData__FIELD_NAME__orientation, 11, 11},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_NESTED_TYPE,
+      0,
+      0,
+      {custom_msgs__msg__DataXYZ__TYPE_NAME, 23, 23},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {custom_msgs__msg__EstimatorData__FIELD_NAME__raw_data, 8, 8},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_NESTED_TYPE,
       0,
@@ -114,7 +125,7 @@ custom_msgs__msg__EstimatorData__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {custom_msgs__msg__EstimatorData__TYPE_NAME, 29, 29},
-      {custom_msgs__msg__EstimatorData__FIELDS, 5, 5},
+      {custom_msgs__msg__EstimatorData__FIELDS, 6, 6},
     },
     {custom_msgs__msg__EstimatorData__REFERENCED_TYPE_DESCRIPTIONS, 1, 1},
   };
@@ -131,7 +142,8 @@ static char toplevel_type_raw_source[] =
   "DataXYZ possition\n"
   "DataXYZ speed\n"
   "DataXYZ accel\n"
-  "DataXYZ rotation";
+  "DataXYZ orientation\n"
+  "DataXYZ raw_data";
 
 static char msg_encoding[] = "msg";
 
@@ -145,7 +157,7 @@ custom_msgs__msg__EstimatorData__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {custom_msgs__msg__EstimatorData__TYPE_NAME, 29, 29},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 78, 78},
+    {toplevel_type_raw_source, 98, 98},
   };
   return &source;
 }

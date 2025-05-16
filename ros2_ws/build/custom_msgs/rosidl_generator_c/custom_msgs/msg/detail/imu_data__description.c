@@ -23,8 +23,8 @@ custom_msgs__msg__ImuData__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "custom_msgs/msg/detail/gyro_data__functions.h"
 #include "custom_msgs/msg/detail/accel_data__functions.h"
+#include "custom_msgs/msg/detail/gyro_data__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG

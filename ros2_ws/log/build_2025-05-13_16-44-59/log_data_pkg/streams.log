@@ -1,0 +1,25 @@
+[1.999s] Invoking command in '/home/rosbot/ros2_ws/src/log_data_pkg': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/log_data_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/log_data_pkg build --build-base /home/rosbot/ros2_ws/build/log_data_pkg/build install --record /home/rosbot/ros2_ws/build/log_data_pkg/install.log --single-version-externally-managed install_data
+[2.401s] running egg_info
+[2.426s] writing ../../build/log_data_pkg/log_data_pkg.egg-info/PKG-INFO
+[2.426s] writing dependency_links to ../../build/log_data_pkg/log_data_pkg.egg-info/dependency_links.txt
+[2.428s] writing entry points to ../../build/log_data_pkg/log_data_pkg.egg-info/entry_points.txt
+[2.432s] writing requirements to ../../build/log_data_pkg/log_data_pkg.egg-info/requires.txt
+[2.437s] writing top-level names to ../../build/log_data_pkg/log_data_pkg.egg-info/top_level.txt
+[2.514s] reading manifest file '../../build/log_data_pkg/log_data_pkg.egg-info/SOURCES.txt'
+[2.515s] writing manifest file '../../build/log_data_pkg/log_data_pkg.egg-info/SOURCES.txt'
+[2.517s] running build
+[2.519s] running build_py
+[2.520s] copying log_data_pkg/save_to_csv.py -> /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg
+[2.520s] running install
+[2.529s] running install_lib
+[2.560s] copying /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg/save_to_csv.py -> /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg
+[2.561s] byte-compiling /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg/save_to_csv.py to save_to_csv.cpython-312.pyc
+[2.563s] running install_data
+[2.564s] copying package.xml -> /home/rosbot/ros2_ws/install/log_data_pkg/share/log_data_pkg
+[2.564s] running install_egg_info
+[2.599s] removing '/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[2.602s] Copying ../../build/log_data_pkg/log_data_pkg.egg-info to /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg-0.0.0-py3.12.egg-info
+[2.605s] running install_scripts
+[2.859s] Installing data_collector script to /home/rosbot/ros2_ws/install/log_data_pkg/lib/log_data_pkg
+[2.863s] writing list of installed files to '/home/rosbot/ros2_ws/build/log_data_pkg/install.log'
+[3.024s] Invoked command in '/home/rosbot/ros2_ws/src/log_data_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rosbot/ros2_ws/install/custom_msgs:/home/rosbot/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/log_data_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/custom_msgs/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/rosbot/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/rosbot/ros2_ws/venv/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/log_data_pkg build --build-base /home/rosbot/ros2_ws/build/log_data_pkg/build install --record /home/rosbot/ros2_ws/build/log_data_pkg/install.log --single-version-externally-managed install_data

@@ -3,10 +3,13 @@ import rclpy
 from rclpy.node import Node
 from custom_msgs.msg import ImuData, AccelData, GyroData, EstimatorData, PossitionData
 from example_interfaces.msg import String
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_from_directory, abort, redirect, url_for, render_template_string
 import threading
 import os
 from datetime import datetime, timedelta
+
+# Ścieżka do katalogu danych
+BASE_DIR = '/home/rosbot'  # Zmień na odpowiednią ścieżkę
 
 # Uzyskanie ścieżki do katalogu z szablonami
 template_dir = os.path.join(os.path.expanduser('~'), 'ros2_ws/src/flask_pkg/flask_pkg/templates')
@@ -43,7 +46,8 @@ class ServerNode(Node):
              msg.possition.z, msg.speed.x, 
              msg.speed.y, msg.speed.z, 
              msg.accel.x, msg.accel.y, msg.accel.z,
-             msg.rotation.x, msg.rotation.y, msg.rotation.z
+             msg.orientation.x, msg.orientation.y, msg.orientation.z,
+             msg.raw_data.x, msg.raw_data.y, msg.raw_data.z
              ))
         cutoff = timestamp - timedelta(seconds=5)
         while data_buffer and data_buffer[0][0] < cutoff:
@@ -78,16 +82,79 @@ def index():
         print('POST')
         if request.form.get('reset') == 'Reset':
             ros2_node.publish_message('reset')
-        if request.form.get('calibrate') == 'Re-calibrate':
+        elif request.form.get('calibrate') == 'Re-calibrate':
             ros2_node.publish_message('calibrate')
+        elif request.form.get('start') == 'Start':
+            ros2_node.publish_message('start_logging')
+        elif request.form.get('restart') == 'Restart':
+            ros2_node.publish_message('new_logging')
+        elif request.form.get('stop') == 'Stop':
+            ros2_node.publish_message('end_logging')
     return render_template('index.html')
 
+@app.route('/files/<path:req_path>', methods=['GET'])
+def dir_listing(req_path):
+    abs_path = os.path.join(BASE_DIR, req_path)
+
+    if not os.path.exists(abs_path):
+        return abort(404)
+
+    if os.path.isfile(abs_path):
+        return send_from_directory(os.path.dirname(abs_path), os.path.basename(abs_path), as_attachment=True)
+
+    files = os.listdir(abs_path)
+    file_items = []
+
+    for filename in files:
+        full_path = os.path.join(abs_path, filename)
+        rel_path = os.path.join(req_path, filename)
+
+        if os.path.isfile(full_path):
+            size = os.path.getsize(full_path)
+            try:
+                with open(full_path, 'r', encoding='utf-8') as f:
+                    lines = sum(1 for _ in f)
+            except:
+                lines = "n/a"
+
+            item = f'''
+                <li>
+                    <a href="/files/{rel_path}">{filename}</a> 
+                    (rozmiar: {size} B, wiersze: {lines})
+                    <form action="/delete" method="post" style="display:inline;">
+                        <input type="hidden" name="file_path" value="{rel_path}">
+                        <button type="submit">Usuń</button>
+                    </form>
+                </li>
+            '''
+        else:
+            item = f'<li><a href="/files/{rel_path}">{filename}/</a> (katalog)</li>'
+
+        file_items.append(item)
+
+    return f'''
+        <h1>Lista plików w: /{req_path}</h1>
+        <ul>
+            {''.join(file_items)}
+        </ul>
+    '''
+
+@app.route('/delete', methods=['POST'])
+def delete_file():
+    file_path = request.form.get('file_path')
+    abs_path = os.path.join(BASE_DIR, file_path)
+
+    if os.path.isfile(abs_path):
+        os.remove(abs_path)
+        return redirect(url_for('dir_listing', req_path=os.path.dirname(file_path)))
+    else:
+        return abort(400, "To nie jest plik lub nie można usunąć.")
 
 @app.route('/data')
 def get_data():
     now = datetime.utcnow()
-    recent = [(t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, rotx, roty, rotz) 
-              for (t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, rotx, roty, rotz) in data_buffer]
+    recent = [(t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, orientx, orienty, orientz, rawx, rawy, rawz) 
+              for (t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, orientx, orienty, orientz, rawx, rawy, rawz) in data_buffer]
     return jsonify([
         {
             'time': t.strftime('%H:%M:%S'),
@@ -100,10 +167,13 @@ def get_data():
             'accel_x': accx,
             'accel_y': accy,
             'accel_z': accz,
-            'rotation_x': rotx,
-            'rotation_y': roty,
-            'rotation_z': rotz
-        } for (t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, rotx, roty, rotz) in recent
+            'orientation_x': orientx,
+            'orientation_y': orienty,
+            'orientation_z': orientz,
+            'raw_x': rawx,
+            'raw_y': rawy,
+            'raw_z': rawz
+        } for (t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, orientx, orienty, orientz, rawx, rawy, rawz) in recent
     ])
 
 def main():

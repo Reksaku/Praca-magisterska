@@ -7,8 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         canvas {
-            width: 100% !important;
-            height: auto !important;
+            width: 45vw;
+            display: block;
         }
         .chart-container {
             display: flex;
@@ -30,28 +30,59 @@
             align-items: center;
             align-content: center;
         }
+        div {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="horizontal-flex-canvas">
-            Odczyty
-            <div><canvas id="leftCanva" width="800" height="400"></canvas></div>
-            Przyśpieszenie
-            <div><canvas id="rightCanva" width="800" height="400"></canvas></div>
+            <div>
+                <h3>Odczyty akcelerometru</h3>
+                <canvas id="leftCanva" height="250"></canvas>
+            </div>
+            <div>
+                <h3>Orientacja</h3>
+                <canvas id="rightCanva" height="250"></canvas>
+            </div>
         </div>
+
         <br>
+        <br>
+
         <div class="horizontal-flex-canvas">
-            Prędkość
-            <div><canvas id="leftCanvaBot" width="800" height="400"></canvas></div>
-            Pozycja
-            <div><canvas id="rightCanvaBot" width="800" height="400"></canvas></div>
+            <div>
+                <h3>Estymata przyśpieszeń</h3>
+                <canvas id="leftCanvaBot" height="250"></canvas>
+            </div>
+            <div>
+                <h3>Estymata prędkości</h3>
+                <canvas id="rightCanvaBot" height="250"></canvas>
+            </div>
         </div>
+
         <br>
+        <br>
+
+        <div>
+            <h3>Estymata pozycji</h3>
+            <canvas id="centralCanva" height="150"></canvas>
+        </div>
+
+        <br>
+
         <form method="POST" action="/">
+            <h3>Obsługa estymatora</h3>
             <div class="horizontal-flex">
                 <input type="submit" value="Reset" name="reset">
                 <input type="submit" value="Re-calibrate" name="calibrate" />
+            </div>
+            <h3>Zapis danych</h3>
+            <div class="horizontal-flex">
+                <input type="submit" value="Start" name="start">
+                <input type="submit" value="Restart" name="restart" />
+                <input type="submit" value="Stop" name="stop" />
             </div>
         </form>
     </div>
@@ -62,6 +93,7 @@
         const ctxRight = document.getElementById('rightCanva').getContext('2d');
         const ctxLeftBot = document.getElementById('leftCanvaBot').getContext('2d');
         const ctxRightBot = document.getElementById('rightCanvaBot').getContext('2d');
+        const ctxCentral = document.getElementById('centralCanva').getContext('2d');
 
 
         const labels = Array.from({});
@@ -218,35 +250,78 @@
             }
         });
 
+        const centerChart = new Chart(ctxCentral, {
+            type: 'line',
+            data: {
+                labels: labels,
+
+                datasets: [
+                    {
+                        label: 'Oś X',
+                        data: [],
+                        fill: false,
+                        borderColor: 'red',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Y',
+                        data: [],
+                        fill: false,
+                        borderColor: 'blue',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Oś Z',
+                        data: [],
+                        fill: false,
+                        borderColor: 'green',
+                        lineTension: 0.1,                
+                        pointStyle: 'false',
+                        pointRadius: 0
+                    }
+                ]
+            }
+        });
+
         // Funkcja aktualizująca wykresy
         function updateCharts() {
             fetch('/data')
                 .then(response => response.json())
                 .then(data => {
                     leftChart.data.labels = data.map(d => d.time);
-                    leftChart.data.datasets[0].data = data.map(d => d.accel_x);
-                    leftChart.data.datasets[1].data = data.map(d => d.accel_y);
-                    leftChart.data.datasets[2].data = data.map(d => d.accel_z);
+                    leftChart.data.datasets[0].data = data.map(d => d.raw_x);
+                    leftChart.data.datasets[1].data = data.map(d => d.raw_y);
+                    leftChart.data.datasets[2].data = data.map(d => d.raw_z);
 
                     rightChart.data.labels = data.map(d => d.time);
-                    rightChart.data.datasets[0].data = data.map(d => d.rotation_x);
-                    rightChart.data.datasets[1].data = data.map(d => d.rotation_y);
-                    rightChart.data.datasets[2].data = data.map(d => d.rotation_z);
+                    rightChart.data.datasets[0].data = data.map(d => d.orientation_x);
+                    rightChart.data.datasets[1].data = data.map(d => d.orientation_y);
+                    rightChart.data.datasets[2].data = data.map(d => d.orientation_z);
 
                     leftChartBot.data.labels = data.map(d => d.time);
-                    leftChartBot.data.datasets[0].data = data.map(d => d.speed_x);
-                    leftChartBot.data.datasets[1].data = data.map(d => d.speed_y);
-                    leftChartBot.data.datasets[2].data = data.map(d => d.speed_z);
+                    leftChartBot.data.datasets[0].data = data.map(d => d.accel_x);
+                    leftChartBot.data.datasets[1].data = data.map(d => d.accel_y);
+                    leftChartBot.data.datasets[2].data = data.map(d => d.accel_z);
 
                     rightChartBot.data.labels = data.map(d => d.time);
-                    rightChartBot.data.datasets[0].data = data.map(d => d.position_x);
-                    rightChartBot.data.datasets[1].data = data.map(d => d.position_y);
-                    rightChartBot.data.datasets[2].data = data.map(d => d.position_z);
+                    rightChartBot.data.datasets[0].data = data.map(d => d.speed_x);
+                    rightChartBot.data.datasets[1].data = data.map(d => d.speed_y);
+                    rightChartBot.data.datasets[2].data = data.map(d => d.speed_z);
+                    
+                    centerChart.data.labels = data.map(d => d.time);
+                    centerChart.data.datasets[0].data = data.map(d => d.position_x);
+                    centerChart.data.datasets[1].data = data.map(d => d.position_y);
+                    centerChart.data.datasets[2].data = data.map(d => d.position_z);
 
                     leftChart.update();
                     rightChart.update();
                     leftChartBot.update();
                     rightChartBot.update();
+                    centerChart.update();
 
                 })
                 .catch(error => console.error('Błąd podczas pobierania danych:', error));

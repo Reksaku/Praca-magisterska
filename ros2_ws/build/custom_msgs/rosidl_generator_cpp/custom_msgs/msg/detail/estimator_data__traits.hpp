@@ -21,7 +21,8 @@
 // Member 'possition'
 // Member 'speed'
 // Member 'accel'
-// Member 'rotation'
+// Member 'orientation'
+// Member 'raw_data'
 #include "custom_msgs/msg/detail/data_xyz__traits.hpp"
 
 namespace custom_msgs
@@ -63,10 +64,17 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: rotation
+  // member: orientation
   {
-    out << "rotation: ";
-    to_flow_style_yaml(msg.rotation, out);
+    out << "orientation: ";
+    to_flow_style_yaml(msg.orientation, out);
+    out << ", ";
+  }
+
+  // member: raw_data
+  {
+    out << "raw_data: ";
+    to_flow_style_yaml(msg.raw_data, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -112,13 +120,22 @@ inline void to_block_style_yaml(
     to_block_style_yaml(msg.accel, out, indentation + 2);
   }
 
-  // member: rotation
+  // member: orientation
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "rotation:\n";
-    to_block_style_yaml(msg.rotation, out, indentation + 2);
+    out << "orientation:\n";
+    to_block_style_yaml(msg.orientation, out, indentation + 2);
+  }
+
+  // member: raw_data
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "raw_data:\n";
+    to_block_style_yaml(msg.raw_data, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 

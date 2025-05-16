@@ -1,0 +1,34 @@
+[1.898s] Invoking command in '/home/rosbot/ros2_ws/src/log_data_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/log_data_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/log_data_pkg build --build-base /home/rosbot/ros2_ws/build/log_data_pkg/build install --record /home/rosbot/ros2_ws/build/log_data_pkg/install.log --single-version-externally-managed install_data
+[2.353s] running egg_info
+[2.354s] creating ../../build/log_data_pkg/log_data_pkg.egg-info
+[2.381s] writing ../../build/log_data_pkg/log_data_pkg.egg-info/PKG-INFO
+[2.382s] writing dependency_links to ../../build/log_data_pkg/log_data_pkg.egg-info/dependency_links.txt
+[2.384s] writing entry points to ../../build/log_data_pkg/log_data_pkg.egg-info/entry_points.txt
+[2.385s] writing requirements to ../../build/log_data_pkg/log_data_pkg.egg-info/requires.txt
+[2.386s] writing top-level names to ../../build/log_data_pkg/log_data_pkg.egg-info/top_level.txt
+[2.386s] writing manifest file '../../build/log_data_pkg/log_data_pkg.egg-info/SOURCES.txt'
+[2.478s] reading manifest file '../../build/log_data_pkg/log_data_pkg.egg-info/SOURCES.txt'
+[2.480s] writing manifest file '../../build/log_data_pkg/log_data_pkg.egg-info/SOURCES.txt'
+[2.488s] running build
+[2.488s] running build_py
+[2.489s] creating /home/rosbot/ros2_ws/build/log_data_pkg/build
+[2.493s] creating /home/rosbot/ros2_ws/build/log_data_pkg/build/lib
+[2.493s] creating /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg
+[2.494s] copying log_data_pkg/template_python_node.py -> /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg
+[2.495s] copying log_data_pkg/__init__.py -> /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg
+[2.495s] copying log_data_pkg/save_to_csv.py -> /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg
+[2.496s] running install
+[2.497s] running install_lib
+[2.551s] creating /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg
+[2.554s] copying /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg/template_python_node.py -> /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg
+[2.555s] copying /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg/__init__.py -> /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg
+[2.556s] copying /home/rosbot/ros2_ws/build/log_data_pkg/build/lib/log_data_pkg/save_to_csv.py -> /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg
+[2.556s] byte-compiling /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg/template_python_node.py to template_python_node.cpython-312.pyc
+[2.559s] byte-compiling /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg/__init__.py to __init__.cpython-312.pyc
+[2.559s] byte-compiling /home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages/log_data_pkg/save_to_csv.py to save_to_csv.cpython-312.pyc
+[2.560s] running install_data
+[2.560s] creating /home/rosbot/ros2_ws/install/log_data_pkg/share/ament_index
+[2.564s] error: can't copy 'resource/log_data_pkg': doesn't exist or not a regular file
+[2.565s] creating /home/rosbot/ros2_ws/install/log_data_pkg/share/ament_index/resource_index
+[2.566s] creating /home/rosbot/ros2_ws/install/log_data_pkg/share/ament_index/resource_index/packages
+[2.628s] Invoked command in '/home/rosbot/ros2_ws/src/log_data_pkg' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/rosbot/ros2_ws/build/log_data_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rosbot/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/log_data_pkg build --build-base /home/rosbot/ros2_ws/build/log_data_pkg/build install --record /home/rosbot/ros2_ws/build/log_data_pkg/install.log --single-version-externally-managed install_data

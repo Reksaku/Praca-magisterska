@@ -23,7 +23,8 @@ extern "C"
 // Member 'possition'
 // Member 'speed'
 // Member 'accel'
-// Member 'rotation'
+// Member 'orientation'
+// Member 'raw_data'
 #include "custom_msgs/msg/detail/data_xyz__struct.h"
 
 /// Struct defined in msg/EstimatorData in the package custom_msgs.
@@ -33,7 +34,8 @@ typedef struct custom_msgs__msg__EstimatorData
   custom_msgs__msg__DataXYZ possition;
   custom_msgs__msg__DataXYZ speed;
   custom_msgs__msg__DataXYZ accel;
-  custom_msgs__msg__DataXYZ rotation;
+  custom_msgs__msg__DataXYZ orientation;
+  custom_msgs__msg__DataXYZ raw_data;
 } custom_msgs__msg__EstimatorData;
 
 // Struct for a sequence of custom_msgs__msg__EstimatorData.

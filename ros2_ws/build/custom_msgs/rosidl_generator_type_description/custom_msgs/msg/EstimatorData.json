@@ -44,7 +44,17 @@
           "default_value": ""
         },
         {
-          "name": "rotation",
+          "name": "orientation",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "custom_msgs/msg/DataXYZ"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "raw_data",
           "type": {
             "type_id": 1,
             "capacity": 0,
@@ -96,7 +106,7 @@
   "type_hashes": [
     {
       "type_name": "custom_msgs/msg/EstimatorData",
-      "hash_string": "RIHS01_ef22e0408260165a986b7abfccf906d7a9b41388ef99943bf17ddcf0f5b03978"
+      "hash_string": "RIHS01_e59d3209981a2dba19b65fc72507b8df9dfbce32ff930ed0c9a01d798456995c"
     },
     {
       "type_name": "custom_msgs/msg/DataXYZ",

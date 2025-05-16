@@ -16,12 +16,14 @@
 // Member `possition`
 // Member `speed`
 // Member `accel`
-// Member `rotation`
+// Member `orientation`
+// Member `raw_data`
 #include "custom_msgs/msg/data_xyz.h"
 // Member `possition`
 // Member `speed`
 // Member `accel`
-// Member `rotation`
+// Member `orientation`
+// Member `raw_data`
 #include "custom_msgs/msg/detail/data_xyz__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
@@ -43,7 +45,7 @@ void custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__Estima
   custom_msgs__msg__EstimatorData__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_member_array[5] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_member_array[6] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -117,7 +119,7 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Estim
     NULL  // resize(index) function pointer
   },
   {
-    "rotation",  // name
+    "orientation",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
@@ -125,7 +127,25 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Estim
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_msgs__msg__EstimatorData, rotation),  // bytes offset in struct
+    offsetof(custom_msgs__msg__EstimatorData, orientation),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "raw_data",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__EstimatorData, raw_data),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -139,7 +159,7 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Estim
 static const rosidl_typesupport_introspection_c__MessageMembers custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_members = {
   "custom_msgs__msg",  // message namespace
   "EstimatorData",  // message name
-  5,  // number of fields
+  6,  // number of fields
   sizeof(custom_msgs__msg__EstimatorData),
   false,  // has_any_key_member_
   custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_member_array,  // message members
@@ -168,6 +188,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
   custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_member_array[3].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, DataXYZ)();
   custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_member_array[4].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, DataXYZ)();
+  custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_member_array[5].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, DataXYZ)();
   if (!custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_type_support_handle.typesupport_identifier) {
     custom_msgs__msg__EstimatorData__rosidl_typesupport_introspection_c__EstimatorData_message_type_support_handle.typesupport_identifier =
