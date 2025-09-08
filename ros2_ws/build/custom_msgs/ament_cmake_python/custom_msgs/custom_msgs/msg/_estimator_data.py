@@ -2,13 +2,6 @@
 # with input from custom_msgs:msg/EstimatorData.idl
 # generated code does not contain a copyright notice
 
-# This is being done at the module level and not on the instance level to avoid looking
-# for the same variable multiple times on each instance. This variable is not supposed to
-# change during runtime so it makes sense to only look for it once.
-from os import getenv
-
-ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
-
 
 # Import statements for member types
 
@@ -72,7 +65,6 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         '_accel',
         '_orientation',
         '_raw_data',
-        '_check_fields',
     ]
 
     _fields_and_field_types = {
@@ -84,8 +76,6 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         'raw_data': 'custom_msgs/DataXYZ',
     }
 
-    # This attribute is used to store an rosidl_parser.definition variable
-    # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['custom_msgs', 'msg'], 'DataXYZ'),  # noqa: E501
@@ -96,14 +86,9 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
     )
 
     def __init__(self, **kwargs):
-        if 'check_fields' in kwargs:
-            self._check_fields = kwargs['check_fields']
-        else:
-            self._check_fields = ros_python_check_fields == '1'
-        if self._check_fields:
-            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
-                'Invalid arguments passed to constructor: %s' % \
-                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+            'Invalid arguments passed to constructor: %s' % \
+            ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.timestamp = kwargs.get('timestamp', int())
         from custom_msgs.msg import DataXYZ
         self.possition = kwargs.get('possition', DataXYZ())
@@ -121,7 +106,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
         typename.pop()
         typename.append(self.__class__.__name__)
         args = []
-        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
+        for s, t in zip(self.__slots__, self.SLOT_TYPES):
             field = getattr(self, s)
             fieldstr = repr(field)
             # We use Python array type for fields that can be directly stored
@@ -135,12 +120,11 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
                 if len(field) == 0:
                     fieldstr = '[]'
                 else:
-                    if self._check_fields:
-                        assert fieldstr.startswith('array(')
+                    assert fieldstr.startswith('array(')
                     prefix = "array('X', "
                     suffix = ')'
                     fieldstr = fieldstr[len(prefix):-len(suffix)]
-            args.append(s + '=' + fieldstr)
+            args.append(s[1:] + '=' + fieldstr)
         return '%s(%s)' % ('.'.join(typename), ', '.join(args))
 
     def __eq__(self, other):
@@ -172,7 +156,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
 
     @timestamp.setter
     def timestamp(self, value):
-        if self._check_fields:
+        if __debug__:
             assert \
                 isinstance(value, int), \
                 "The 'timestamp' field must be of type 'int'"
@@ -187,7 +171,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
 
     @possition.setter
     def possition(self, value):
-        if self._check_fields:
+        if __debug__:
             from custom_msgs.msg import DataXYZ
             assert \
                 isinstance(value, DataXYZ), \
@@ -201,7 +185,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
 
     @speed.setter
     def speed(self, value):
-        if self._check_fields:
+        if __debug__:
             from custom_msgs.msg import DataXYZ
             assert \
                 isinstance(value, DataXYZ), \
@@ -215,7 +199,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
 
     @accel.setter
     def accel(self, value):
-        if self._check_fields:
+        if __debug__:
             from custom_msgs.msg import DataXYZ
             assert \
                 isinstance(value, DataXYZ), \
@@ -229,7 +213,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
 
     @orientation.setter
     def orientation(self, value):
-        if self._check_fields:
+        if __debug__:
             from custom_msgs.msg import DataXYZ
             assert \
                 isinstance(value, DataXYZ), \
@@ -243,7 +227,7 @@ class EstimatorData(metaclass=Metaclass_EstimatorData):
 
     @raw_data.setter
     def raw_data(self, value):
-        if self._check_fields:
+        if __debug__:
             from custom_msgs.msg import DataXYZ
             assert \
                 isinstance(value, DataXYZ), \

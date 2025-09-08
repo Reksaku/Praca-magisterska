@@ -73,7 +73,7 @@ custom_msgs__msg__GyroData__copy(
 }
 
 custom_msgs__msg__GyroData *
-custom_msgs__msg__GyroData__create(void)
+custom_msgs__msg__GyroData__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_msgs__msg__GyroData * msg = (custom_msgs__msg__GyroData *)allocator.allocate(sizeof(custom_msgs__msg__GyroData), allocator.state);

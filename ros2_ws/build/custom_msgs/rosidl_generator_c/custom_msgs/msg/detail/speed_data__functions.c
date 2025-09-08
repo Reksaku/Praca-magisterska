@@ -73,7 +73,7 @@ custom_msgs__msg__SpeedData__copy(
 }
 
 custom_msgs__msg__SpeedData *
-custom_msgs__msg__SpeedData__create(void)
+custom_msgs__msg__SpeedData__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_msgs__msg__SpeedData * msg = (custom_msgs__msg__SpeedData *)allocator.allocate(sizeof(custom_msgs__msg__SpeedData), allocator.state);

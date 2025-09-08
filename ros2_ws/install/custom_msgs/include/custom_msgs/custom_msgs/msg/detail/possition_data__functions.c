@@ -73,7 +73,7 @@ custom_msgs__msg__PossitionData__copy(
 }
 
 custom_msgs__msg__PossitionData *
-custom_msgs__msg__PossitionData__create(void)
+custom_msgs__msg__PossitionData__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_msgs__msg__PossitionData * msg = (custom_msgs__msg__PossitionData *)allocator.allocate(sizeof(custom_msgs__msg__PossitionData), allocator.state);

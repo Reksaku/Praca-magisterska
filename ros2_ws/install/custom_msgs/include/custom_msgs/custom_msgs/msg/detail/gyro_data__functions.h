@@ -2,9 +2,6 @@
 // with input from custom_msgs:msg/GyroData.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_msgs/msg/gyro_data.h"
-
-
 #ifndef CUSTOM_MSGS__MSG__DETAIL__GYRO_DATA__FUNCTIONS_H_
 #define CUSTOM_MSGS__MSG__DETAIL__GYRO_DATA__FUNCTIONS_H_
 
@@ -16,12 +13,6 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "rosidl_runtime_c/action_type_support_struct.h"
-#include "rosidl_runtime_c/message_type_support_struct.h"
-#include "rosidl_runtime_c/service_type_support_struct.h"
-#include "rosidl_runtime_c/type_description/type_description__struct.h"
-#include "rosidl_runtime_c/type_description/type_source__struct.h"
-#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "custom_msgs/msg/rosidl_generator_c__visibility_control.h"
 
@@ -62,7 +53,7 @@ custom_msgs__msg__GyroData__fini(custom_msgs__msg__GyroData * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 custom_msgs__msg__GyroData *
-custom_msgs__msg__GyroData__create(void);
+custom_msgs__msg__GyroData__create();
 
 /// Destroy msg/GyroData message.
 /**
@@ -101,30 +92,6 @@ bool
 custom_msgs__msg__GyroData__copy(
   const custom_msgs__msg__GyroData * input,
   custom_msgs__msg__GyroData * output);
-
-/// Retrieve pointer to the hash of the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
-const rosidl_type_hash_t *
-custom_msgs__msg__GyroData__get_type_hash(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
-const rosidl_runtime_c__type_description__TypeDescription *
-custom_msgs__msg__GyroData__get_type_description(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the single raw source text that defined this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
-const rosidl_runtime_c__type_description__TypeSource *
-custom_msgs__msg__GyroData__get_individual_type_description_source(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the recursive raw sources that defined the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
-const rosidl_runtime_c__type_description__TypeSource__Sequence *
-custom_msgs__msg__GyroData__get_type_description_sources(
-  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/GyroData messages.
 /**

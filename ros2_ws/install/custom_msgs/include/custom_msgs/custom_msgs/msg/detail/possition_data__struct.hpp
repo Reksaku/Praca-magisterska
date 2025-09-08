@@ -2,9 +2,6 @@
 // with input from custom_msgs:msg/PossitionData.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_msgs/msg/possition_data.hpp"
-
-
 #ifndef CUSTOM_MSGS__MSG__DETAIL__POSSITION_DATA__STRUCT_HPP_
 #define CUSTOM_MSGS__MSG__DETAIL__POSSITION_DATA__STRUCT_HPP_
 

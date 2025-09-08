@@ -1,0 +1,34 @@
+[2.909s] Invoking command in '/home/dron/Praca-magisterska/ros2_ws/src/um7_pkg': CMAKE_PREFIX_PATH=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs:/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg LD_LIBRARY_PATH=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/um7_pkg build --build-base /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build install --record /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/install.log --single-version-externally-managed install_data
+[3.888s] running egg_info
+[3.890s] creating ../../build/um7_pkg/um7_pkg.egg-info
+[3.891s] writing ../../build/um7_pkg/um7_pkg.egg-info/PKG-INFO
+[3.892s] writing dependency_links to ../../build/um7_pkg/um7_pkg.egg-info/dependency_links.txt
+[3.893s] writing entry points to ../../build/um7_pkg/um7_pkg.egg-info/entry_points.txt
+[3.893s] writing requirements to ../../build/um7_pkg/um7_pkg.egg-info/requires.txt
+[3.894s] writing top-level names to ../../build/um7_pkg/um7_pkg.egg-info/top_level.txt
+[3.895s] writing manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+[3.902s] reading manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+[3.904s] writing manifest file '../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt'
+[3.905s] running build
+[3.905s] running build_py
+[3.906s] creating /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build
+[3.907s] creating /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build/lib
+[3.907s] creating /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+[3.908s] copying um7_pkg/__init__.py -> /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+[3.908s] copying um7_pkg/imu_reader.py -> /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build/lib/um7_pkg
+[3.909s] running install
+[3.910s] running install_lib
+[3.913s] creating /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages/um7_pkg
+[3.913s] copying /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build/lib/um7_pkg/__init__.py -> /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages/um7_pkg
+[3.914s] copying /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build/lib/um7_pkg/imu_reader.py -> /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages/um7_pkg
+[3.917s] byte-compiling /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages/um7_pkg/__init__.py to __init__.cpython-310.pyc
+[3.918s] byte-compiling /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages/um7_pkg/imu_reader.py to imu_reader.cpython-310.pyc
+[3.921s] running install_data
+[3.922s] copying resource/um7_pkg -> /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/share/ament_index/resource_index/packages
+[3.922s] copying package.xml -> /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/share/um7_pkg
+[3.923s] running install_egg_info
+[3.931s] Copying ../../build/um7_pkg/um7_pkg.egg-info to /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages/um7_pkg-0.0.0-py3.10.egg-info
+[3.936s] running install_scripts
+[4.017s] Installing imu_reader script to /home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/um7_pkg
+[4.018s] writing list of installed files to '/home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/install.log'
+[4.134s] Invoked command in '/home/dron/Praca-magisterska/ros2_ws/src/um7_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs:/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg LD_LIBRARY_PATH=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.10/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/um7_pkg build --build-base /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/build install --record /home/dron/Praca-magisterska/ros2_ws/build/um7_pkg/install.log --single-version-externally-managed install_data

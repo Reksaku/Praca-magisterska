@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/um7_pkg/um7_pkg.egg-info/PKG-INFO
+../../build/um7_pkg/um7_pkg.egg-info/SOURCES.txt
+../../build/um7_pkg/um7_pkg.egg-info/dependency_links.txt
+../../build/um7_pkg/um7_pkg.egg-info/entry_points.txt
+../../build/um7_pkg/um7_pkg.egg-info/requires.txt
+../../build/um7_pkg/um7_pkg.egg-info/top_level.txt
+../../build/um7_pkg/um7_pkg.egg-info/zip-safe
+resource/um7_pkg
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+um7_pkg/__init__.py
+um7_pkg/imu_reader.py

@@ -2,10 +2,8 @@
 // with input from custom_msgs:msg/EstimatorData.idl
 // generated code does not contain a copyright notice
 #include "custom_msgs/msg/detail/estimator_data__rosidl_typesupport_fastrtps_cpp.hpp"
-#include "custom_msgs/msg/detail/estimator_data__functions.h"
 #include "custom_msgs/msg/detail/estimator_data__struct.hpp"
 
-#include <cstddef>
 #include <limits>
 #include <stdexcept>
 #include <string>
@@ -13,7 +11,6 @@
 #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
-#include "rosidl_typesupport_fastrtps_cpp/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
 #include "fastcdr/Cdr.h"
 
@@ -39,17 +36,6 @@ max_serialized_size_DataXYZ(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
-bool cdr_serialize_key(
-  const custom_msgs::msg::DataXYZ &,
-  eprosima::fastcdr::Cdr &);
-size_t get_serialized_size_key(
-  const custom_msgs::msg::DataXYZ &,
-  size_t current_alignment);
-size_t
-max_serialized_size_key_DataXYZ(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
 }  // namespace msg
 }  // namespace custom_msgs
@@ -72,7 +58,6 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 
-
 bool
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
 cdr_serialize(
@@ -81,32 +66,26 @@ cdr_serialize(
 {
   // Member: timestamp
   cdr << ros_message.timestamp;
-
   // Member: possition
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.possition,
     cdr);
-
   // Member: speed
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.speed,
     cdr);
-
   // Member: accel
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.accel,
     cdr);
-
   // Member: orientation
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.orientation,
     cdr);
-
   // Member: raw_data
   custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.raw_data,
     cdr);
-
   return true;
 }
 
@@ -142,7 +121,6 @@ cdr_deserialize(
   return true;
 }
 
-
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
 get_serialized_size(
@@ -162,35 +140,34 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
   // Member: possition
+
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.possition, current_alignment);
-
   // Member: speed
+
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.speed, current_alignment);
-
   // Member: accel
+
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.accel, current_alignment);
-
   // Member: orientation
+
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.orientation, current_alignment);
-
   // Member: raw_data
+
   current_alignment +=
     custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.raw_data, current_alignment);
 
   return current_alignment - initial_alignment;
 }
-
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
@@ -211,16 +188,21 @@ max_serialized_size_EstimatorData(
   full_bounded = true;
   is_plain = true;
 
+
   // Member: timestamp
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+
   // Member: possition
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -234,9 +216,12 @@ max_serialized_size_EstimatorData(
       is_plain &= inner_is_plain;
     }
   }
+
   // Member: speed
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -250,9 +235,12 @@ max_serialized_size_EstimatorData(
       is_plain &= inner_is_plain;
     }
   }
+
   // Member: accel
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -266,9 +254,12 @@ max_serialized_size_EstimatorData(
       is_plain &= inner_is_plain;
     }
   }
+
   // Member: orientation
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -282,9 +273,12 @@ max_serialized_size_EstimatorData(
       is_plain &= inner_is_plain;
     }
   }
+
   // Member: raw_data
   {
     size_t array_size = 1;
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -314,220 +308,6 @@ max_serialized_size_EstimatorData(
 
   return ret_val;
 }
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
-cdr_serialize_key(
-  const custom_msgs::msg::EstimatorData & ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Member: timestamp
-  cdr << ros_message.timestamp;
-
-  // Member: possition
-  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.possition,
-    cdr);
-
-  // Member: speed
-  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.speed,
-    cdr);
-
-  // Member: accel
-  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.accel,
-    cdr);
-
-  // Member: orientation
-  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.orientation,
-    cdr);
-
-  // Member: raw_data
-  custom_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-    ros_message.raw_data,
-    cdr);
-
-  return true;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
-get_serialized_size_key(
-  const custom_msgs::msg::EstimatorData & ros_message,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Member: timestamp
-  {
-    size_t item_size = sizeof(ros_message.timestamp);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Member: possition
-  current_alignment +=
-    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.possition, current_alignment);
-
-  // Member: speed
-  current_alignment +=
-    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.speed, current_alignment);
-
-  // Member: accel
-  current_alignment +=
-    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.accel, current_alignment);
-
-  // Member: orientation
-  current_alignment +=
-    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.orientation, current_alignment);
-
-  // Member: raw_data
-  current_alignment +=
-    custom_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-    ros_message.raw_data, current_alignment);
-
-  return current_alignment - initial_alignment;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
-max_serialized_size_key_EstimatorData(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-
-  // Member: timestamp
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: possition
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DataXYZ(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Member: speed
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DataXYZ(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Member: accel
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DataXYZ(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Member: orientation
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DataXYZ(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Member: raw_data
-  {
-    size_t array_size = 1;
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        custom_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DataXYZ(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = custom_msgs::msg::EstimatorData;
-    is_plain =
-      (
-      offsetof(DataType, raw_data) +
-      last_member_size
-      ) == ret_val;
-  }
-
-  return ret_val;
-}
-
 
 static bool _EstimatorData__cdr_serialize(
   const void * untyped_ros_message,
@@ -578,17 +358,13 @@ static message_type_support_callbacks_t _EstimatorData__callbacks = {
   _EstimatorData__cdr_serialize,
   _EstimatorData__cdr_deserialize,
   _EstimatorData__get_serialized_size,
-  _EstimatorData__max_serialized_size,
-  nullptr
+  _EstimatorData__max_serialized_size
 };
 
 static rosidl_message_type_support_t _EstimatorData__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_EstimatorData__callbacks,
   get_message_typesupport_handle_function,
-  &custom_msgs__msg__EstimatorData__get_type_hash,
-  &custom_msgs__msg__EstimatorData__get_type_description,
-  &custom_msgs__msg__EstimatorData__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

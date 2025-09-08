@@ -2,9 +2,6 @@
 // with input from custom_msgs:msg/GyroData.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_msgs/msg/gyro_data.h"
-
-
 #ifndef CUSTOM_MSGS__MSG__DETAIL__GYRO_DATA__TYPE_SUPPORT_H_
 #define CUSTOM_MSGS__MSG__DETAIL__GYRO_DATA__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   custom_msgs,
   msg,
   GyroData
-)(void);
+)();
 
 #ifdef __cplusplus
 }

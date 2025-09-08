@@ -34,7 +34,6 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_msgs/msg/gyro_data.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/imu_data.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/possition_data.hpp"
-  "rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/speed_data.hpp"
 )
 

@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.001985] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.002458] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.002636] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.002900] (estimator_pkg) JobQueued: {'identifier': 'estimator_pkg', 'dependencies': OrderedDict([('custom_msgs', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs')])}
+[0.003060] (flask_pkg) JobQueued: {'identifier': 'flask_pkg', 'dependencies': OrderedDict([('custom_msgs', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs')])}
+[0.003157] (flight_controller_pkg) JobQueued: {'identifier': 'flight_controller_pkg', 'dependencies': OrderedDict([('custom_msgs', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs')])}
+[0.003255] (log_data_pkg) JobQueued: {'identifier': 'log_data_pkg', 'dependencies': OrderedDict([('custom_msgs', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs')])}
+[0.003374] (um7_pkg) JobQueued: {'identifier': 'um7_pkg', 'dependencies': OrderedDict([('custom_msgs', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs')])}
+[0.003509] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.025674] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.039146] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.067018] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.069781] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs'], 'cwd': '/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dron'), ('SSH_CLIENT', 'fe80::73bc:b5b3:a668:f352%wlan0 51701 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dron'), ('OLDPWD', '/home/dron/Praca-magisterska/ros2_ws/install'), ('SSH_TTY', '/dev/pts/0'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/dron/Praca-magisterska/ros2_ws/install'), ('LOGNAME', 'dron'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('PATH', '/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg:/home/dron/Praca-magisterska/ros2_ws/install/my_py_pkg:/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg:/home/dron/Praca-magisterska/ros2_ws/install/log_data_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flight_controller_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg:/home/dron/Praca-magisterska/ros2_ws/install/estimator_pkg:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/rosbot/ros2_ws/venv'), ('PWD', '/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs'), ('SSH_CONNECTION', 'fe80::73bc:b5b3:a668:f352%wlan0 51701 fe80::da3a:ddff:fe3f:f331%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/lib/python3.12/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs:/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg:/home/dron/Praca-magisterska/ros2_ws/install/my_py_pkg:/home/dron/Praca-magisterska/ros2_ws/install/log_data_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flight_controller_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg:/home/dron/Praca-magisterska/ros2_ws/install/estimator_pkg')]), 'shell': False}
+[0.082851] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.085270] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/dron/Praca-magisterska/ros2_ws/src/my_cpp_pkg', '-DCMAKE_INSTALL_PREFIX=/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg'], 'cwd': '/home/dron/Praca-magisterska/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dron'), ('SSH_CLIENT', 'fe80::73bc:b5b3:a668:f352%wlan0 51701 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dron'), ('OLDPWD', '/home/dron/Praca-magisterska/ros2_ws/install'), ('SSH_TTY', '/dev/pts/0'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/dron/Praca-magisterska/ros2_ws/install'), ('LOGNAME', 'dron'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('PATH', '/home/rosbot/ros2_ws/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg:/home/dron/Praca-magisterska/ros2_ws/install/my_py_pkg:/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg:/home/dron/Praca-magisterska/ros2_ws/install/log_data_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flight_controller_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg:/home/dron/Praca-magisterska/ros2_ws/install/estimator_pkg:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/rosbot/ros2_ws/venv'), ('PWD', '/home/dron/Praca-magisterska/ros2_ws/build/my_cpp_pkg'), ('SSH_CONNECTION', 'fe80::73bc:b5b3:a668:f352%wlan0 51701 fe80::da3a:ddff:fe3f:f331%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/log_data_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/flight_controller_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/estimator_pkg/lib/python3.12/site-packages:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs/lib/python3.12/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg:/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs:/home/dron/Praca-magisterska/ros2_ws/install/um7_pkg:/home/dron/Praca-magisterska/ros2_ws/install/my_py_pkg:/home/dron/Praca-magisterska/ros2_ws/install/log_data_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flight_controller_pkg:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg:/home/dron/Praca-magisterska/ros2_ws/install/estimator_pkg')]), 'shell': False}
+[0.098317] (-) TimerEvent: {}
+[0.199640] (-) TimerEvent: {}
+[0.300421] (-) TimerEvent: {}
+[0.401254] (-) TimerEvent: {}
+[0.502034] (-) TimerEvent: {}
+[0.602841] (-) TimerEvent: {}
+[0.703534] (-) TimerEvent: {}
+[0.804200] (-) TimerEvent: {}
+[0.904988] (-) TimerEvent: {}
+[0.994406] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.998065] (my_cpp_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.005151] (-) TimerEvent: {}
+[1.106809] (-) TimerEvent: {}
+[1.207852] (-) TimerEvent: {}
+[1.309087] (-) TimerEvent: {}
+[1.409803] (-) TimerEvent: {}
+[1.510547] (-) TimerEvent: {}
+[1.611270] (-) TimerEvent: {}
+[1.712039] (-) TimerEvent: {}
+[1.810782] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.812219] (-) TimerEvent: {}
+[1.813365] (my_cpp_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.863253] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.863977] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.912520] (-) TimerEvent: {}
+[2.013526] (-) TimerEvent: {}
+[2.114356] (-) TimerEvent: {}
+[2.216601] (-) TimerEvent: {}
+[2.229533] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.244591] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.261381] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.264608] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.269180] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.273289] (my_cpp_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.274267] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.275988] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.290085] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.290951] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.316827] (-) TimerEvent: {}
+[2.417875] (-) TimerEvent: {}
+[2.518778] (-) TimerEvent: {}
+[2.619768] (-) TimerEvent: {}
+[2.685232] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.688438] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.714745] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.716550] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.719016] (my_cpp_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.720463] (-) TimerEvent: {}
+[2.721252] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.722002] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.725383] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.791330] (my_cpp_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[2.793185] (my_cpp_pkg) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.793691] (custom_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.794198] (custom_msgs) StdoutLine: {'line': b'See also "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[2.794912] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.796404] (my_cpp_pkg) StdoutLine: {'line': b'See also "/home/dron/Praca-magisterska/ros2_ws/build/my_cpp_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[2.797977] (my_cpp_pkg) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.798911] (my_cpp_pkg) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.803025] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[2.804566] (my_cpp_pkg) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.806761] (my_cpp_pkg) StderrLine: {'line': b'  any of the following names:\n'}
+[2.808845] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[2.809758] (my_cpp_pkg) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.811753] (my_cpp_pkg) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.813154] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[2.817976] (my_cpp_pkg) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.818707] (my_cpp_pkg) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.819266] (my_cpp_pkg) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.819887] (my_cpp_pkg) StderrLine: {'line': b'  has been installed.\n'}
+[2.820436] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[2.820942] (-) TimerEvent: {}
+[2.821542] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[2.822238] (custom_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[2.822879] (custom_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.823333] (custom_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.824559] (custom_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.825010] (custom_msgs) StderrLine: {'line': b'\n'}
+[2.825410] (custom_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.825810] (custom_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[2.826195] (custom_msgs) StderrLine: {'line': b'\n'}
+[2.826569] (custom_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.826928] (custom_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.827290] (custom_msgs) StderrLine: {'line': b'\n'}
+[2.827727] (custom_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.828118] (custom_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.828478] (custom_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.828839] (custom_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[2.829186] (custom_msgs) StderrLine: {'line': b'\n'}
+[2.829533] (custom_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[2.829894] (my_cpp_pkg) CommandEnded: {'returncode': 1}
+[2.832390] (custom_msgs) CommandEnded: {'returncode': 1}
+[2.921128] (-) TimerEvent: {}
+[2.923290] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 1}
+[2.926707] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 'SIGINT'}
+[3.021310] (-) TimerEvent: {}
+[3.122116] (-) TimerEvent: {}
+[3.222889] (-) TimerEvent: {}
+[3.323679] (-) TimerEvent: {}
+[3.424563] (-) TimerEvent: {}
+[3.475541] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 'SIGINT'}
+[3.487979] (estimator_pkg) JobSkipped: {'identifier': 'estimator_pkg'}
+[3.488313] (flask_pkg) JobSkipped: {'identifier': 'flask_pkg'}
+[3.488466] (flight_controller_pkg) JobSkipped: {'identifier': 'flight_controller_pkg'}
+[3.488604] (log_data_pkg) JobSkipped: {'identifier': 'log_data_pkg'}
+[3.488742] (um7_pkg) JobSkipped: {'identifier': 'um7_pkg'}
+[3.488876] (-) EventReactorShutdown: {}

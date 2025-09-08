@@ -1,0 +1,24 @@
+[6.828s] Invoking command in '/home/dron/Praca-magisterska/ros2_ws/src/flask_pkg': CMAKE_PREFIX_PATH=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs:/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/build install --record /home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data
+[8.251s] running egg_info
+[8.254s] writing ../../build/flask_pkg/flask_pkg.egg-info/PKG-INFO
+[8.258s] writing dependency_links to ../../build/flask_pkg/flask_pkg.egg-info/dependency_links.txt
+[8.262s] writing entry points to ../../build/flask_pkg/flask_pkg.egg-info/entry_points.txt
+[8.266s] writing requirements to ../../build/flask_pkg/flask_pkg.egg-info/requires.txt
+[8.268s] writing top-level names to ../../build/flask_pkg/flask_pkg.egg-info/top_level.txt
+[8.282s] reading manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'
+[8.300s] writing manifest file '../../build/flask_pkg/flask_pkg.egg-info/SOURCES.txt'
+[8.308s] running build
+[8.315s] running build_py
+[8.317s] copying flask_pkg/flask_server.py -> /home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/build/lib/flask_pkg
+[8.321s] running install
+[8.326s] running install_lib
+[8.332s] copying /home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/build/lib/flask_pkg/flask_server.py -> /home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.10/site-packages/flask_pkg
+[8.347s] byte-compiling /home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.10/site-packages/flask_pkg/flask_server.py to flask_server.cpython-310.pyc
+[8.360s] running install_data
+[8.368s] running install_egg_info
+[8.388s] removing '/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.10/site-packages/flask_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[8.392s] Copying ../../build/flask_pkg/flask_pkg.egg-info to /home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.10/site-packages/flask_pkg-0.0.0-py3.10.egg-info
+[8.414s] running install_scripts
+[8.598s] Installing flask_server script to /home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/flask_pkg
+[8.606s] writing list of installed files to '/home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/install.log'
+[8.875s] Invoked command in '/home/dron/Praca-magisterska/ros2_ws/src/flask_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dron/Praca-magisterska/ros2_ws/install/custom_msgs:/home/dron/Praca-magisterska/ros2_ws/install/my_cpp_pkg PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dron/Praca-magisterska/ros2_ws/install/flask_pkg/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/flask_pkg build --build-base /home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/build install --record /home/dron/Praca-magisterska/ros2_ws/build/flask_pkg/install.log --single-version-externally-managed install_data

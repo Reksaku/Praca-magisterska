@@ -2,9 +2,6 @@
 // with input from custom_msgs:msg/EstimatorData.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_msgs/msg/estimator_data.h"
-
-
 #ifndef CUSTOM_MSGS__MSG__DETAIL__ESTIMATOR_DATA__STRUCT_H_
 #define CUSTOM_MSGS__MSG__DETAIL__ESTIMATOR_DATA__STRUCT_H_
 
@@ -16,6 +13,7 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
+
 
 // Constants defined in the message
 

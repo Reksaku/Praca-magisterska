@@ -15,7 +15,7 @@ G_force = 9.81228 # Warsaw g value
 # ==============================================================================
 class MainData:
     def __init__(self):
-        self.um7 = UM7Serial(port_name='/dev/ttyAMA0')
+        self.um7 = UM7Serial(port_name='/dev/ttyUSB0')
         self.um7.port.close()
         self.um7.port.baudrate = 921600
         self.um7.port.open()

@@ -2,9 +2,6 @@
 // with input from custom_msgs:msg/SpeedData.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_msgs/msg/speed_data.hpp"
-
-
 #ifndef CUSTOM_MSGS__MSG__DETAIL__SPEED_DATA__TRAITS_HPP_
 #define CUSTOM_MSGS__MSG__DETAIL__SPEED_DATA__TRAITS_HPP_
 

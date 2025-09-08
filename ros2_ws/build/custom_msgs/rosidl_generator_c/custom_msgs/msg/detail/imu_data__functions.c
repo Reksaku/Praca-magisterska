@@ -101,7 +101,7 @@ custom_msgs__msg__ImuData__copy(
 }
 
 custom_msgs__msg__ImuData *
-custom_msgs__msg__ImuData__create(void)
+custom_msgs__msg__ImuData__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_msgs__msg__ImuData * msg = (custom_msgs__msg__ImuData *)allocator.allocate(sizeof(custom_msgs__msg__ImuData), allocator.state);

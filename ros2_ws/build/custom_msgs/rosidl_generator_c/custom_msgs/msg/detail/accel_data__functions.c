@@ -73,7 +73,7 @@ custom_msgs__msg__AccelData__copy(
 }
 
 custom_msgs__msg__AccelData *
-custom_msgs__msg__AccelData__create(void)
+custom_msgs__msg__AccelData__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_msgs__msg__AccelData * msg = (custom_msgs__msg__AccelData *)allocator.allocate(sizeof(custom_msgs__msg__AccelData), allocator.state);

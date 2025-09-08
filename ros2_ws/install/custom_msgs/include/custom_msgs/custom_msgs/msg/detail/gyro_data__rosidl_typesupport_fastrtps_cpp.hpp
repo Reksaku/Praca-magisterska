@@ -5,7 +5,6 @@
 #ifndef CUSTOM_MSGS__MSG__DETAIL__GYRO_DATA__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define CUSTOM_MSGS__MSG__DETAIL__GYRO_DATA__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
-#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -55,25 +54,6 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
 max_serialized_size_GyroData(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
-cdr_serialize_key(
-  const custom_msgs::msg::GyroData & ros_message,
-  eprosima::fastcdr::Cdr &);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
-get_serialized_size_key(
-  const custom_msgs::msg::GyroData & ros_message,
-  size_t current_alignment);
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_custom_msgs
-max_serialized_size_key_GyroData(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

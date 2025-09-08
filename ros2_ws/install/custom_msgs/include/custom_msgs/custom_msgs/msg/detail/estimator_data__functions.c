@@ -160,7 +160,7 @@ custom_msgs__msg__EstimatorData__copy(
 }
 
 custom_msgs__msg__EstimatorData *
-custom_msgs__msg__EstimatorData__create(void)
+custom_msgs__msg__EstimatorData__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   custom_msgs__msg__EstimatorData * msg = (custom_msgs__msg__EstimatorData *)allocator.allocate(sizeof(custom_msgs__msg__EstimatorData), allocator.state);

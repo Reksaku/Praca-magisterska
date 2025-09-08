@@ -9,23 +9,11 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-#include "custom_msgs/msg/detail/data_xyz__struct.h"
-#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
-bool cdr_serialize_custom_msgs__msg__DataXYZ(
-  const custom_msgs__msg__DataXYZ * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
-bool cdr_deserialize_custom_msgs__msg__DataXYZ(
-  eprosima::fastcdr::Cdr &,
-  custom_msgs__msg__DataXYZ * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
 size_t get_serialized_size_custom_msgs__msg__DataXYZ(
@@ -34,22 +22,6 @@ size_t get_serialized_size_custom_msgs__msg__DataXYZ(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
 size_t max_serialized_size_custom_msgs__msg__DataXYZ(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
-bool cdr_serialize_key_custom_msgs__msg__DataXYZ(
-  const custom_msgs__msg__DataXYZ * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
-size_t get_serialized_size_key_custom_msgs__msg__DataXYZ(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
-size_t max_serialized_size_key_custom_msgs__msg__DataXYZ(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

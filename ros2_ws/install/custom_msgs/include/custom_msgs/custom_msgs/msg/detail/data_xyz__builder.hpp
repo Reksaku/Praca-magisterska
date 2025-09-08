@@ -2,9 +2,6 @@
 // with input from custom_msgs:msg/DataXYZ.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "custom_msgs/msg/data_xyz.hpp"
-
-
 #ifndef CUSTOM_MSGS__MSG__DETAIL__DATA_XYZ__BUILDER_HPP_
 #define CUSTOM_MSGS__MSG__DETAIL__DATA_XYZ__BUILDER_HPP_
 

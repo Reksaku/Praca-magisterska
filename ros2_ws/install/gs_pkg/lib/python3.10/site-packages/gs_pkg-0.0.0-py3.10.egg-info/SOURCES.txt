@@ -1,0 +1,18 @@
+package.xml
+setup.cfg
+setup.py
+../../build/gs_pkg/gs_pkg.egg-info/PKG-INFO
+../../build/gs_pkg/gs_pkg.egg-info/SOURCES.txt
+../../build/gs_pkg/gs_pkg.egg-info/dependency_links.txt
+../../build/gs_pkg/gs_pkg.egg-info/entry_points.txt
+../../build/gs_pkg/gs_pkg.egg-info/requires.txt
+../../build/gs_pkg/gs_pkg.egg-info/top_level.txt
+../../build/gs_pkg/gs_pkg.egg-info/zip-safe
+gs_pkg/__init__.py
+gs_pkg/flask_server copy.py
+gs_pkg/flask_server.py
+gs_pkg/flask_server_old.py
+resource/gs_pkg
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
