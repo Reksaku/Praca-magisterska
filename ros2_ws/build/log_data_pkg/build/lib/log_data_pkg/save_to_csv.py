@@ -9,7 +9,7 @@ import csv
 
 
 class CSVWriter:
-    def __init__(self, filename, headers=None, batch_size=20, path='/home/dron/log_data/'):
+    def __init__(self, filename, headers=None, batch_size=20, path='/home/rosbot/log_data/'):
         self.path = path
         self.headers = headers
         self.batch_size = batch_size

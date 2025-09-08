@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "custom_msgs")
 set(custom_msgs_VERSION "0.0.0")
-set(custom_msgs_MAINTAINER "dron <dron@todo.todo>")
+set(custom_msgs_MAINTAINER "rosbot <rosbot@todo.todo>")
 set(custom_msgs_BUILD_DEPENDS "rosidl_default_generators")
 set(custom_msgs_BUILDTOOL_DEPENDS "ament_cmake")
 set(custom_msgs_BUILD_EXPORT_DEPENDS )

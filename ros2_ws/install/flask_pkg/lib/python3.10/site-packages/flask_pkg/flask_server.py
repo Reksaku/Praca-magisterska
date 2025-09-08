@@ -9,10 +9,10 @@ import os
 from datetime import datetime, timedelta
 
 # Ścieżka do katalogu danych
-BASE_DIR = '/home/dron'  # Zmień na odpowiednią ścieżkę
+BASE_DIR = '/home/rosbot'  # Zmień na odpowiednią ścieżkę
 
 # Uzyskanie ścieżki do katalogu z szablonami
-template_dir = os.path.join(os.path.expanduser('~'), 'Praca-magisterska/ros2_ws/src/flask_pkg/flask_pkg/templates')
+template_dir = os.path.join(os.path.expanduser('~'), 'ros2_ws/src/flask_pkg/flask_pkg/templates')
 
 # Inicjalizacja aplikacji Flask z niestandardowym katalogiem szablonów
 app = Flask(__name__, template_folder=template_dir)
