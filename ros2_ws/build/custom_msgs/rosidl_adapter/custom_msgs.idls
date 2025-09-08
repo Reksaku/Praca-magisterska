@@ -5,3 +5,6 @@
 /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PossitionData.idl
 /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/SpeedData.idl
 /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DataXYZ.idl
+/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DroneStatus.idl
+/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/GeoData.idl
+/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/TagLocation.idl

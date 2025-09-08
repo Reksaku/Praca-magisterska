@@ -9,9 +9,8 @@ setup.py
 ../../build/flask_pkg/flask_pkg.egg-info/top_level.txt
 ../../build/flask_pkg/flask_pkg.egg-info/zip-safe
 flask_pkg/__init__.py
-flask_pkg/flask_server copy.py
+flask_pkg/basic_flask_server.py
 flask_pkg/flask_server.py
-flask_pkg/flask_server_old.py
 resource/flask_pkg
 test/test_copyright.py
 test/test_flake8.py

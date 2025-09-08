@@ -262,8 +262,31 @@ CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cust
   rosidl_generator_c/custom_msgs/msg/detail/speed_data__struct.h \
   rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.h \
   rosidl_generator_c/custom_msgs/msg/detail/data_xyz__type_support.h \
-  rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.h
+  rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.h \
+  rosidl_generator_c/custom_msgs/msg/detail/drone_status__type_support.h \
+  rosidl_generator_c/custom_msgs/msg/detail/drone_status__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/geo_data__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.h \
+  rosidl_generator_c/custom_msgs/msg/detail/geo_data__type_support.h \
+  rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.h \
+  rosidl_generator_c/custom_msgs/msg/detail/tag_location__type_support.h \
+  rosidl_generator_c/custom_msgs/msg/detail/tag_location__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.h
 
+
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__struct.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__type_support.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__type_support.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__struct.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__type_support.h:
 
 rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.h:
 
@@ -441,6 +464,8 @@ rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
 
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.h:
+
 /usr/include/python3.10/pymath.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -568,6 +593,8 @@ rosidl_generator_c/custom_msgs/msg/detail/possition_data__functions.h:
 /usr/include/python3.10/listobject.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__FILE.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
 

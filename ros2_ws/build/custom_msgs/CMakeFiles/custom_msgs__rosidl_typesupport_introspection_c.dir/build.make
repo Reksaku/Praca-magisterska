@@ -84,6 +84,9 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typ
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/PossitionData.idl
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/SpeedData.idl
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/DataXYZ.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/DroneStatus.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/GeoData.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/TagLocation.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c__arguments.json
 
@@ -105,6 +108,15 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__rosidl_typ
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c
 
@@ -125,6 +137,15 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_suppo
 
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c
 
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c
@@ -224,6 +245,48 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesuppor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.s
 
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o -c /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o -c /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o -c /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s
+
 # Object files for target custom_msgs__rosidl_typesupport_introspection_c
 custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c.o" \
@@ -232,7 +295,10 @@ custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.o" \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/possition_data__type_support.c.o" \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.c.o" \
-"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.o"
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o"
 
 # External object files for target custom_msgs__rosidl_typesupport_introspection_c
 custom_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
@@ -244,13 +310,16 @@ libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__r
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/possition_data__type_support.c.o
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.c.o
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.o
+libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o
+libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o
+libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libcustom_msgs__rosidl_typesupport_introspection_c.so: libcustom_msgs__rosidl_generator_c.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -265,8 +334,12 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_ty
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.c
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
@@ -275,6 +348,8 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_ty
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/possition_data__type_support.c
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c
 	cd /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend
 

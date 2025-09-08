@@ -101,6 +101,21 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xy
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/drone_status.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/geo_data.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/tag_location.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -125,6 +140,9 @@ rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/
 rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/msg/PossitionData.idl
 rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/msg/SpeedData.idl
 rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/msg/DataXYZ.idl
+rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/msg/DroneStatus.idl
+rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/msg/GeoData.idl
+rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp: rosidl_adapter/custom_msgs/msg/TagLocation.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
@@ -230,6 +248,51 @@ rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__traits.hpp: rosidl_generat
 rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__type_support.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/drone_status.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/drone_status.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__type_support.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/geo_data.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/geo_data.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__type_support.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/tag_location.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/tag_location.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__type_support.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/accel_data.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/data_xyz.hpp
@@ -241,10 +304,18 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__builder.
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/data_xyz__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/drone_status__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/estimator_data__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/estimator_data__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/estimator_data__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/estimator_data__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/geo_data__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gyro_data__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gyro_data__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gyro_data__traits.hpp
@@ -261,11 +332,18 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/speed_data__builde
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/speed_data__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/speed_data__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/speed_data__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/tag_location__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/drone_status.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/estimator_data.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/geo_data.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/gyro_data.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/imu_data.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/possition_data.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/speed_data.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/tag_location.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 .PHONY : custom_msgs__cpp
 

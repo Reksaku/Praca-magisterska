@@ -9,7 +9,10 @@
     "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/EstimatorData.idl",
     "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PossitionData.idl",
     "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/SpeedData.idl",
-    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DataXYZ.idl"
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DataXYZ.idl",
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DroneStatus.idl",
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/GeoData.idl",
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/TagLocation.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
@@ -26,6 +29,9 @@
     "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/EstimatorData.idl",
     "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PossitionData.idl",
     "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/SpeedData.idl",
-    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/DataXYZ.idl"
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/DataXYZ.idl",
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/DroneStatus.idl",
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/GeoData.idl",
+    "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/TagLocation.idl"
   ]
 }

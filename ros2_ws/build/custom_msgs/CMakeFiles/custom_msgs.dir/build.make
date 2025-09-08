@@ -73,6 +73,9 @@ CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg
 CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg/PossitionData.msg
 CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg/SpeedData.msg
 CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg/DataXYZ.msg
+CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg/DroneStatus.msg
+CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg/GeoData.msg
+CMakeFiles/custom_msgs: /home/dron/Praca-magisterska/ros2_ws/src/custom_msgs/msg/TagLocation.msg
 
 custom_msgs: CMakeFiles/custom_msgs
 custom_msgs: CMakeFiles/custom_msgs.dir/build.make

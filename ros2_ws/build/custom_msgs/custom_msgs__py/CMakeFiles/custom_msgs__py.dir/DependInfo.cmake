@@ -19,8 +19,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_accel_data_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_data_xyz.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_data_xyz_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_drone_status.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_drone_status_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_estimator_data.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_geo_data.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_geo_data_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_gyro_data.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_gyro_data_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_imu_data.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
@@ -29,6 +33,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_possition_data_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_speed_data.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_speed_data_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_tag_location.py" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_tag_location_s.c" "/home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

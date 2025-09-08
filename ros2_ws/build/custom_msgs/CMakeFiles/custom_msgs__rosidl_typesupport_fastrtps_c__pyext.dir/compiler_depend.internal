@@ -264,4 +264,13 @@ CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generato
  /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.h
  /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/data_xyz__type_support.h
  /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/drone_status__type_support.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/drone_status__struct.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/geo_data__struct.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/geo_data__type_support.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/tag_location__type_support.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/tag_location__struct.h
+ /home/dron/Praca-magisterska/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.h
 

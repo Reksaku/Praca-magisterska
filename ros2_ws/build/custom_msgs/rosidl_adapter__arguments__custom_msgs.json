@@ -7,6 +7,9 @@
     "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/EstimatorData.msg",
     "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/PossitionData.msg",
     "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/SpeedData.msg",
-    "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/DataXYZ.msg"
+    "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/DataXYZ.msg",
+    "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/DroneStatus.msg",
+    "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/GeoData.msg",
+    "/home/dron/Praca-magisterska/ros2_ws/src/custom_msgs:msg/TagLocation.msg"
   ]
 }

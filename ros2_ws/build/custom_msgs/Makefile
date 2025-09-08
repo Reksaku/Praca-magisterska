@@ -453,6 +453,30 @@ rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.c.s
 .PHONY : rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.c.s
 
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.o: rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.o
+
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.i: rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.i
+
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.s: rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.c.s
+
 rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.o: rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.c.o
 .PHONY : rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.o
 
@@ -476,6 +500,30 @@ rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.s: rosidl_ge
 rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.c.s
 .PHONY : rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.c.s
+
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.o: rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.o
+
+# target to build an object file
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.o
+
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.i: rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.i
+
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.s: rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.c.s
 
 rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.o: rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.c.o
 .PHONY : rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.o
@@ -572,6 +620,30 @@ rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.s: rosidl_genera
 rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.c.s
 .PHONY : rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.c.s
+
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.o: rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.o
+
+# target to build an object file
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.o
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.o
+
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.i: rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.i
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.i
+
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.s: rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.s
+.PHONY : rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.c.s
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o
 .PHONY : rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.o
@@ -693,6 +765,30 @@ rosidl_generator_py/custom_msgs/msg/_data_xyz_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_data_xyz_s.c.s
 .PHONY : rosidl_generator_py/custom_msgs/msg/_data_xyz_s.c.s
 
+rosidl_generator_py/custom_msgs/msg/_drone_status_s.o: rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_drone_status_s.o
+
+# target to build an object file
+rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.o
+
+rosidl_generator_py/custom_msgs/msg/_drone_status_s.i: rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_drone_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.i
+
+rosidl_generator_py/custom_msgs/msg/_drone_status_s.s: rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_drone_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_drone_status_s.c.s
+
 rosidl_generator_py/custom_msgs/msg/_estimator_data_s.o: rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c.o
 .PHONY : rosidl_generator_py/custom_msgs/msg/_estimator_data_s.o
 
@@ -716,6 +812,30 @@ rosidl_generator_py/custom_msgs/msg/_estimator_data_s.s: rosidl_generator_py/cus
 rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c.s
 .PHONY : rosidl_generator_py/custom_msgs/msg/_estimator_data_s.c.s
+
+rosidl_generator_py/custom_msgs/msg/_geo_data_s.o: rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_geo_data_s.o
+
+# target to build an object file
+rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.o
+
+rosidl_generator_py/custom_msgs/msg/_geo_data_s.i: rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_geo_data_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.i
+
+rosidl_generator_py/custom_msgs/msg/_geo_data_s.s: rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_geo_data_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_geo_data_s.c.s
 
 rosidl_generator_py/custom_msgs/msg/_gyro_data_s.o: rosidl_generator_py/custom_msgs/msg/_gyro_data_s.c.o
 .PHONY : rosidl_generator_py/custom_msgs/msg/_gyro_data_s.o
@@ -813,6 +933,30 @@ rosidl_generator_py/custom_msgs/msg/_speed_data_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_speed_data_s.c.s
 .PHONY : rosidl_generator_py/custom_msgs/msg/_speed_data_s.c.s
 
+rosidl_generator_py/custom_msgs/msg/_tag_location_s.o: rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_tag_location_s.o
+
+# target to build an object file
+rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.o
+.PHONY : rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.o
+
+rosidl_generator_py/custom_msgs/msg/_tag_location_s.i: rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_tag_location_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.i
+.PHONY : rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.i
+
+rosidl_generator_py/custom_msgs/msg/_tag_location_s.s: rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_tag_location_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_generator_py.dir/build.make CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.s
+.PHONY : rosidl_generator_py/custom_msgs/msg/_tag_location_s.c.s
+
 rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.o: rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.o
 
@@ -861,6 +1005,30 @@ rosidl_typesupport_c/custom_msgs/msg/data_xyz__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/data_xyz__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/data_xyz__type_support.cpp.s
 
+rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.o: rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.o
+
+rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.i: rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.i
+
+rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.s: rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.cpp.s
+
 rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.o: rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.o
 
@@ -884,6 +1052,30 @@ rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.s: rosidl_type
 rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.cpp.s
+
+rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.o: rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.o
+
+rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.i: rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.i
+
+rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.s: rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.cpp.s
 
 rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.o: rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.o
@@ -981,6 +1173,30 @@ rosidl_typesupport_c/custom_msgs/msg/speed_data__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/speed_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/custom_msgs/msg/speed_data__type_support.cpp.s
 
+rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.o: rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.o
+
+rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.i: rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.i
+
+rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.s: rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.cpp.s
+
 rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.o
 
@@ -1029,6 +1245,30 @@ rosidl_typesupport_cpp/custom_msgs/msg/data_xyz__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/data_xyz__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/data_xyz__type_support.cpp.s
 
+rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.i: rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.s: rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.cpp.s
+
 rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.o
 
@@ -1052,6 +1292,30 @@ rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.s: rosidl_ty
 rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.cpp.s
+
+rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.o
+
+rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.i: rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.i
+
+rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.s: rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.cpp.s
 
 rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.o
@@ -1149,6 +1413,30 @@ rosidl_typesupport_cpp/custom_msgs/msg/speed_data__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/speed_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/custom_msgs/msg/speed_data__type_support.cpp.s
 
+rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.o: rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.o
+
+rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.i: rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.i
+
+rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.s: rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.o
 
@@ -1197,6 +1485,30 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/data_xyz__type_support_c.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/data_xyz__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/data_xyz__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.i: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.s: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.o
 
@@ -1220,6 +1532,30 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_suppor
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.i: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.s: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.o
@@ -1317,6 +1653,30 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/speed_data__type_support_c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/speed_data__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/speed_data__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.i: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.s: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.o
 
@@ -1365,6 +1725,30 @@ rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/data_xyz__ty
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/data_xyz__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/data_xyz__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.i: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.s: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.o
 
@@ -1388,6 +1772,30 @@ rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_da
 rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.i: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.s: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.o
@@ -1485,6 +1893,30 @@ rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/speed_data__
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/speed_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/speed_data__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.i: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.s: rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.cpp.s
+
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.o
 
@@ -1533,6 +1965,30 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.c.s
 
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.i: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.s: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.c.s
+
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.o
 
@@ -1556,6 +2012,30 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_s
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.c.s
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.o
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.i: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.i
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.s: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.c.s
 
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.o
@@ -1653,6 +2133,30 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_suppo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.c.s
 
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.o
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.i: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.i
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.s: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.c.s
+
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.o
 
@@ -1701,6 +2205,30 @@ rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/data_xyz__type_suppo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/data_xyz__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/data_xyz__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.i: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.s: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.o
 
@@ -1724,6 +2252,30 @@ rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.i: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.s: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.o
@@ -1821,6 +2373,30 @@ rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/speed_data__type_sup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/speed_data__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/speed_data__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.o: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.i: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.s: rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1858,9 +2434,15 @@ help:
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.o"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.i"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/data_xyz__functions.s"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.o"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.i"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/drone_status__functions.s"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.o"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.i"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/estimator_data__functions.s"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.o"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.i"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/geo_data__functions.s"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.o"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.i"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/gyro_data__functions.s"
@@ -1873,6 +2455,9 @@ help:
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.o"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.i"
 	@echo "... rosidl_generator_c/custom_msgs/msg/detail/speed_data__functions.s"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.o"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.i"
+	@echo "... rosidl_generator_c/custom_msgs/msg/detail/tag_location__functions.s"
 	@echo "... rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.s"
@@ -1888,9 +2473,15 @@ help:
 	@echo "... rosidl_generator_py/custom_msgs/msg/_data_xyz_s.o"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_data_xyz_s.i"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_data_xyz_s.s"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_drone_status_s.o"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_drone_status_s.i"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_drone_status_s.s"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_estimator_data_s.o"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_estimator_data_s.i"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_estimator_data_s.s"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_geo_data_s.o"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_geo_data_s.i"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_geo_data_s.s"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_gyro_data_s.o"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_gyro_data_s.i"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_gyro_data_s.s"
@@ -1903,15 +2494,24 @@ help:
 	@echo "... rosidl_generator_py/custom_msgs/msg/_speed_data_s.o"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_speed_data_s.i"
 	@echo "... rosidl_generator_py/custom_msgs/msg/_speed_data_s.s"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_tag_location_s.o"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_tag_location_s.i"
+	@echo "... rosidl_generator_py/custom_msgs/msg/_tag_location_s.s"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/accel_data__type_support.s"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/data_xyz__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/data_xyz__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/data_xyz__type_support.s"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.o"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.i"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/drone_status__type_support.s"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/estimator_data__type_support.s"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.o"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.i"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/geo_data__type_support.s"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/gyro_data__type_support.s"
@@ -1924,15 +2524,24 @@ help:
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/speed_data__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/speed_data__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_msgs/msg/speed_data__type_support.s"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.o"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.i"
+	@echo "... rosidl_typesupport_c/custom_msgs/msg/tag_location__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/accel_data__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/data_xyz__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/data_xyz__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/data_xyz__type_support.s"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/drone_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/estimator_data__type_support.s"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.o"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.i"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/geo_data__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/gyro_data__type_support.s"
@@ -1945,15 +2554,24 @@ help:
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/speed_data__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/speed_data__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/speed_data__type_support.s"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.o"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.i"
+	@echo "... rosidl_typesupport_cpp/custom_msgs/msg/tag_location__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/accel_data__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/data_xyz__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/data_xyz__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/data_xyz__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/drone_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/estimator_data__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/geo_data__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gyro_data__type_support_c.s"
@@ -1966,15 +2584,24 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/speed_data__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/speed_data__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/speed_data__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/tag_location__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/accel_data__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/data_xyz__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/data_xyz__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/data_xyz__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/drone_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/estimator_data__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/geo_data__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gyro_data__type_support.s"
@@ -1987,15 +2614,24 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/speed_data__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/speed_data__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/speed_data__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/tag_location__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/accel_data__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/data_xyz__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/drone_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/estimator_data__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/geo_data__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gyro_data__type_support.s"
@@ -2008,15 +2644,24 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/speed_data__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/custom_msgs/msg/detail/tag_location__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/accel_data__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/data_xyz__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/data_xyz__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/data_xyz__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/drone_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/estimator_data__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/geo_data__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/gyro_data__type_support.s"
@@ -2029,6 +2674,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/speed_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/speed_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/speed_data__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/tag_location__type_support.s"
 .PHONY : help
 
 
