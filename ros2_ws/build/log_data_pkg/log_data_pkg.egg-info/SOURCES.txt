@@ -9,6 +9,7 @@ setup.py
 ../../build/log_data_pkg/log_data_pkg.egg-info/top_level.txt
 ../../build/log_data_pkg/log_data_pkg.egg-info/zip-safe
 log_data_pkg/__init__.py
+log_data_pkg/save_imu.py
 log_data_pkg/save_to_csv.py
 resource/log_data_pkg
 test/test_copyright.py

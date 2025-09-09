@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "data_collector = log_data_pkg.save_to_csv:main"
+            "data_collector = log_data_pkg.save_to_csv:main",
+            "save_data = log_data_pkg.save_imu:main"
         ],
     },
 )

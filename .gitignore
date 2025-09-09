@@ -21,3 +21,4 @@ snap
 .xorgxrdp.10.log
 .xsession-errors
 ros2_ws/log
+log_data
