@@ -12,7 +12,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, qos_profile_sensor_data
 
 from pymavlink import mavutil, mavwp
-from custom_msgs.msg import DroneStatus, GeoData, TagLocation
+from custom_msgs.msg import DroneStatus, GeoData, TagLocation, ImuData, AccelData, GyroData
 from example_interfaces.msg import String
 
 LatLon = Tuple[float, float]
@@ -51,7 +51,16 @@ class MissionParams:
     zTarget: float = 0.0
     approachingTarget: bool = False
     targetHoverTimer: float = 0
+class ImuReadings:
+    accelX: float = 0.0
+    accelY: float = 0.0
+    accelZ: float = 0.0
+    gyroX: float = 0.0
+    gyroY: float = 0.0
+    gyroZ: float = 0.0
+    timestamp: float = 0.0
 missionStatus = MissionParams()
+imuStatus = ImuReadings()
 
 
 # =============================================================================
@@ -595,11 +604,15 @@ class MavLinkConfigurator:
         self.geofence = GeoFenceConfigurator(self.master)
         self.mission = MisionController(self.master)
 
-        # ---- Stan ARM (jak u Ciebie) ----
+        # ---- Stan ARM ----
         self._armed = False
         self._armed_lock = threading.Lock()
 
-        # ---- Stan headingu (nowe) ----
+        # ---- Stan IMU ----
+        self._imu = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        self._imu_lock = threading.Lock()
+
+        # ---- Stan headingu ----
         self._heading_deg = None           # ostatnio znana wartość [0..360)
         self._heading_ts = 0.0             # unix time ostatniej aktualizacji
         self._heading_lock = threading.Lock()
@@ -607,19 +620,25 @@ class MavLinkConfigurator:
         # Wspólny sygnał stop
         self._stop_evt = threading.Event()
 
-        # Wątek heartbeat (jak u Ciebie)
+        # Wątek heartbeat
         self._thr_hb = threading.Thread(target=self._watch_heartbeat, daemon=True)
         self._thr_hb.start()
 
-        # Wątek kompasu/headingu (nowe)
+        # Wątek kompasu/headingu
         self._thr_hdg = threading.Thread(target=self._watch_heading, daemon=True)
         self._thr_hdg.start()
+
+        # Wątek imu
+        self._thr_imu = threading.Thread(target=self._watch_imu, daemon=True)
+        self._thr_imu.start()
+        
         
         # publikacja potrzebnych ramek w zadanej częstotliwości
         try:
             self.request_message_interval(mavutil.mavlink.MAVLINK_MSG_ID_GLOBAL_POSITION_INT, 10)  # id=33
             self.request_message_interval(mavutil.mavlink.MAVLINK_MSG_ID_VFR_HUD, 10)              # id=74
             self.request_message_interval(mavutil.mavlink.MAVLINK_MSG_ID_ATTITUDE, 20)             # id=30
+            self.connection.request_message_interval(105, 200) # HIGHRES_IMU request
         except Exception:
             pass
 
@@ -762,6 +781,48 @@ class MavLinkConfigurator:
                     self._heading_deg = new_deg
                     self._heading_ts = time.time()
 
+    # -------------------- Nieblokujące API dla imu --------------------
+    def get_imu_readings(self):
+        """Szybkie, nieblokujące – zwraca (heading_deg, age_s) lub (None, None)."""
+        with self._imu_lock:
+            if self._imu is None:
+                return [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0]
+            return self._imu
+
+    # -------------------- Wątek: heading z kilku źródeł -------------------
+    def _watch_imu(self):
+        """
+        Nasłuchuje tylko ramek HIGHRES_IMU aktualizuje ostatnio znaną wartość.
+        """
+        wanted = 'HIGHRES_IMU'
+        while not self._stop_evt.is_set():
+            # krótki timeout -> wątek responsywny na _stop_evt
+            msg = self.master.recv_match(blocking=True, timeout=0.2)
+            if msg is None:
+                continue
+
+            new_data = None
+            try:
+                if msg.msgname == 'HIGHRES_IMU':
+                    self._log('info', 'Nowe dane IMU')
+                    new_data = [
+                        msg.xacc,
+                        msg.yacc,
+                        msg.zacc,
+                        msg.xgyro,
+                        msg.ygyro,
+                        msg.zgyro,  
+                        msg.time_usec]
+
+            except Exception:
+                continue  # sporadyczne błędy parsowania – pomiń
+
+            if new_data is not None:
+                with self._imu_lock:
+                    self._imu = new_data
+            else:
+                with self._imu_lock:
+                    self._imu = [99.99, 99.99, 99.99, 99.99, 99.99, 99.99, 9999]
     # ---------------------- Przykładowe polecenia trybów ----------------------
     def set_mode(self, mode = 'AUTO') -> None:
         if mode not in self.master.mode_mapping():
@@ -879,6 +940,31 @@ class MainData:
         msg.ekf_position.altitude = self._last_status.ekf_position.altitude
         return msg
 
+    def do_read_imu(self) -> ImuData:
+        msg = ImuData()
+        msg.accel = AccelData()
+        msg.gyro = GyroData()
+
+        data = self.connection.get_imu_readings()
+
+        msg.accel.x = data[0]
+        msg.accel.y = data[1]
+        msg.accel.z = data[2]
+        msg.gyro.x = data[3]
+        msg.gyro.y = data[4]
+        msg.gyro.z = data[5]
+        msg.timestamp = int(data[6])
+        
+        # msg.accel.x = 0.0
+        # msg.accel.y = 1.0
+        # msg.accel.z = 0.0
+        # msg.gyro.x = 1.0
+        # msg.gyro.y = 0.0
+        # msg.gyro.z = 0.0
+        # msg.timestamp = 1
+
+        return msg
+
     # GeoFence passthrough
     def read_fence(self, gd: GeoData) -> None:
         self.connection.geofence.read_fence(gd)
@@ -901,6 +987,7 @@ class FlightControllerNode(Node):
 
         # Publikator telemetrii – QoS pod dane sensorowe
         self.publisher_ = self.create_publisher(DroneStatus, 'drone_status', qos_profile_sensor_data)
+        self.publisher__ = self.create_publisher(ImuData, "imu_data", qos_profile_sensor_data)
 
         # Subskrypcje; nie trzeba przechowywać referencji w polach
         self.create_subscription(String, 'flask_commands', self.listener_flask_callback, 10)
@@ -910,6 +997,7 @@ class FlightControllerNode(Node):
         # Timer (1 Hz): publikacja ostatniego znanego stanu (bez blokowania)
         self.timer_ = self.create_timer(0.25, self.timer_function)
         self.timer__ = self.create_timer(0.1, self.mission_timer)
+        self.timer___ = self.create_timer(1/200, self.imu_timer_function)
 
         # Sprzątanie
         #rclpy.on_shutdown(self._on_shutdown)
@@ -924,6 +1012,10 @@ class FlightControllerNode(Node):
     def timer_function(self) -> None:
         msg = self.public_data.do_magic()
         self.publisher_.publish(msg)
+
+    def imu_timer_function(self) -> None:
+        msg = self.public_data.do_read_imu()
+        self.publisher__.publish(msg)
 
     def mission_timer(self) -> None:
         global missionStatus

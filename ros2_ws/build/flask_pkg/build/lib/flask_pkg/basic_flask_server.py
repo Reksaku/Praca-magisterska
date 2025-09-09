@@ -16,8 +16,6 @@ template_dir = os.path.join(os.path.expanduser('~'), 'ros2_ws/src/flask_pkg/flas
 static_dir = os.path.join(os.path.expanduser('~'), 'ros2_ws/src/flask_pkg/flask_pkg/basic_static')
 
 # Inicjalizacja aplikacji Flask z niestandardowym katalogiem szablonów
-app = Flask(__name__, template_folder=template_dir)
-
 app = Flask(
     __name__,
     template_folder=template_dir,
