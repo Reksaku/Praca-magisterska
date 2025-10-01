@@ -22,3 +22,5 @@ snap
 .xsession-errors
 ros2_ws/log
 log_data
+ros2_ws/build
+ros2_ws/install
