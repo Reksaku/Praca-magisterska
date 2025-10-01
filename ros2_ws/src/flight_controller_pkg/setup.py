@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "fc_controller = flight_controller_pkg.fc_control:main"
+            "imu_reader = flight_controller_pkg.imu_reader:main"
         ],
     },
 )

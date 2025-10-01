@@ -31,7 +31,7 @@ class MainData:
         self.timer_2 = datetime.now()
     
     def set_rates(self):
-        rate = 240
+        rate = 400
         self.um7.creg_com_rates1 = 10
         self.um7.creg_com_rates2 = 10
         self.um7.creg_com_rates3 = rate
@@ -43,7 +43,7 @@ class MainData:
         time.sleep(1)
 
     def do_magic(self, publisher):
-        for packet in self.um7.recv_all_proc_broadcast(num_packets=1000, flush_buffer_on_start=True):
+        for packet in self.um7.recv_all_proc_broadcast(num_packets=400, flush_buffer_on_start=True):
             #print(packet)
             self.msg.timestamp = int(packet.accel_proc_time*1000000)
             self.msg.accel.x = float(packet.accel_proc_x * G_force)
@@ -80,7 +80,7 @@ class UM7Node(Node):
 
         self.public_data = MainData()
 
-        self.publisher_ = self.create_publisher(ImuData, "imu_data", 100)
+        self.publisher_ = self.create_publisher(ImuData, "um7_imu_data", 100)
 
         self.timer_ = self.create_timer(1, self.timer_function)
 

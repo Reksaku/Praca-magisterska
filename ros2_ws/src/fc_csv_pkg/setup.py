@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'log_data_pkg'
+package_name = 'fc_csv_pkg'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "data_collector = log_data_pkg.save_to_csv:main"
+            "fc_logger = fc_csv_pkg.save_to_csv:main",
         ],
     },
 )

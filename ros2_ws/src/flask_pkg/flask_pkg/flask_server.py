@@ -1,411 +1,183 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import QoSProfile, qos_profile_sensor_data
-from custom_msgs.msg import DroneStatus, GeoData, TagLocation
+from custom_msgs.msg import ImuData, AccelData, GyroData, EstimatorData, PossitionData
 from example_interfaces.msg import String
-from flask import Flask, render_template, jsonify, request, make_response, redirect, url_for, Response, send_file
-import mimetypes
+from flask import Flask, render_template, jsonify, request, send_from_directory, abort, redirect, url_for, render_template_string
 import threading
 import os
 from datetime import datetime, timedelta
-import csv
-import io
-import uuid
-import atexit
 
-def _shutdown_camera():
-    global cam_running
-    try:
-        cam_running = False
-    except Exception:
-        pass
-atexit.register(_shutdown_camera)
+# Ścieżka do katalogu danych
+BASE_DIR = '/home/rosbot'  # Zmień na odpowiednią ścieżkę
 
-# Ścieżka do katalogu danych (niewykorzystywana tutaj, zostawiamy jak było)
-# BASE_DIR = '/home/dron'
-BASE_DIR = '/home/dron/Praca-magisterska'  # Zmień na odpowiednią ścieżkę
+# Uzyskanie ścieżki do katalogu z szablonami
+template_dir = os.path.join(os.path.expanduser('~'), 'ros2_ws/src/flask_pkg/flask_pkg/templates')
 
-# Katalog szablonów
-# template_dir = os.path.join(os.path.expanduser('~'), 'ws_controller/src/flask_pkg/flask_pkg/templates')
-# static_dir = os.path.join(os.path.expanduser('~'), 'ws_controller/src/flask_pkg/flask_pkg/static')
+# Inicjalizacja aplikacji Flask z niestandardowym katalogiem szablonów
+app = Flask(__name__, template_folder=template_dir)
 
-template_dir = os.path.join(os.path.expanduser('~'), 'Praca-magisterska/ros2_ws/src/flask_pkg/flask_pkg/templates')
-static_dir = os.path.join(os.path.expanduser('~'), 'Praca-magisterska/ros2_ws/src/flask_pkg/flask_pkg/static')
-
-# Flask
-app = Flask(
-    __name__,
-    template_folder=template_dir,
-    static_folder=static_dir,
-    static_url_path='/static'
-)
-
-# Bufor i blokada współbieżna (NEW)
-data_buffer = []
-data_lock = threading.Lock()
+data_buffer = [] 
 
 # Inicjalizacja rclpy
-rclpy.init(args=None)
+rclpy.init()
 
+# Tworzenie węzła ROS 2
 class ServerNode(Node):
     def __init__(self):
         super().__init__('flask_server')
         self.subscription = self.create_subscription(
-            DroneStatus,
-            'drone_status',
+            EstimatorData,
+            'estimation_data',
             self.listener_callback,
-            qos_profile_sensor_data
-        )
+            100)
+        self.subscription  # zapobiega usunięciu subskrypcji przez garbage collector
+        self.counter = 0  # licznik do próbkowania
         self.publisher_ = self.create_publisher(String, 'flask_commands', 10)
-        self.coords_pub = self.create_publisher(TagLocation, 'goal_location', 10)
-        self.geo_pub = self.create_publisher(GeoData, 'geo_points', 10)
 
 
-    def listener_callback(self, msg: DroneStatus):
+    def listener_callback(self, msg):
+        self.counter += 1
+        if self.counter % 4 != 0:  # tylko co 10. wiadomość (czyli 10Hz)
+            return  
         timestamp = datetime.utcnow()
-        sample = (
-            timestamp,
-            msg.is_armed,
-            msg.is_autonomy_active,
-            msg.is_searching,
-            msg.is_durning_takeoff,
-            msg.is_target_spotted,
-            msg.is_moving,
-            msg.battery_voltage,
-            msg.ekf_position.latitude,
-            msg.ekf_position.longitude,
-            msg.ekf_position.altitude
-        )
-        # Zapis z lockiem (NEW)
-        with data_lock:
-            data_buffer.append(sample)
-            cutoff = timestamp - timedelta(seconds=60)
-            # Zostaw tylko ostatnie 60 s danych
-            while data_buffer and data_buffer[0][0] < cutoff:
-                data_buffer.pop(0)
-        #self.get_logger().info(f'Odebrano nap. baterii: {msg.battery_voltage}') 
+        data_buffer.append(
+            (timestamp, msg.possition.x, msg.possition.y, 
+             msg.possition.z, msg.speed.x, 
+             msg.speed.y, msg.speed.z, 
+             msg.accel.x, msg.accel.y, msg.accel.z,
+             msg.orientation.x, msg.orientation.y, msg.orientation.z,
+             msg.raw_data.x, msg.raw_data.y, msg.raw_data.z
+             ))
+        cutoff = timestamp - timedelta(seconds=5)
+        while data_buffer and data_buffer[0][0] < cutoff:
+            data_buffer.pop(0)
+        #self.get_logger().info('Odebrano: "%s"' % msg.timestamp)
 
-    def publish_message(self, command: str):
+
+    def publish_message(self, command):
         msg = String()
         msg.data = command
         self.publisher_.publish(msg)
-        self.get_logger().info(f'Opublikowano komendę: "{command}"')
+        self.get_logger().info(f'Opublikowano: "{msg}"')
+
+
 
 
 ros2_node = ServerNode()
 
-# Wątek ROS2
 
+
+# Uruchomienie węzła ROS 2 w osobnym wątku
 def ros2_spin():
     rclpy.spin(ros2_node)
 
 ros2_thread = threading.Thread(target=ros2_spin, daemon=True)
 ros2_thread.start()
 
-# ==== DepthAI / OAK-D-Lite MJPEG stream ====
-try:
-    import depthai as dai
-    import cv2
-except Exception as _e:
-    dai = None
-    cv2 = None
 
-last_frame = None
-cam_lock = threading.Lock()
-cam_running = False
-_cam_thread = None
-_device = None
-_queue = None
-
-def _camera_thread():
-    global last_frame, cam_running, _device, _queue
-    try:
-        pipeline = dai.Pipeline()
-        cam = pipeline.createColorCamera()
-        cam.setPreviewSize(640, 360)
-        cam.setInterleaved(False)
-        cam.setColorOrder(dai.ColorCameraProperties.ColorOrder.BGR)
-        cam.setFps(30)
-
-        xout = pipeline.createXLinkOut()
-        xout.setStreamName("preview")
-        cam.preview.link(xout.input)
-
-        _device = dai.Device(pipeline)
-        _queue = _device.getOutputQueue(name="preview", maxSize=4, blocking=False)
-
-        cam_running = True
-        while cam_running:
-            pkt = _queue.get()
-            frame = pkt.getCvFrame()
-            with cam_lock:
-                last_frame = frame
-    except Exception as e:
-        print(f"[camera] stopped: {e}")
-    finally:
-        try:
-            if _device is not None:
-                _device.close()
-        except Exception:
-            pass
-        cam_running = False
-
-def start_camera_if_possible():
-    global _cam_thread, cam_running
-    if dai is None or cv2 is None:
-        print("[camera] DepthAI not available — video endpoints will return 503")
-        return
-    if _cam_thread and _cam_thread.is_alive():
-        return
-    _cam_thread = threading.Thread(target=_camera_thread, daemon=True)
-    _cam_thread.start()
-
-@app.route("/video_feed")
-def video_feed():
-    start_camera_if_possible()
-    if dai is None or cv2 is None:
-        return make_response("DepthAI not available", 503)
-
-    def gen():
-        while True:
-            with cam_lock:
-                frame = None if last_frame is None else last_frame.copy()
-            if frame is None:
-                import time; time.sleep(0.01)
-                continue
-            ok, jpg = cv2.imencode(".jpg", frame, [int(cv2.IMWRITE_JPEG_QUALITY), 90])
-            if not ok:
-                continue
-            chunk = jpg.tobytes()
-            yield (b"--frame\r\n"
-                   b"Content-Type: image/jpeg\r\n"
-                   b"Content-Length: " + str(len(chunk)).encode() + b"\r\n\r\n" +
-                   chunk + b"\r\n")
-
-    return Response(gen(), mimetype="multipart/x-mixed-replace; boundary=frame")
-
-@app.route("/snapshot.jpg")
-def snapshot():
-    start_camera_if_possible()
-    if dai is None or cv2 is None:
-        return make_response("DepthAI not available", 503)
-    with cam_lock:
-        frame = None if last_frame is None else last_frame.copy()
-    if frame is None:
-        return make_response("No frame yet", 503)
-    ok, jpg = cv2.imencode(".jpg", frame, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
-    if not ok:
-        return make_response("Encode error", 500)
-    import io
-    buf = io.BytesIO(jpg.tobytes()); buf.seek(0)
-    return send_file(buf, mimetype="image/jpeg")
-
-# =============== ROUTES ===============
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        print("Obebrano POST")
-        if request.form.get('logging') == 'Logging':
+        print('POST')
+        if request.form.get('reset') == 'Reset':
+            ros2_node.publish_message('reset')
+        elif request.form.get('calibrate') == 'Re-calibrate':
+            ros2_node.publish_message('calibrate')
+        elif request.form.get('start') == 'Start':
             ros2_node.publish_message('start_logging')
-
-        elif request.form.get('arm') == 'Arm':
-            ros2_node.publish_message('set_arm')
-        elif request.form.get('disarm') == 'Disarm':
-            ros2_node.publish_message('set_disarm')
-
-        elif request.form.get('land') == 'Land':
-            ros2_node.publish_message('land_now')
-        elif request.form.get('stabilize') == 'Stabilize':
-            ros2_node.publish_message('stabilize')
-        elif request.form.get('auto') == 'Auto':
-            ros2_node.publish_message('auto')
-        elif request.form.get('guided') == 'Guided':
-            ros2_node.publish_message('guided')
-
-        elif request.form.get('takeoff') == 'Takeoff':
-            ros2_node.publish_message('takeoff')
-        elif request.form.get('autonomy_on') == 'Autonomy_on':
-            ros2_node.publish_message('autonomy_on')
-        elif request.form.get('autonomy_off') == 'Autonomy_off':
-            ros2_node.publish_message('autonomy_off')
-        elif request.form.get('mission') == 'Mission':
-            ros2_node.publish_message('mission')
-            
-        elif request.form.get('test_1') == 'Test_1':
-            ros2_node.publish_message('test_1')
-        elif request.form.get('test_2') == 'Test_2':
-            ros2_node.publish_message('test_2')
-        elif request.form.get('test_3') == 'Test_3':
-            ros2_node.publish_message('test_3')
-
-        elif request.form.get('test_4') == 'Test_4':
-            ros2_node.publish_message('test_4')
-        elif request.form.get('test_5') == 'Test_5':
-            ros2_node.publish_message('test_5')
-        elif request.form.get('test_6') == 'Test_6':
-            ros2_node.publish_message('test_6')
-
-        elif request.form.get('play_barka') == 'Play_barka':
-            ros2_node.publish_message('play_Barka')
-        elif request.form.get('inne') == 'Inne':
-            ros2_node.publish_message('inne')
-
-        elif request.form.get('remove_geo') == 'Remove_geo':
-            ros2_node.publish_message('remove_geo')
-        elif request.form.get('set_geo') == 'Set_geo':
-            ros2_node.publish_message('set_geo')
-
+        elif request.form.get('restart') == 'Restart':
+            ros2_node.publish_message('new_logging')
+        elif request.form.get('stop') == 'Stop':
+            ros2_node.publish_message('end_logging')
     return render_template('index.html')
 
-@app.post("/submit-vector")
-def submit():
-    # Odbiór współrzędnych z formularza (typ string -> float)
-    x = request.form.get("x")
-    y = request.form.get("y")
-    try:
-        msg = TagLocation()
-        msg.x_distance = float(y)
-        msg.y_distance = float(x)
-        msg.z_distance = 0.0
-        ros2_node.coords_pub.publish(msg)
-    except (TypeError, ValueError):
-        print("Błąd: nieprawidłowe współrzędne.")
-    return redirect(url_for("index"))
+@app.route('/files/<path:req_path>', methods=['GET'])
+def dir_listing(req_path):
+    abs_path = os.path.join(BASE_DIR, req_path)
 
-# NEW: API – zwróć okno danych (ostatnie ~60 s)
-@app.route('/api/data')
-def api_data():
-    with data_lock:
-        payload = [
-            {
-                't': ts.isoformat() + 'Z',
-                'armed': bool(arm),
-                'autonomy': bool(auth),
-                'moving': bool(move),
-                'takeoff': bool(takeoff),
-                'searching': bool(search),
-                'target': bool(target),
-                'voltage': float(voltage),
-                'lat': float(lat),
-                'lon': float(lon),
-                'alt': float(alt),
-            }
-            for (ts, arm, auth, search, takeoff, target, move, voltage, lat, lon, alt) in data_buffer
-        ]
-    return jsonify(payload)
+    if not os.path.exists(abs_path):
+        return abort(404)
 
-# NEW: API – ostatnia próbka
-@app.route('/api/latest')
-def api_latest():
-    with data_lock:
-        if not data_buffer:
-            return jsonify({'available': False}), 200
-        ts, arm, auth, search, takeoff, target, move, voltage, lat, lon, alt = data_buffer[-1]
-        return jsonify({
-            'available': True,
-            't': ts.isoformat() + 'Z',
-            'armed': bool(arm),
-            'autonomy': bool(auth),
-            'moving': bool(move),
-            'takeoff': bool(takeoff),
-            'searching': bool(search),
-            'target': bool(target),
-            'voltage': float(voltage),
-            'lat': float(lat),
-            'lon': float(lon),
-            'alt': float(alt),
-        })
+    if os.path.isfile(abs_path):
+        return send_from_directory(os.path.dirname(abs_path), os.path.basename(abs_path), as_attachment=True)
 
-@app.route('/api/health')
-def api_health():
-    with data_lock:
-        return jsonify({'buffer_len': len(data_buffer)})
+    files = os.listdir(abs_path)
+    file_items = []
 
-@app.route('/api/mock')
-def api_mock():
-    ts = datetime.utcnow()
-    sample = (ts, True, True, False, 11.9, 52.2297, 21.0122, 120.0)  # przykładowe dane
-    with data_lock:
-        data_buffer.append(sample)
-    return jsonify({'ok': True})
+    for filename in files:
+        full_path = os.path.join(abs_path, filename)
+        rel_path = os.path.join(req_path, filename)
 
-@app.route('/sw.js')
-def service_worker():
-    # Serwujemy SW z korzenia, żeby miał scope '/'
-    sw_path = os.path.join(os.path.dirname(__file__), 'sw.js')
-    if not os.path.exists(sw_path):
-        return "", 404
-    with open(sw_path, 'rb') as f:
-        resp = make_response(f.read())
-        resp.headers['Content-Type'] = 'application/javascript'
-        return resp
+        if os.path.isfile(full_path):
+            size = os.path.getsize(full_path)
+            try:
+                with open(full_path, 'r', encoding='utf-8') as f:
+                    lines = sum(1 for _ in f)
+            except:
+                lines = "n/a"
 
-@app.route('/api/upload-csv', methods=['POST'])
-def upload_csv():
-    """
-    Przyjmuje plik CSV (multipart/form-data: file=<csv>),
-    parsuje kolumny lat, lon, [alt] i publikuje je na topic 'geo_points' jako GeoData.
-    Zwraca liczbę opublikowanych punktów.
-    """
-    if 'file' not in request.files:
-        return jsonify({'error': 'Brak pliku w żądaniu (pole "file").'}), 400
+            item = f'''
+                <li>
+                    <a href="/files/{rel_path}">{filename}</a> 
+                    (rozmiar: {size} B, wiersze: {lines})
+                    <form action="/delete" method="post" style="display:inline;">
+                        <input type="hidden" name="file_path" value="{rel_path}">
+                        <button type="submit">Usuń</button>
+                    </form>
+                </li>
+            '''
+        else:
+            item = f'<li><a href="/files/{rel_path}">{filename}/</a> (katalog)</li>'
 
-    file = request.files['file']
-    if not file.filename.lower().endswith('.csv'):
-        return jsonify({'error': 'Dozwolone są tylko pliki .csv'}), 400
+        file_items.append(item)
 
-    # Opcjonalnie zapisz kopię na dysk (dla logów / re-użycia)
-    uploads_dir = '/tmp/uploads'
-    os.makedirs(uploads_dir, exist_ok=True)
-    safe_name = f"{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}_{uuid.uuid4().hex}.csv"
-    save_path = os.path.join(uploads_dir, safe_name)
-    file.stream.seek(0)
-    file.save(save_path)
+    return f'''
+        <h1>Lista plików w: /{req_path}</h1>
+        <ul>
+            {''.join(file_items)}
+        </ul>
+    '''
 
-    # Wczytaj do pamięci do parsowania
-    file.stream.seek(0)
-    file.stream.flush()
-    file.stream.seek(0)
-    content = file.read().decode('utf-8', errors='replace')
-    reader = csv.DictReader(io.StringIO(content))
+@app.route('/delete', methods=['POST'])
+def delete_file():
+    file_path = request.form.get('file_path')
+    abs_path = os.path.join(BASE_DIR, file_path)
 
-    count = 0
-    errors = 0
+    if os.path.isfile(abs_path):
+        os.remove(abs_path)
+        return redirect(url_for('dir_listing', req_path=os.path.dirname(file_path)))
+    else:
+        return abort(400, "To nie jest plik lub nie można usunąć.")
 
-    required = {'lat', 'lon'}
-    # Sprawdź czy nagłówki mają przynajmniej lat, lon
-    if not required.issubset({h.strip().lower() for h in reader.fieldnames or []}):
-        return jsonify({'error': 'CSV musi zawierać nagłówki kolumn: lat, lon (alt opcjonalne).'}), 400
-
-    for i, row in enumerate(reader, start=1):
-        try:
-            lat = float(str(row.get('lat', '')).strip())
-            lon = float(str(row.get('lon', '')).strip())
-            alt_str = row.get('alt', '')
-            alt = float(str(alt_str).strip()) if (alt_str is not None and str(alt_str).strip() != '') else 0.0
-
-            msg = GeoData()
-            msg.latitude = lat
-            msg.longitude = lon
-            msg.altitude = alt
-            ros2_node.geo_pub.publish(msg)
-            count += 1
-        except Exception:
-            errors += 1
-            continue
-
-    return jsonify({
-        'ok': True,
-        'points': count,
-        'errors': errors,
-        'filename': os.path.basename(save_path)
-    }), 200
-
+@app.route('/data')
+def get_data():
+    now = datetime.utcnow()
+    recent = [(t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, orientx, orienty, orientz, rawx, rawy, rawz) 
+              for (t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, orientx, orienty, orientz, rawx, rawy, rawz) in data_buffer]
+    return jsonify([
+        {
+            'time': t.strftime('%H:%M:%S'),
+            'position_x': posx,
+            'position_y': posy,
+            'position_z': posz,
+            'speed_x': spdx,
+            'speed_y': spdy,
+            'speed_z': spdz,
+            'accel_x': accx,
+            'accel_y': accy,
+            'accel_z': accz,
+            'orientation_x': orientx,
+            'orientation_y': orienty,
+            'orientation_z': orientz,
+            'raw_x': rawx,
+            'raw_y': rawy,
+            'raw_z': rawz
+        } for (t, posx, posy, posz, spdx, spdy, spdz, accx, accy, accz, orientx, orienty, orientz, rawx, rawy, rawz) in recent
+    ])
 
 def main():
-    # host=0.0.0.0 aby dostęp był z sieci; debug opcjonalny
-    app.run(debug=True, use_reloader=False, host='0.0.0.0')
-
+    app.run(debug=True,  host='0.0.0.0')
 
 if __name__ == '__main__':
     main()

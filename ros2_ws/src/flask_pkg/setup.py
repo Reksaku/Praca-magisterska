@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "basic_flask_server = flask_pkg.basic_flask_server:main",
-            "flask_server = flask_pkg.flask_server:main",
+            "flask_server = flask_pkg.flask_server:main"
         ],
     },
 )
