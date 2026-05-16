@@ -1,2 +1,0 @@
-int64 timestamp
-PossitionData possition
